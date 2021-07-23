@@ -84,7 +84,7 @@ iex> LemonMarketsEx.get_instruments(client, search: "AIRBNB", type: "stock")
   }}
 ```
 
-As you can see the function returns an `:ok` tuple with the result as map `%{next: nil, previous: nil, results: [%LemonMarketsEx.Instrument{}]}`. Please refer to the [Pagionation](#pagination) section on how to paginate through records.
+As you can see the function returns an `:ok` tuple with the result as map `%{next: nil, previous: nil, results: [%LemonMarketsEx.Instrument{}]}`. Please refer to the [Pagination](#pagination) section on how to paginate through records.
 
 #### Create a new order
 
