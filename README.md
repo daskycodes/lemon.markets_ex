@@ -154,7 +154,7 @@ iex> {:ok, %{results: ^first_batch}} = previous.()
 
 ## 🤝 Contributing
 
-1. Fork it [daskycodes/lemon_markets_ex](https://github.com/daskycodes/lemon_markets_ex)
+1. Fork it [daskycodes/lemon.markets_ex](https://github.com/daskycodes/lemon.markets_ex)
 2. Create your feature branch (git checkout -b my-new-feature)
 3. Commit your changes (git commit -am 'Add some feature')
 4. Push to the branch (git push origin my-new-feature)
