@@ -1,0 +1,598 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="generator" content="ExDoc v0.25.0">
+    <meta name="project" content="LemonMarketsEx v0.1.0">
+
+    <title>LemonMarketsEx.Spaces — LemonMarketsEx v0.1.0</title>
+    <link rel="stylesheet" href="dist/elixir-a172fe91e725dcb259e2.css" />
+
+    <script src="dist/sidebar_items-905c31c8e5.js"></script>
+
+      <script src="docs_config.js"></script>
+
+    <script async src="dist/app-f27ff079945e43879c46.js"></script>
+
+
+  </head>
+  <body data-type="modules">
+    <script>
+
+      try {
+        if (localStorage.getItem('night-mode') === 'true') {
+          document.body.classList.add('night-mode');
+        }
+      } catch (error) { }
+    </script>
+
+<div class="main">
+
+<button class="sidebar-button sidebar-toggle">
+  <span class="icon-menu" title="Collapse/expand sidebar"></span>
+</button>
+
+<section class="sidebar">
+  <form class="sidebar-search" action="search.html">
+    <button type="submit" class="search-button" aria-label="Submit Search">
+      <span class="icon-search" aria-hidden="true" title="Submit search"></span>
+    </button>
+    <button type="button" tabindex="-1" class="search-close-button" aria-label="Cancel Search">
+      <span class="icon-cross" aria-hidden="true" title="Cancel search"></span>
+    </button>
+    <label class="search-label">
+      <input name="q" type="text" class="search-input" placeholder="Search..." aria-label="Input your search terms" autocomplete="off" />
+    </label>
+  </form>
+
+  <div class="autocomplete">
+    <div class="autocomplete-results">
+    </div>
+  </div>
+
+  <div class="sidebar-header">
+    <div class="sidebar-projectDetails">
+      <a href="readme.html" class="sidebar-projectName">
+LemonMarketsEx
+      </a>
+      <strong class="sidebar-projectVersion">
+        v0.1.0
+      </strong>
+    </div>
+
+  </div>
+
+  <ul class="sidebar-listNav">
+    <li><a id="extras-list-link" href="#full-list">Pages</a></li>
+
+      <li><a id="modules-list-link" href="#full-list">Modules</a></li>
+
+
+  </ul>
+  <div class="gradient"></div>
+  <ul id="full-list" class="sidebar-fullList"></ul>
+</section>
+
+<section class="content">
+  <div class="content-outer">
+    <div id="content" class="content-inner">
+
+      <h1>
+LemonMarketsEx.Spaces <small class="app-vsn">(LemonMarketsEx v0.1.0)</small>
+
+          <a href="https://github.com/daskycodes/lemon.markets_ex/blob/master/lib/lemon_markets_ex/spaces.ex#L1" title="View Source" class="view-source" rel="help">
+            <span class="icon-code" aria-hidden="true"></span>
+            <span class="sr-only">View Source</span>
+          </a>
+
+      </h1>
+
+
+        <section id="moduledoc">
+<p>Spaces are an (if not the most) important concept for using lemon.markets.
+It is crucial to understand what a space is and how it relates to your overall balance and the cash you can invest.
+If you have not quite grasped the concept of spaces yet, please take a look <a href="https://docs.lemon.markets/spaces-apps-strategies">here</a> for a detailed overview.</p>
+        </section>
+
+
+        <section id="summary" class="details-list">
+          <h1 class="section-heading">
+            <a class="hover-link" href="#summary">
+              <span class="icon-link" aria-hidden="true"></span>
+              <span class="sr-only">Link to this section</span>
+            </a>
+            Summary
+          </h1>
+
+  <div class="summary-functions summary">
+    <h2>
+      <a href="#functions">Functions</a>
+    </h2>
+<div class="summary-row">
+  <div class="summary-signature">
+    <a href="#get_portfolio/2">get_portfolio(client, params \\ [])</a>
+
+  </div>
+
+    <div class="summary-synopsis"><p>Gets a list of <a href="LemonMarketsEx.PortfolioItem.html#t:t/0"><code class="inline">LemonMarketsEx.PortfolioItem.t/0</code></a> structs for the given space in the client.</p></div>
+
+</div>
+<div class="summary-row">
+  <div class="summary-signature">
+    <a href="#get_portfolio_transactions/2">get_portfolio_transactions(client, params \\ [])</a>
+
+  </div>
+
+    <div class="summary-synopsis"><p>Gets a list of <a href="LemonMarketsEx.PortfolioTransaction.html#t:t/0"><code class="inline">LemonMarketsEx.PortfolioTransaction.t/0</code></a> structs for the given space in the client.</p></div>
+
+</div>
+<div class="summary-row">
+  <div class="summary-signature">
+    <a href="#get_space/2">get_space(client, space_uuid)</a>
+
+  </div>
+
+    <div class="summary-synopsis"><p>Get a <a href="LemonMarketsEx.Space.html#t:t/0"><code class="inline">LemonMarketsEx.Space.t/0</code></a> by its UUID.</p></div>
+
+</div>
+<div class="summary-row">
+  <div class="summary-signature">
+    <a href="#get_space_state/2">get_space_state(client, space_uuid)</a>
+
+  </div>
+
+    <div class="summary-synopsis"><p>Get the state of a <a href="LemonMarketsEx.Space.html#t:t/0"><code class="inline">LemonMarketsEx.Space.t/0</code></a>.</p></div>
+
+</div>
+<div class="summary-row">
+  <div class="summary-signature">
+    <a href="#get_spaces/2">get_spaces(client, params \\ [])</a>
+
+  </div>
+
+    <div class="summary-synopsis"><p>Get a list of all your spaces.</p></div>
+
+</div>
+<div class="summary-row">
+  <div class="summary-signature">
+    <a href="#get_state/1">get_state(client)</a>
+
+  </div>
+
+    <div class="summary-synopsis"><p>Get the <a href="LemonMarketsEx.State.html#t:t/0"><code class="inline">LemonMarketsEx.State.t/0</code></a> for the given client.</p></div>
+
+</div>
+<div class="summary-row">
+  <div class="summary-signature">
+    <a href="#get_transaction/2">get_transaction(client, transaction_uuid)</a>
+
+  </div>
+
+    <div class="summary-synopsis"><p>Gets a single <a href="LemonMarketsEx.Transaction.html#t:t/0"><code class="inline">LemonMarketsEx.Transaction.t/0</code></a> struct for the given space in the client.</p></div>
+
+</div>
+<div class="summary-row">
+  <div class="summary-signature">
+    <a href="#get_transactions/2">get_transactions(client, params \\ [])</a>
+
+  </div>
+
+    <div class="summary-synopsis"><p>Gets a list of <a href="LemonMarketsEx.Transaction.html#t:t/0"><code class="inline">LemonMarketsEx.Transaction.t/0</code></a> structs for the given space in the client.</p></div>
+
+</div>
+
+  </div>
+
+        </section>
+
+
+        <section id="functions" class="details-list">
+          <h1 class="section-heading">
+            <a class="hover-link" href="#functions">
+              <span class="icon-link" aria-hidden="true"></span>
+              <span class="sr-only">Link to this section</span>
+            </a>
+Functions
+          </h1>
+          <div class="functions-list">
+<section class="detail" id="get_portfolio/2">
+
+    <span id="get_portfolio/1"></span>
+
+  <div class="detail-header">
+    <a href="#get_portfolio/2" class="detail-link" title="Link to this function">
+      <span class="icon-link" aria-hidden="true"></span>
+      <span class="sr-only">Link to this function</span>
+    </a>
+    <h1 class="signature">get_portfolio(client, params \\ [])</h1>
+
+      <a href="https://github.com/daskycodes/lemon.markets_ex/blob/master/lib/lemon_markets_ex/spaces.ex#L156" class="view-source" rel="help" title="View Source">
+       <span class="icon-code" aria-hidden="true"></span>
+       <span class="sr-only">View Source</span>
+     </a>
+
+
+  </div>
+
+  <section class="docstring">
+
+      <h2>Specs</h2>
+      <div class="specs">
+
+          <pre>get_portfolio(<a href="LemonMarketsEx.Client.html#t:t/0">LemonMarketsEx.Client.t</a>(), <a href="https://hexdocs.pm/elixir/typespecs.html#built-in-types">keyword</a>()) ::
+  {:error, <a href="LemonMarketsEx.Error.html#t:t/0">LemonMarketsEx.Error.t</a>()}
+  | {:ok,
+     %{
+       next: <a href="https://hexdocs.pm/elixir/typespecs.html#basic-types">any</a>(),
+       previous: <a href="https://hexdocs.pm/elixir/typespecs.html#basic-types">any</a>(),
+       results: [<a href="LemonMarketsEx.PortfolioItem.html#t:t/0">LemonMarketsEx.PortfolioItem.t</a>()]
+     }}</pre>
+
+      </div>
+
+<p>Gets a list of <a href="LemonMarketsEx.PortfolioItem.html#t:t/0"><code class="inline">LemonMarketsEx.PortfolioItem.t/0</code></a> structs for the given space in the client.</p><ul><li>Returns <code class="inline">{:ok, %{next: any, previous: any, [PortfolioItem.t()]}}</code> on success.</li><li>Returns <code class="inline">{:error, Error.t()}</code> on failure.</li></ul><h2 id="get_portfolio/2-examples" class="section-heading">
+  <a href="#get_portfolio/2-examples" class="hover-link"><span class="icon-link" aria-hidden="true"></span></a>
+  Examples
+</h2>
+<pre><code class="makeup elixir"><span class="gp unselectable">iex&gt; </span><span class="nc">LemonMarketsEx.Spaces</span><span class="o">.</span><span class="n">get_portfolio</span><span class="p" data-group-id="0256934697-1">(</span><span class="n">client</span><span class="p" data-group-id="0256934697-1">)</span><span class="w">
+</span><span class="p" data-group-id="0256934697-2">{</span><span class="ss">:ok</span><span class="p">,</span><span class="w"> </span><span class="p" data-group-id="0256934697-3">%{</span><span class="ss">next</span><span class="p">:</span><span class="w"> </span><span class="no">nil</span><span class="p">,</span><span class="w"> </span><span class="ss">previous</span><span class="p">:</span><span class="w"> </span><span class="no">nil</span><span class="p">,</span><span class="w"> </span><span class="ss">results</span><span class="p">:</span><span class="w"> </span><span class="p" data-group-id="0256934697-4">[</span><span class="p" data-group-id="0256934697-5">%</span><span class="nc" data-group-id="0256934697-5">PortfolioItem</span><span class="p" data-group-id="0256934697-5">{</span><span class="p" data-group-id="0256934697-5">}</span><span class="p">,</span><span class="w"> </span><span class="n">...</span><span class="p" data-group-id="0256934697-4">]</span><span class="p" data-group-id="0256934697-3">}</span><span class="p" data-group-id="0256934697-2">}</span></code></pre><h3 id="get_portfolio/2-parameters" class="section-heading">
+  <a href="#get_portfolio/2-parameters" class="hover-link"><span class="icon-link" aria-hidden="true"></span></a>
+  Parameters
+</h3>
+<ul><li><code class="inline">client</code> - <a href="LemonMarketsEx.Client.html#t:t/0"><code class="inline">LemonMarketsEx.Client.t/0</code></a></li><li><code class="inline">params</code> - A keyword list of query parameters.<ul><li><code class="inline">limit</code> (optional) - Required for pagination; default is 200.</li><li><code class="inline">offset</code> (optional) - Required for pagination.</li></ul></li></ul>
+  </section>
+</section>
+<section class="detail" id="get_portfolio_transactions/2">
+
+    <span id="get_portfolio_transactions/1"></span>
+
+  <div class="detail-header">
+    <a href="#get_portfolio_transactions/2" class="detail-link" title="Link to this function">
+      <span class="icon-link" aria-hidden="true"></span>
+      <span class="sr-only">Link to this function</span>
+    </a>
+    <h1 class="signature">get_portfolio_transactions(client, params \\ [])</h1>
+
+      <a href="https://github.com/daskycodes/lemon.markets_ex/blob/master/lib/lemon_markets_ex/spaces.ex#L190" class="view-source" rel="help" title="View Source">
+       <span class="icon-code" aria-hidden="true"></span>
+       <span class="sr-only">View Source</span>
+     </a>
+
+
+  </div>
+
+  <section class="docstring">
+
+      <h2>Specs</h2>
+      <div class="specs">
+
+          <pre>get_portfolio_transactions(<a href="LemonMarketsEx.Client.html#t:t/0">LemonMarketsEx.Client.t</a>(), <a href="https://hexdocs.pm/elixir/typespecs.html#built-in-types">keyword</a>()) ::
+  {:error, <a href="LemonMarketsEx.Error.html#t:t/0">LemonMarketsEx.Error.t</a>()}
+  | {:ok,
+     %{
+       next: <a href="https://hexdocs.pm/elixir/typespecs.html#basic-types">any</a>(),
+       previous: <a href="https://hexdocs.pm/elixir/typespecs.html#basic-types">any</a>(),
+       results: [<a href="LemonMarketsEx.PortfolioTransaction.html#t:t/0">LemonMarketsEx.PortfolioTransaction.t</a>()]
+     }}</pre>
+
+      </div>
+
+<p>Gets a list of <a href="LemonMarketsEx.PortfolioTransaction.html#t:t/0"><code class="inline">LemonMarketsEx.PortfolioTransaction.t/0</code></a> structs for the given space in the client.</p><ul><li>Returns <code class="inline">{:ok, %{next: any, previous: any, [PortfolioTransaction.t()]}}</code> on success.</li><li>Returns <code class="inline">{:error, Error.t()}</code> on failure.</li></ul><h2 id="get_portfolio_transactions/2-examples" class="section-heading">
+  <a href="#get_portfolio_transactions/2-examples" class="hover-link"><span class="icon-link" aria-hidden="true"></span></a>
+  Examples
+</h2>
+<pre><code class="makeup elixir"><span class="gp unselectable">iex&gt; </span><span class="nc">LemonMarketsEx.Spaces</span><span class="o">.</span><span class="n">get_portfolio_transactions</span><span class="p" data-group-id="1319043791-1">(</span><span class="n">client</span><span class="p" data-group-id="1319043791-1">)</span><span class="w">
+</span><span class="p" data-group-id="1319043791-2">{</span><span class="ss">:ok</span><span class="p">,</span><span class="w"> </span><span class="p" data-group-id="1319043791-3">%{</span><span class="ss">next</span><span class="p">:</span><span class="w"> </span><span class="no">nil</span><span class="p">,</span><span class="w"> </span><span class="ss">previous</span><span class="p">:</span><span class="w"> </span><span class="no">nil</span><span class="p">,</span><span class="w"> </span><span class="ss">results</span><span class="p">:</span><span class="w"> </span><span class="p" data-group-id="1319043791-4">[</span><span class="p" data-group-id="1319043791-5">%</span><span class="nc" data-group-id="1319043791-5">PortfolioTransaction</span><span class="p" data-group-id="1319043791-5">{</span><span class="p" data-group-id="1319043791-5">}</span><span class="p">,</span><span class="w"> </span><span class="n">...</span><span class="p" data-group-id="1319043791-4">]</span><span class="p" data-group-id="1319043791-3">}</span><span class="p" data-group-id="1319043791-2">}</span></code></pre><h3 id="get_portfolio_transactions/2-parameters" class="section-heading">
+  <a href="#get_portfolio_transactions/2-parameters" class="hover-link"><span class="icon-link" aria-hidden="true"></span></a>
+  Parameters
+</h3>
+<ul><li><code class="inline">client</code> - <a href="LemonMarketsEx.Client.html#t:t/0"><code class="inline">LemonMarketsEx.Client.t/0</code></a></li><li><code class="inline">params</code> - A keyword list of query parameters.<ul><li><code class="inline">created_at_until</code> (optional) - UTC Unix Timestamp.</li><li><code class="inline">created_at_from</code> (optional) - UTC Unix Timestamp.</li><li><code class="inline">limit</code> (optional) - Required for pagination; default is 200.</li><li><code class="inline">offset</code> (optional) - Required for pagination.</li></ul></li></ul>
+  </section>
+</section>
+<section class="detail" id="get_space/2">
+
+  <div class="detail-header">
+    <a href="#get_space/2" class="detail-link" title="Link to this function">
+      <span class="icon-link" aria-hidden="true"></span>
+      <span class="sr-only">Link to this function</span>
+    </a>
+    <h1 class="signature">get_space(client, space_uuid)</h1>
+
+      <a href="https://github.com/daskycodes/lemon.markets_ex/blob/master/lib/lemon_markets_ex/spaces.ex#L107" class="view-source" rel="help" title="View Source">
+       <span class="icon-code" aria-hidden="true"></span>
+       <span class="sr-only">View Source</span>
+     </a>
+
+
+  </div>
+
+  <section class="docstring">
+
+      <h2>Specs</h2>
+      <div class="specs">
+
+          <pre>get_space(<a href="LemonMarketsEx.Client.html#t:t/0">LemonMarketsEx.Client.t</a>(), <a href="https://hexdocs.pm/elixir/String.html#t:t/0">String.t</a>()) ::
+  {:error, <a href="LemonMarketsEx.Error.html#t:t/0">LemonMarketsEx.Error.t</a>()} | {:ok, <a href="LemonMarketsEx.Space.html#t:t/0">LemonMarketsEx.Space.t</a>()}</pre>
+
+      </div>
+
+<p>Get a <a href="LemonMarketsEx.Space.html#t:t/0"><code class="inline">LemonMarketsEx.Space.t/0</code></a> by its UUID.</p><h2 id="get_space/2-examples" class="section-heading">
+  <a href="#get_space/2-examples" class="hover-link"><span class="icon-link" aria-hidden="true"></span></a>
+  Examples
+</h2>
+<pre><code class="makeup elixir"><span class="gp unselectable">iex&gt; </span><span class="nc">LemonMarketsEx.Spaces</span><span class="o">.</span><span class="n">get_space</span><span class="p" data-group-id="1362879191-1">(</span><span class="n">client</span><span class="p">,</span><span class="w"> </span><span class="s">&quot;33e81fe3-7ada-433d-bdc4-7db4d5033b60&quot;</span><span class="p" data-group-id="1362879191-1">)</span><span class="w">
+</span><span class="p" data-group-id="1362879191-2">{</span><span class="ss">:ok</span><span class="p">,</span><span class="w">
+</span><span class="p" data-group-id="1362879191-3">%</span><span class="nc" data-group-id="1362879191-3">LemonMarketsEx.Space</span><span class="p" data-group-id="1362879191-3">{</span><span class="w">
+  </span><span class="ss">name</span><span class="p">:</span><span class="w"> </span><span class="s">&quot;Naive Paper Strategy&quot;</span><span class="p">,</span><span class="w">
+  </span><span class="ss">state</span><span class="p">:</span><span class="w"> </span><span class="p" data-group-id="1362879191-4">%{</span><span class="ss">balance</span><span class="p">:</span><span class="w"> </span><span class="s">&quot;10000.0000&quot;</span><span class="p">,</span><span class="w"> </span><span class="ss">cash_to_invest</span><span class="p">:</span><span class="w"> </span><span class="s">&quot;10000.0000&quot;</span><span class="p" data-group-id="1362879191-4">}</span><span class="p">,</span><span class="w">
+  </span><span class="ss">type</span><span class="p">:</span><span class="w"> </span><span class="s">&quot;strategy&quot;</span><span class="p">,</span><span class="w">
+  </span><span class="ss">uuid</span><span class="p">:</span><span class="w"> </span><span class="s">&quot;33e81fe3-7ada-433d-bdc4-7db4d5033b60&quot;</span><span class="w">
+</span><span class="p" data-group-id="1362879191-3">}</span><span class="p" data-group-id="1362879191-2">}</span></code></pre><h3 id="get_space/2-parameters" class="section-heading">
+  <a href="#get_space/2-parameters" class="hover-link"><span class="icon-link" aria-hidden="true"></span></a>
+  Parameters
+</h3>
+<ul><li><code class="inline">client</code> - <a href="LemonMarketsEx.Client.html#t:t/0"><code class="inline">LemonMarketsEx.Client.t/0</code></a></li><li><code class="inline">space_uuid</code> - The UUID of the space to get.</li></ul>
+  </section>
+</section>
+<section class="detail" id="get_space_state/2">
+
+  <div class="detail-header">
+    <a href="#get_space_state/2" class="detail-link" title="Link to this function">
+      <span class="icon-link" aria-hidden="true"></span>
+      <span class="sr-only">Link to this function</span>
+    </a>
+    <h1 class="signature">get_space_state(client, space_uuid)</h1>
+
+      <a href="https://github.com/daskycodes/lemon.markets_ex/blob/master/lib/lemon_markets_ex/spaces.ex#L128" class="view-source" rel="help" title="View Source">
+       <span class="icon-code" aria-hidden="true"></span>
+       <span class="sr-only">View Source</span>
+     </a>
+
+
+  </div>
+
+  <section class="docstring">
+
+      <h2>Specs</h2>
+      <div class="specs">
+
+          <pre>get_space_state(<a href="LemonMarketsEx.Client.html#t:t/0">LemonMarketsEx.Client.t</a>(), <a href="https://hexdocs.pm/elixir/String.html#t:t/0">String.t</a>()) ::
+  {:error, <a href="LemonMarketsEx.Error.html#t:t/0">LemonMarketsEx.Error.t</a>()} | {:ok, <a href="https://hexdocs.pm/elixir/typespecs.html#basic-types">map</a>()}</pre>
+
+      </div>
+
+<p>Get the state of a <a href="LemonMarketsEx.Space.html#t:t/0"><code class="inline">LemonMarketsEx.Space.t/0</code></a>.</p><h2 id="get_space_state/2-examples" class="section-heading">
+  <a href="#get_space_state/2-examples" class="hover-link"><span class="icon-link" aria-hidden="true"></span></a>
+  Examples
+</h2>
+<pre><code class="makeup elixir"><span class="gp unselectable">iex&gt; </span><span class="nc">LemonMarketsEx.Spaces</span><span class="o">.</span><span class="n">get_space_state</span><span class="p" data-group-id="6288505244-1">(</span><span class="n">client</span><span class="p">,</span><span class="w"> </span><span class="s">&quot;33e81fe3-7ada-433d-bdc4-7db4d5033b60&quot;</span><span class="p" data-group-id="6288505244-1">)</span><span class="w">
+</span><span class="p" data-group-id="6288505244-2">{</span><span class="ss">:ok</span><span class="p">,</span><span class="w"> </span><span class="p" data-group-id="6288505244-3">%{</span><span class="ss">balance</span><span class="p">:</span><span class="w"> </span><span class="s">&quot;10000.0000&quot;</span><span class="p">,</span><span class="w"> </span><span class="ss">cash_to_invest</span><span class="p">:</span><span class="w"> </span><span class="s">&quot;10000.0000&quot;</span><span class="p" data-group-id="6288505244-3">}</span><span class="p" data-group-id="6288505244-2">}</span></code></pre><h3 id="get_space_state/2-parameters" class="section-heading">
+  <a href="#get_space_state/2-parameters" class="hover-link"><span class="icon-link" aria-hidden="true"></span></a>
+  Parameters
+</h3>
+<ul><li><code class="inline">client</code> - <a href="LemonMarketsEx.Client.html#t:t/0"><code class="inline">LemonMarketsEx.Client.t/0</code></a></li><li><code class="inline">space_uuid</code> - The UUID of the space state to get.</li></ul>
+  </section>
+</section>
+<section class="detail" id="get_spaces/2">
+
+    <span id="get_spaces/1"></span>
+
+  <div class="detail-header">
+    <a href="#get_spaces/2" class="detail-link" title="Link to this function">
+      <span class="icon-link" aria-hidden="true"></span>
+      <span class="sr-only">Link to this function</span>
+    </a>
+    <h1 class="signature">get_spaces(client, params \\ [])</h1>
+
+      <a href="https://github.com/daskycodes/lemon.markets_ex/blob/master/lib/lemon_markets_ex/spaces.ex#L76" class="view-source" rel="help" title="View Source">
+       <span class="icon-code" aria-hidden="true"></span>
+       <span class="sr-only">View Source</span>
+     </a>
+
+
+  </div>
+
+  <section class="docstring">
+
+      <h2>Specs</h2>
+      <div class="specs">
+
+          <pre>get_spaces(<a href="LemonMarketsEx.Client.html#t:t/0">LemonMarketsEx.Client.t</a>(), <a href="https://hexdocs.pm/elixir/typespecs.html#built-in-types">keyword</a>()) ::
+  {:error, <a href="LemonMarketsEx.Error.html#t:t/0">LemonMarketsEx.Error.t</a>()}
+  | {:ok, %{next: <a href="https://hexdocs.pm/elixir/typespecs.html#basic-types">any</a>(), previous: <a href="https://hexdocs.pm/elixir/typespecs.html#basic-types">any</a>(), results: [<a href="LemonMarketsEx.Space.html#t:t/0">LemonMarketsEx.Space.t</a>()]}}</pre>
+
+      </div>
+
+<p>Get a list of all your spaces.</p><h2 id="get_spaces/2-examples" class="section-heading">
+  <a href="#get_spaces/2-examples" class="hover-link"><span class="icon-link" aria-hidden="true"></span></a>
+  Examples
+</h2>
+<pre><code class="makeup elixir"><span class="gp unselectable">iex&gt; </span><span class="nc">LemonMarketsEx.Spaces</span><span class="o">.</span><span class="n">get_spaces</span><span class="p" data-group-id="1923443514-1">(</span><span class="n">client</span><span class="p" data-group-id="1923443514-1">)</span><span class="w">
+</span><span class="p" data-group-id="1923443514-2">{</span><span class="ss">:ok</span><span class="p">,</span><span class="w">
+</span><span class="p" data-group-id="1923443514-3">%{</span><span class="w">
+  </span><span class="ss">next</span><span class="p">:</span><span class="w"> </span><span class="no">nil</span><span class="p">,</span><span class="w">
+  </span><span class="ss">previous</span><span class="p">:</span><span class="w"> </span><span class="no">nil</span><span class="p">,</span><span class="w">
+  </span><span class="ss">results</span><span class="p">:</span><span class="w"> </span><span class="p" data-group-id="1923443514-4">[</span><span class="w">
+    </span><span class="p" data-group-id="1923443514-5">%</span><span class="nc" data-group-id="1923443514-5">LemonMarketsEx.Space</span><span class="p" data-group-id="1923443514-5">{</span><span class="w">
+      </span><span class="ss">name</span><span class="p">:</span><span class="w"> </span><span class="s">&quot;Naive Paper Strategy&quot;</span><span class="p">,</span><span class="w">
+      </span><span class="ss">state</span><span class="p">:</span><span class="w"> </span><span class="p" data-group-id="1923443514-6">%{</span><span class="ss">balance</span><span class="p">:</span><span class="w"> </span><span class="s">&quot;10000.0000&quot;</span><span class="p">,</span><span class="w"> </span><span class="ss">cash_to_invest</span><span class="p">:</span><span class="w"> </span><span class="s">&quot;10000.0000&quot;</span><span class="p" data-group-id="1923443514-6">}</span><span class="p">,</span><span class="w">
+      </span><span class="ss">type</span><span class="p">:</span><span class="w"> </span><span class="s">&quot;strategy&quot;</span><span class="p">,</span><span class="w">
+      </span><span class="ss">uuid</span><span class="p">:</span><span class="w"> </span><span class="s">&quot;33e81fe3-7ada-433d-bdc4-7db4d5033b60&quot;</span><span class="w">
+    </span><span class="p" data-group-id="1923443514-5">}</span><span class="w">
+  </span><span class="p" data-group-id="1923443514-4">]</span><span class="w">
+</span><span class="p" data-group-id="1923443514-3">}</span><span class="p" data-group-id="1923443514-2">}</span></code></pre><h3 id="get_spaces/2-parameters" class="section-heading">
+  <a href="#get_spaces/2-parameters" class="hover-link"><span class="icon-link" aria-hidden="true"></span></a>
+  Parameters
+</h3>
+<ul><li><code class="inline">client</code> - <a href="LemonMarketsEx.Client.html#t:t/0"><code class="inline">LemonMarketsEx.Client.t/0</code></a></li><li><code class="inline">params</code> - A keyword list of query parameters.<ul><li><code class="inline">limit</code> (optional) - The maximum number of spaces to return.</li><li><code class="inline">offset</code> (optional) - The offset to start returning spaces from.</li></ul></li></ul>
+  </section>
+</section>
+<section class="detail" id="get_state/1">
+
+  <div class="detail-header">
+    <a href="#get_state/1" class="detail-link" title="Link to this function">
+      <span class="icon-link" aria-hidden="true"></span>
+      <span class="sr-only">Link to this function</span>
+    </a>
+    <h1 class="signature">get_state(client)</h1>
+
+      <a href="https://github.com/daskycodes/lemon.markets_ex/blob/master/lib/lemon_markets_ex/spaces.ex#L40" class="view-source" rel="help" title="View Source">
+       <span class="icon-code" aria-hidden="true"></span>
+       <span class="sr-only">View Source</span>
+     </a>
+
+
+  </div>
+
+  <section class="docstring">
+
+      <h2>Specs</h2>
+      <div class="specs">
+
+          <pre>get_state(<a href="LemonMarketsEx.Client.html#t:t/0">LemonMarketsEx.Client.t</a>()) ::
+  {:error, <a href="LemonMarketsEx.Error.html#t:t/0">LemonMarketsEx.Error.t</a>()} | {:ok, <a href="LemonMarketsEx.State.html#t:t/0">LemonMarketsEx.State.t</a>()}</pre>
+
+      </div>
+
+<p>Get the <a href="LemonMarketsEx.State.html#t:t/0"><code class="inline">LemonMarketsEx.State.t/0</code></a> for the given client.</p><p>The state is a place where unused money is store and can be reached.</p><h2 id="get_state/1-examples" class="section-heading">
+  <a href="#get_state/1-examples" class="hover-link"><span class="icon-link" aria-hidden="true"></span></a>
+  Examples
+</h2>
+<pre><code class="makeup elixir"><span class="gp unselectable">iex&gt; </span><span class="nc">LemonMarketsEx.Spaces</span><span class="o">.</span><span class="n">get_state</span><span class="p" data-group-id="9947119552-1">(</span><span class="n">client</span><span class="p" data-group-id="9947119552-1">)</span><span class="w">
+</span><span class="p" data-group-id="9947119552-2">{</span><span class="ss">:ok</span><span class="p">,</span><span class="w">
+ </span><span class="p" data-group-id="9947119552-3">%</span><span class="nc" data-group-id="9947119552-3">LemonMarketsEx.State</span><span class="p" data-group-id="9947119552-3">{</span><span class="w">
+   </span><span class="ss">cash_account_number</span><span class="p">:</span><span class="w"> </span><span class="no">nil</span><span class="p">,</span><span class="w">
+   </span><span class="ss">securities_account_number</span><span class="p">:</span><span class="w"> </span><span class="no">nil</span><span class="p">,</span><span class="w">
+   </span><span class="ss">state</span><span class="p">:</span><span class="w"> </span><span class="p" data-group-id="9947119552-4">%{</span><span class="ss">balance</span><span class="p">:</span><span class="w"> </span><span class="s">&quot;89999.0000&quot;</span><span class="p" data-group-id="9947119552-4">}</span><span class="w">
+ </span><span class="p" data-group-id="9947119552-3">}</span><span class="p" data-group-id="9947119552-2">}</span></code></pre><h3 id="get_state/1-parameters" class="section-heading">
+  <a href="#get_state/1-parameters" class="hover-link"><span class="icon-link" aria-hidden="true"></span></a>
+  Parameters
+</h3>
+<ul><li><code class="inline">client</code> - <a href="LemonMarketsEx.Client.html#t:t/0"><code class="inline">LemonMarketsEx.Client.t/0</code></a></li></ul>
+  </section>
+</section>
+<section class="detail" id="get_transaction/2">
+
+  <div class="detail-header">
+    <a href="#get_transaction/2" class="detail-link" title="Link to this function">
+      <span class="icon-link" aria-hidden="true"></span>
+      <span class="sr-only">Link to this function</span>
+    </a>
+    <h1 class="signature">get_transaction(client, transaction_uuid)</h1>
+
+      <a href="https://github.com/daskycodes/lemon.markets_ex/blob/master/lib/lemon_markets_ex/spaces.ex#L254" class="view-source" rel="help" title="View Source">
+       <span class="icon-code" aria-hidden="true"></span>
+       <span class="sr-only">View Source</span>
+     </a>
+
+
+  </div>
+
+  <section class="docstring">
+
+      <h2>Specs</h2>
+      <div class="specs">
+
+          <pre>get_transaction(<a href="LemonMarketsEx.Client.html#t:t/0">LemonMarketsEx.Client.t</a>(), <a href="https://hexdocs.pm/elixir/String.html#t:t/0">String.t</a>()) ::
+  {:error, <a href="LemonMarketsEx.Error.html#t:t/0">LemonMarketsEx.Error.t</a>()} | {:ok, <a href="LemonMarketsEx.Transaction.html#t:t/0">LemonMarketsEx.Transaction.t</a>()}</pre>
+
+      </div>
+
+<p>Gets a single <a href="LemonMarketsEx.Transaction.html#t:t/0"><code class="inline">LemonMarketsEx.Transaction.t/0</code></a> struct for the given space in the client.</p><ul><li>Returns <code class="inline">{:ok, Transaction.t()}</code> on success.</li><li>Returns <code class="inline">{:error, Error.t()}</code> on failure.</li></ul><h2 id="get_transaction/2-examples" class="section-heading">
+  <a href="#get_transaction/2-examples" class="hover-link"><span class="icon-link" aria-hidden="true"></span></a>
+  Examples
+</h2>
+<pre><code class="makeup elixir"><span class="gp unselectable">iex&gt; </span><span class="nc">LemonMarketsEx.Spaces</span><span class="o">.</span><span class="n">get_transaction</span><span class="p" data-group-id="8689155568-1">(</span><span class="n">client</span><span class="p">,</span><span class="w"> </span><span class="n">transaction_uuid</span><span class="p" data-group-id="8689155568-1">)</span><span class="w">
+</span><span class="p" data-group-id="8689155568-2">{</span><span class="ss">:ok</span><span class="p">,</span><span class="w"> </span><span class="p" data-group-id="8689155568-3">%</span><span class="nc" data-group-id="8689155568-3">Transaction</span><span class="p" data-group-id="8689155568-3">{</span><span class="p" data-group-id="8689155568-3">}</span><span class="p" data-group-id="8689155568-2">}</span></code></pre><h3 id="get_transaction/2-parameters" class="section-heading">
+  <a href="#get_transaction/2-parameters" class="hover-link"><span class="icon-link" aria-hidden="true"></span></a>
+  Parameters
+</h3>
+<ul><li><code class="inline">client</code> - <a href="LemonMarketsEx.Client.html#t:t/0"><code class="inline">LemonMarketsEx.Client.t/0</code></a></li><li><code class="inline">transaction_uuid</code> - The <code class="inline">UUID</code> of the transaction.</li></ul>
+  </section>
+</section>
+<section class="detail" id="get_transactions/2">
+
+    <span id="get_transactions/1"></span>
+
+  <div class="detail-header">
+    <a href="#get_transactions/2" class="detail-link" title="Link to this function">
+      <span class="icon-link" aria-hidden="true"></span>
+      <span class="sr-only">Link to this function</span>
+    </a>
+    <h1 class="signature">get_transactions(client, params \\ [])</h1>
+
+      <a href="https://github.com/daskycodes/lemon.markets_ex/blob/master/lib/lemon_markets_ex/spaces.ex#L226" class="view-source" rel="help" title="View Source">
+       <span class="icon-code" aria-hidden="true"></span>
+       <span class="sr-only">View Source</span>
+     </a>
+
+
+  </div>
+
+  <section class="docstring">
+
+      <h2>Specs</h2>
+      <div class="specs">
+
+          <pre>get_transactions(<a href="LemonMarketsEx.Client.html#t:t/0">LemonMarketsEx.Client.t</a>(), <a href="https://hexdocs.pm/elixir/typespecs.html#built-in-types">keyword</a>()) ::
+  {:error, <a href="LemonMarketsEx.Error.html#t:t/0">LemonMarketsEx.Error.t</a>()}
+  | {:ok,
+     %{next: <a href="https://hexdocs.pm/elixir/typespecs.html#basic-types">any</a>(), previous: <a href="https://hexdocs.pm/elixir/typespecs.html#basic-types">any</a>(), results: [<a href="LemonMarketsEx.Transaction.html#t:t/0">LemonMarketsEx.Transaction.t</a>()]}}</pre>
+
+      </div>
+
+<p>Gets a list of <a href="LemonMarketsEx.Transaction.html#t:t/0"><code class="inline">LemonMarketsEx.Transaction.t/0</code></a> structs for the given space in the client.</p><ul><li>Returns <code class="inline">{:ok, %{next: any, previous: any, [Transaction.t()]}}</code> on success.</li><li>Returns <code class="inline">{:error, Error.t()}</code> on failure.</li></ul><h2 id="get_transactions/2-examples" class="section-heading">
+  <a href="#get_transactions/2-examples" class="hover-link"><span class="icon-link" aria-hidden="true"></span></a>
+  Examples
+</h2>
+<pre><code class="makeup elixir"><span class="gp unselectable">iex&gt; </span><span class="nc">LemonMarketsEx.Spaces</span><span class="o">.</span><span class="n">get_transactions</span><span class="p" data-group-id="3433579356-1">(</span><span class="n">client</span><span class="p" data-group-id="3433579356-1">)</span><span class="w">
+</span><span class="p" data-group-id="3433579356-2">{</span><span class="ss">:ok</span><span class="p">,</span><span class="w"> </span><span class="p" data-group-id="3433579356-3">%{</span><span class="ss">next</span><span class="p">:</span><span class="w"> </span><span class="no">nil</span><span class="p">,</span><span class="w"> </span><span class="ss">previous</span><span class="p">:</span><span class="w"> </span><span class="no">nil</span><span class="p">,</span><span class="w"> </span><span class="ss">results</span><span class="p">:</span><span class="w"> </span><span class="p" data-group-id="3433579356-4">[</span><span class="p" data-group-id="3433579356-5">%</span><span class="nc" data-group-id="3433579356-5">Transaction</span><span class="p" data-group-id="3433579356-5">{</span><span class="p" data-group-id="3433579356-5">}</span><span class="p">,</span><span class="w"> </span><span class="n">...</span><span class="p" data-group-id="3433579356-4">]</span><span class="p" data-group-id="3433579356-3">}</span><span class="p" data-group-id="3433579356-2">}</span></code></pre><h3 id="get_transactions/2-parameters" class="section-heading">
+  <a href="#get_transactions/2-parameters" class="hover-link"><span class="icon-link" aria-hidden="true"></span></a>
+  Parameters
+</h3>
+<ul><li><code class="inline">client</code> - <code class="inline">LemonMarketsEx.Client.t()</code></li><li><code class="inline">params</code> - A keyword list of query parameters.<ul><li><code class="inline">created_at_until</code> (optional) - UTC Unix Timestamp.</li><li><code class="inline">created_at_from</code> (optional) - UTC Unix Timestamp.</li><li><code class="inline">limit</code> (optional) - Required for pagination; default is 200.</li><li><code class="inline">offset</code> (optional) - Required for pagination.</li></ul></li></ul>
+  </section>
+</section>
+
+          </div>
+        </section>
+
+      <footer class="footer">
+        <p>
+          <span class="line">
+            Built using
+            <a href="https://github.com/elixir-lang/ex_doc" title="ExDoc" target="_blank" rel="help noopener">ExDoc</a> (v0.25.0) for the
+            <a href="https://elixir-lang.org" title="Elixir" target="_blank">Elixir programming language</a>.
+          </span>
+          <span class="line">
+            Designed by
+            <a href="https://twitter.com/dignifiedquire" target="_blank" rel="noopener" title="@dignifiedquire">Friedel Ziegelmayer</a>.
+          </span>
+        </p>
+        <p>
+
+          <button class="line footer-button display-shortcuts-help">
+            Display keyboard shortcuts
+          </button>
+          <button class="line footer-button night-mode-toggle">
+            Toggle night mode
+          </button>
+          <button class="line footer-button display-quick-switch">
+            Go to a HexDocs package
+          </button>
+          <button class="line footer-button tooltips-toggle">
+            <span class="tooltips-option-disable">Disable tooltips</span>
+            <span class="tooltips-option-enable">Enable tooltips</span>
+          </button>
+        </p>
+      </footer>
+    </div>
+  </div>
+</section>
+</div>
+
+
+  </body>
+</html>

@@ -1,0 +1,275 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="generator" content="ExDoc v0.25.0">
+    <meta name="project" content="LemonMarketsEx v0.1.0">
+
+    <title>LemonMarketsEx.Authentication — LemonMarketsEx v0.1.0</title>
+    <link rel="stylesheet" href="dist/elixir-a172fe91e725dcb259e2.css" />
+
+    <script src="dist/sidebar_items-905c31c8e5.js"></script>
+
+      <script src="docs_config.js"></script>
+
+    <script async src="dist/app-f27ff079945e43879c46.js"></script>
+
+
+  </head>
+  <body data-type="modules">
+    <script>
+
+      try {
+        if (localStorage.getItem('night-mode') === 'true') {
+          document.body.classList.add('night-mode');
+        }
+      } catch (error) { }
+    </script>
+
+<div class="main">
+
+<button class="sidebar-button sidebar-toggle">
+  <span class="icon-menu" title="Collapse/expand sidebar"></span>
+</button>
+
+<section class="sidebar">
+  <form class="sidebar-search" action="search.html">
+    <button type="submit" class="search-button" aria-label="Submit Search">
+      <span class="icon-search" aria-hidden="true" title="Submit search"></span>
+    </button>
+    <button type="button" tabindex="-1" class="search-close-button" aria-label="Cancel Search">
+      <span class="icon-cross" aria-hidden="true" title="Cancel search"></span>
+    </button>
+    <label class="search-label">
+      <input name="q" type="text" class="search-input" placeholder="Search..." aria-label="Input your search terms" autocomplete="off" />
+    </label>
+  </form>
+
+  <div class="autocomplete">
+    <div class="autocomplete-results">
+    </div>
+  </div>
+
+  <div class="sidebar-header">
+    <div class="sidebar-projectDetails">
+      <a href="readme.html" class="sidebar-projectName">
+LemonMarketsEx
+      </a>
+      <strong class="sidebar-projectVersion">
+        v0.1.0
+      </strong>
+    </div>
+
+  </div>
+
+  <ul class="sidebar-listNav">
+    <li><a id="extras-list-link" href="#full-list">Pages</a></li>
+
+      <li><a id="modules-list-link" href="#full-list">Modules</a></li>
+
+
+  </ul>
+  <div class="gradient"></div>
+  <ul id="full-list" class="sidebar-fullList"></ul>
+</section>
+
+<section class="content">
+  <div class="content-outer">
+    <div id="content" class="content-inner">
+
+      <h1>
+LemonMarketsEx.Authentication <small class="app-vsn">(LemonMarketsEx v0.1.0)</small>
+
+          <a href="https://github.com/daskycodes/lemon.markets_ex/blob/master/lib/lemon_markets_ex/authentication.ex#L1" title="View Source" class="view-source" rel="help">
+            <span class="icon-code" aria-hidden="true"></span>
+            <span class="sr-only">View Source</span>
+          </a>
+
+      </h1>
+
+
+        <section id="moduledoc">
+<p>This module provides authentication requests for the <a href="https://lemon.markets">lemon.markets</a> API. See <a href="https://docs.lemon.markets/signing-up-getting-access">here</a> for more information.</p>
+        </section>
+
+
+        <section id="summary" class="details-list">
+          <h1 class="section-heading">
+            <a class="hover-link" href="#summary">
+              <span class="icon-link" aria-hidden="true"></span>
+              <span class="sr-only">Link to this section</span>
+            </a>
+            Summary
+          </h1>
+
+  <div class="summary-functions summary">
+    <h2>
+      <a href="#functions">Functions</a>
+    </h2>
+<div class="summary-row">
+  <div class="summary-signature">
+    <a href="#authenticate/3">authenticate(client_id, client_secret, base_url)</a>
+
+  </div>
+
+    <div class="summary-synopsis"><p>Authenticates the client with the lemon.markets API. Returns a new <a href="LemonMarketsEx.Client.html#t:t/0"><code class="inline">LemonMarketsEx.Client.t/0</code></a> scoped to the space for the client_id.</p></div>
+
+</div>
+<div class="summary-row">
+  <div class="summary-signature">
+    <a href="#request_auth_token/2">request_auth_token(client_id, client_secret)</a>
+
+  </div>
+
+    <div class="summary-synopsis"><p>Requests a new <a href="LemonMarketsEx.Token.html#t:t/0"><code class="inline">LemonMarketsEx.Token.t/0</code></a> from the lemon.markets API.</p></div>
+
+</div>
+
+  </div>
+
+        </section>
+
+
+        <section id="functions" class="details-list">
+          <h1 class="section-heading">
+            <a class="hover-link" href="#functions">
+              <span class="icon-link" aria-hidden="true"></span>
+              <span class="sr-only">Link to this section</span>
+            </a>
+Functions
+          </h1>
+          <div class="functions-list">
+<section class="detail" id="authenticate/3">
+
+  <div class="detail-header">
+    <a href="#authenticate/3" class="detail-link" title="Link to this function">
+      <span class="icon-link" aria-hidden="true"></span>
+      <span class="sr-only">Link to this function</span>
+    </a>
+    <h1 class="signature">authenticate(client_id, client_secret, base_url)</h1>
+
+      <a href="https://github.com/daskycodes/lemon.markets_ex/blob/master/lib/lemon_markets_ex/authentication.ex#L76" class="view-source" rel="help" title="View Source">
+       <span class="icon-code" aria-hidden="true"></span>
+       <span class="sr-only">View Source</span>
+     </a>
+
+
+  </div>
+
+  <section class="docstring">
+
+      <h2>Specs</h2>
+      <div class="specs">
+
+          <pre>authenticate(<a href="https://hexdocs.pm/elixir/String.html#t:t/0">String.t</a>(), <a href="https://hexdocs.pm/elixir/String.html#t:t/0">String.t</a>(), <a href="https://hexdocs.pm/elixir/String.html#t:t/0">String.t</a>()) ::
+  {:error, <a href="LemonMarketsEx.Error.html#t:t/0">LemonMarketsEx.Error.t</a>()} | {:ok, <a href="LemonMarketsEx.Client.html#t:t/0">LemonMarketsEx.Client.t</a>()}</pre>
+
+      </div>
+
+<p>Authenticates the client with the lemon.markets API. Returns a new <a href="LemonMarketsEx.Client.html#t:t/0"><code class="inline">LemonMarketsEx.Client.t/0</code></a> scoped to the space for the client_id.</p><p>The <a href="LemonMarketsEx.Client.html#t:t/0"><code class="inline">LemonMarketsEx.Client.t/0</code></a> is needed to make authenticated requests to the lemon.markets API.</p><ul><li>Returns <code class="inline">{:ok, %LemonMarketsEx.Client{}}</code> on success.</li><li>Returns <code class="inline">{:error, %LemonMarketsEx.Error{}}</code> on failure.</li></ul><h2 id="authenticate/3-examples" class="section-heading">
+  <a href="#authenticate/3-examples" class="hover-link"><span class="icon-link" aria-hidden="true"></span></a>
+  Examples
+</h2>
+<pre><code class="makeup elixir"><span class="gp unselectable">iex&gt; </span><span class="nc">LemonMarketsEx.Authentication</span><span class="o">.</span><span class="n">authenticate</span><span class="p" data-group-id="1204332873-1">(</span><span class="n">client_id</span><span class="p">,</span><span class="w"> </span><span class="n">client_secret</span><span class="p">,</span><span class="w"> </span><span class="n">base_url</span><span class="p" data-group-id="1204332873-1">)</span><span class="w">
+</span><span class="p" data-group-id="1204332873-2">{</span><span class="ss">:ok</span><span class="p">,</span><span class="w"> </span><span class="p" data-group-id="1204332873-3">%</span><span class="nc" data-group-id="1204332873-3">LemonMarketsEx.Client</span><span class="p" data-group-id="1204332873-3">{</span><span class="p" data-group-id="1204332873-3">}</span><span class="p" data-group-id="1204332873-2">}</span></code></pre><h3 id="authenticate/3-parameters" class="section-heading">
+  <a href="#authenticate/3-parameters" class="hover-link"><span class="icon-link" aria-hidden="true"></span></a>
+  Parameters
+</h3>
+<ul><li><code class="inline">client_id</code> - Grab the client ID from your client in the <a href="https://dashboard.lemon.markets">dashboard</a>.</li><li><code class="inline">client_secret</code> - Grab the client secret from your client in the <a href="https://dashboard.lemon.markets">dashboard</a>.</li><li><code class="inline">base_url</code> - The base URL for the lemon.markets API.</li></ul>
+  </section>
+</section>
+<section class="detail" id="request_auth_token/2">
+
+  <div class="detail-header">
+    <a href="#request_auth_token/2" class="detail-link" title="Link to this function">
+      <span class="icon-link" aria-hidden="true"></span>
+      <span class="sr-only">Link to this function</span>
+    </a>
+    <h1 class="signature">request_auth_token(client_id, client_secret)</h1>
+
+      <a href="https://github.com/daskycodes/lemon.markets_ex/blob/master/lib/lemon_markets_ex/authentication.ex#L39" class="view-source" rel="help" title="View Source">
+       <span class="icon-code" aria-hidden="true"></span>
+       <span class="sr-only">View Source</span>
+     </a>
+
+
+  </div>
+
+  <section class="docstring">
+
+      <h2>Specs</h2>
+      <div class="specs">
+
+          <pre>request_auth_token(<a href="https://hexdocs.pm/elixir/String.html#t:t/0">String.t</a>(), <a href="https://hexdocs.pm/elixir/String.html#t:t/0">String.t</a>()) ::
+  {:error, <a href="LemonMarketsEx.Error.html#t:t/0">LemonMarketsEx.Error.t</a>()} | {:ok, <a href="LemonMarketsEx.Token.html#t:t/0">LemonMarketsEx.Token.t</a>()}</pre>
+
+      </div>
+
+<p>Requests a new <a href="LemonMarketsEx.Token.html#t:t/0"><code class="inline">LemonMarketsEx.Token.t/0</code></a> from the lemon.markets API.</p><ul><li>Returns <code class="inline">{:ok, %LemonMarketsEx.Token{}}</code> if successful.</li><li>Returns <code class="inline">{:error, %LemonMarketsEx.Error{}}</code> if unsuccessfull.</li></ul><h2 id="request_auth_token/2-examples" class="section-heading">
+  <a href="#request_auth_token/2-examples" class="hover-link"><span class="icon-link" aria-hidden="true"></span></a>
+  Examples
+</h2>
+<pre><code class="makeup elixir"><span class="gp unselectable">iex&gt; </span><span class="nc">LemonMarketsEx.Authentication</span><span class="o">.</span><span class="n">request_auth_token</span><span class="p" data-group-id="6739011878-1">(</span><span class="n">client_id</span><span class="p">,</span><span class="w"> </span><span class="n">client_secret</span><span class="p" data-group-id="6739011878-1">)</span><span class="w">
+</span><span class="p" data-group-id="6739011878-2">{</span><span class="ss">:ok</span><span class="p">,</span><span class="w">
+</span><span class="p" data-group-id="6739011878-3">%</span><span class="nc" data-group-id="6739011878-3">LemonMarketsEx.Token</span><span class="p" data-group-id="6739011878-3">{</span><span class="w">
+  </span><span class="ss">access_token</span><span class="p">:</span><span class="w"> </span><span class="s">&quot;...&quot;</span><span class="p">,</span><span class="w">
+  </span><span class="ss">token_type</span><span class="p">:</span><span class="w"> </span><span class="s">&quot;bearer&quot;</span><span class="p">,</span><span class="w">
+  </span><span class="ss">expires_in</span><span class="p">:</span><span class="w"> </span><span class="mi">2591999</span><span class="p">,</span><span class="w">
+  </span><span class="ss">expires_at</span><span class="p">:</span><span class="w"> </span><span class="mi">1629410619</span><span class="p">,</span><span class="w">
+  </span><span class="ss">scope</span><span class="p">:</span><span class="w"> </span><span class="p" data-group-id="6739011878-4">%{</span><span class="w">
+    </span><span class="ss">data</span><span class="p">:</span><span class="w"> </span><span class="p" data-group-id="6739011878-5">[</span><span class="s">&quot;stream&quot;</span><span class="p">,</span><span class="w"> </span><span class="s">&quot;historical&quot;</span><span class="p">,</span><span class="w"> </span><span class="s">&quot;read&quot;</span><span class="p" data-group-id="6739011878-5">]</span><span class="p">,</span><span class="w">
+    </span><span class="ss">order</span><span class="p">:</span><span class="w"> </span><span class="p" data-group-id="6739011878-6">[</span><span class="s">&quot;stock&quot;</span><span class="p">,</span><span class="w"> </span><span class="s">&quot;bond&quot;</span><span class="p">,</span><span class="w"> </span><span class="s">&quot;warrant&quot;</span><span class="p">,</span><span class="w"> </span><span class="s">&quot;etf&quot;</span><span class="p">,</span><span class="w"> </span><span class="s">&quot;fund&quot;</span><span class="p">,</span><span class="w"> </span><span class="s">&quot;read&quot;</span><span class="p" data-group-id="6739011878-6">]</span><span class="p">,</span><span class="w">
+    </span><span class="ss">portfolio</span><span class="p">:</span><span class="w"> </span><span class="p" data-group-id="6739011878-7">[</span><span class="s">&quot;read&quot;</span><span class="p" data-group-id="6739011878-7">]</span><span class="p">,</span><span class="w">
+    </span><span class="ss">space</span><span class="p">:</span><span class="w"> </span><span class="s">&quot;268908e8-e31d-47bc-b830-8b90f80806ed&quot;</span><span class="p">,</span><span class="w">
+    </span><span class="ss">transaction</span><span class="p">:</span><span class="w"> </span><span class="p" data-group-id="6739011878-8">[</span><span class="s">&quot;read&quot;</span><span class="p">,</span><span class="w"> </span><span class="s">&quot;create&quot;</span><span class="p" data-group-id="6739011878-8">]</span><span class="w">
+  </span><span class="p" data-group-id="6739011878-4">}</span><span class="w">
+</span><span class="p" data-group-id="6739011878-3">}</span><span class="p" data-group-id="6739011878-2">}</span></code></pre><h3 id="request_auth_token/2-parameters" class="section-heading">
+  <a href="#request_auth_token/2-parameters" class="hover-link"><span class="icon-link" aria-hidden="true"></span></a>
+  Parameters
+</h3>
+<ul><li><code class="inline">client_id</code> - Grab the client ID from your client in the <a href="https://dashboard.lemon.markets">dashboard</a>.</li><li><code class="inline">client_secret</code> - Grab the client secret from your client in the <a href="https://dashboard.lemon.markets">dashboard</a>.</li></ul>
+  </section>
+</section>
+
+          </div>
+        </section>
+
+      <footer class="footer">
+        <p>
+          <span class="line">
+            Built using
+            <a href="https://github.com/elixir-lang/ex_doc" title="ExDoc" target="_blank" rel="help noopener">ExDoc</a> (v0.25.0) for the
+            <a href="https://elixir-lang.org" title="Elixir" target="_blank">Elixir programming language</a>.
+          </span>
+          <span class="line">
+            Designed by
+            <a href="https://twitter.com/dignifiedquire" target="_blank" rel="noopener" title="@dignifiedquire">Friedel Ziegelmayer</a>.
+          </span>
+        </p>
+        <p>
+
+          <button class="line footer-button display-shortcuts-help">
+            Display keyboard shortcuts
+          </button>
+          <button class="line footer-button night-mode-toggle">
+            Toggle night mode
+          </button>
+          <button class="line footer-button display-quick-switch">
+            Go to a HexDocs package
+          </button>
+          <button class="line footer-button tooltips-toggle">
+            <span class="tooltips-option-disable">Disable tooltips</span>
+            <span class="tooltips-option-enable">Enable tooltips</span>
+          </button>
+        </p>
+      </footer>
+    </div>
+  </div>
+</section>
+</div>
+
+
+  </body>
+</html>

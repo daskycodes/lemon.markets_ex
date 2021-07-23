@@ -1,0 +1,383 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="generator" content="ExDoc v0.25.0">
+    <meta name="project" content="LemonMarketsEx v0.1.0">
+
+    <title>LemonMarketsEx.Data — LemonMarketsEx v0.1.0</title>
+    <link rel="stylesheet" href="dist/elixir-a172fe91e725dcb259e2.css" />
+
+    <script src="dist/sidebar_items-905c31c8e5.js"></script>
+
+      <script src="docs_config.js"></script>
+
+    <script async src="dist/app-f27ff079945e43879c46.js"></script>
+
+
+  </head>
+  <body data-type="modules">
+    <script>
+
+      try {
+        if (localStorage.getItem('night-mode') === 'true') {
+          document.body.classList.add('night-mode');
+        }
+      } catch (error) { }
+    </script>
+
+<div class="main">
+
+<button class="sidebar-button sidebar-toggle">
+  <span class="icon-menu" title="Collapse/expand sidebar"></span>
+</button>
+
+<section class="sidebar">
+  <form class="sidebar-search" action="search.html">
+    <button type="submit" class="search-button" aria-label="Submit Search">
+      <span class="icon-search" aria-hidden="true" title="Submit search"></span>
+    </button>
+    <button type="button" tabindex="-1" class="search-close-button" aria-label="Cancel Search">
+      <span class="icon-cross" aria-hidden="true" title="Cancel search"></span>
+    </button>
+    <label class="search-label">
+      <input name="q" type="text" class="search-input" placeholder="Search..." aria-label="Input your search terms" autocomplete="off" />
+    </label>
+  </form>
+
+  <div class="autocomplete">
+    <div class="autocomplete-results">
+    </div>
+  </div>
+
+  <div class="sidebar-header">
+    <div class="sidebar-projectDetails">
+      <a href="readme.html" class="sidebar-projectName">
+LemonMarketsEx
+      </a>
+      <strong class="sidebar-projectVersion">
+        v0.1.0
+      </strong>
+    </div>
+
+  </div>
+
+  <ul class="sidebar-listNav">
+    <li><a id="extras-list-link" href="#full-list">Pages</a></li>
+
+      <li><a id="modules-list-link" href="#full-list">Modules</a></li>
+
+
+  </ul>
+  <div class="gradient"></div>
+  <ul id="full-list" class="sidebar-fullList"></ul>
+</section>
+
+<section class="content">
+  <div class="content-outer">
+    <div id="content" class="content-inner">
+
+      <h1>
+LemonMarketsEx.Data <small class="app-vsn">(LemonMarketsEx v0.1.0)</small>
+
+          <a href="https://github.com/daskycodes/lemon.markets_ex/blob/master/lib/lemon_markets_ex/data.ex#L1" title="View Source" class="view-source" rel="help">
+            <span class="icon-code" aria-hidden="true"></span>
+            <span class="sr-only">View Source</span>
+          </a>
+
+      </h1>
+
+
+        <section id="moduledoc">
+<p>Conveniently retrieve historic market data in M1/H1/D1 format, get the latest quotes and trades for specific instruments or stream market data in real time.</p>
+        </section>
+
+
+        <section id="summary" class="details-list">
+          <h1 class="section-heading">
+            <a class="hover-link" href="#summary">
+              <span class="icon-link" aria-hidden="true"></span>
+              <span class="sr-only">Link to this section</span>
+            </a>
+            Summary
+          </h1>
+
+  <div class="summary-functions summary">
+    <h2>
+      <a href="#functions">Functions</a>
+    </h2>
+<div class="summary-row">
+  <div class="summary-signature">
+    <a href="#get_latest_ohlc_data/4">get_latest_ohlc_data(client, mic, isin, x1)</a>
+
+  </div>
+
+    <div class="summary-synopsis"><p>Get the latest historic OHLC data for the given ISIN.</p></div>
+
+</div>
+<div class="summary-row">
+  <div class="summary-signature">
+    <a href="#get_latest_quote/3">get_latest_quote(client, mic, isin)</a>
+
+  </div>
+
+    <div class="summary-synopsis"><p>Retrieve the latest quotes for a specific instrument and use the information for your trading strategy.</p></div>
+
+</div>
+<div class="summary-row">
+  <div class="summary-signature">
+    <a href="#get_latest_trade/3">get_latest_trade(client, mic, isin)</a>
+
+  </div>
+
+    <div class="summary-synopsis"><p>Retrieve the latest trade for a specific instrument.</p></div>
+
+</div>
+<div class="summary-row">
+  <div class="summary-signature">
+    <a href="#get_ohlc_data/5">get_ohlc_data(client, mic, isin, x1, params \\ [])</a>
+
+  </div>
+
+    <div class="summary-synopsis"><p>Get the historic OHLC data for the given ISIN.</p></div>
+
+</div>
+
+  </div>
+
+        </section>
+
+
+        <section id="functions" class="details-list">
+          <h1 class="section-heading">
+            <a class="hover-link" href="#functions">
+              <span class="icon-link" aria-hidden="true"></span>
+              <span class="sr-only">Link to this section</span>
+            </a>
+Functions
+          </h1>
+          <div class="functions-list">
+<section class="detail" id="get_latest_ohlc_data/4">
+
+  <div class="detail-header">
+    <a href="#get_latest_ohlc_data/4" class="detail-link" title="Link to this function">
+      <span class="icon-link" aria-hidden="true"></span>
+      <span class="sr-only">Link to this function</span>
+    </a>
+    <h1 class="signature">get_latest_ohlc_data(client, mic, isin, x1)</h1>
+
+      <a href="https://github.com/daskycodes/lemon.markets_ex/blob/master/lib/lemon_markets_ex/data.ex#L117" class="view-source" rel="help" title="View Source">
+       <span class="icon-code" aria-hidden="true"></span>
+       <span class="sr-only">View Source</span>
+     </a>
+
+
+  </div>
+
+  <section class="docstring">
+
+      <h2>Specs</h2>
+      <div class="specs">
+
+          <pre>get_latest_ohlc_data(
+  <a href="LemonMarketsEx.Client.html#t:t/0">LemonMarketsEx.Client.t</a>(),
+  <a href="https://hexdocs.pm/elixir/String.html#t:t/0">String.t</a>(),
+  <a href="https://hexdocs.pm/elixir/String.html#t:t/0">String.t</a>(),
+  <a href="https://hexdocs.pm/elixir/String.html#t:t/0">String.t</a>()
+) :: {:error, <a href="LemonMarketsEx.Error.html#t:t/0">LemonMarketsEx.Error.t</a>()} | {:ok, <a href="https://hexdocs.pm/elixir/typespecs.html#basic-types">map</a>()}</pre>
+
+      </div>
+
+<p>Get the latest historic OHLC data for the given ISIN.</p><h2 id="get_latest_ohlc_data/4-examples" class="section-heading">
+  <a href="#get_latest_ohlc_data/4-examples" class="hover-link"><span class="icon-link" aria-hidden="true"></span></a>
+  Examples
+</h2>
+<pre><code class="makeup elixir"><span class="gp unselectable">iex&gt; </span><span class="nc">LemonMarketsEx.Data</span><span class="o">.</span><span class="n">get_latest_ohlc_data</span><span class="p" data-group-id="7979641249-1">(</span><span class="n">client</span><span class="p">,</span><span class="w"> </span><span class="s">&quot;XMUN&quot;</span><span class="p">,</span><span class="w"> </span><span class="s">&quot;US0090661010&quot;</span><span class="p">,</span><span class="w"> </span><span class="s">&quot;m1&quot;</span><span class="p" data-group-id="7979641249-1">)</span><span class="w">
+</span><span class="p" data-group-id="7979641249-2">%{</span><span class="ss">:ok</span><span class="p">,</span><span class="w"> </span><span class="p" data-group-id="7979641249-3">%{</span><span class="ss">c</span><span class="p">:</span><span class="w"> </span><span class="mf">117.56</span><span class="p">,</span><span class="w"> </span><span class="ss">h</span><span class="p">:</span><span class="w"> </span><span class="mf">117.56</span><span class="p">,</span><span class="w"> </span><span class="ss">l</span><span class="p">:</span><span class="w"> </span><span class="mf">117.56</span><span class="p">,</span><span class="w"> </span><span class="ss">o</span><span class="p">:</span><span class="w"> </span><span class="mf">117.56</span><span class="p">,</span><span class="w"> </span><span class="ss">t</span><span class="p">:</span><span class="w"> </span><span class="mf">1626883320.0</span><span class="p" data-group-id="7979641249-3">}</span><span class="p" data-group-id="7979641249-2">}</span></code></pre><h3 id="get_latest_ohlc_data/4-parameters" class="section-heading">
+  <a href="#get_latest_ohlc_data/4-parameters" class="hover-link"><span class="icon-link" aria-hidden="true"></span></a>
+  Parameters
+</h3>
+<ul><li><code class="inline">client</code> - <a href="LemonMarketsEx.Client.html#t:t/0"><code class="inline">LemonMarketsEx.Client.t/0</code></a></li><li><code class="inline">mic</code> - Abbreviation of Trading Venue. Currently, only XMUN is supported.</li><li><code class="inline">isin</code> - The ISIN of the instrument you want to get the latest quote for.</li><li><code class="inline">x1</code> - Specify the type of data you want: <code class="inline">&quot;m1&quot;</code>, <code class="inline">&quot;h1&quot;</code>, or <code class="inline">&quot;d1&quot;</code></li></ul>
+  </section>
+</section>
+<section class="detail" id="get_latest_quote/3">
+
+  <div class="detail-header">
+    <a href="#get_latest_quote/3" class="detail-link" title="Link to this function">
+      <span class="icon-link" aria-hidden="true"></span>
+      <span class="sr-only">Link to this function</span>
+    </a>
+    <h1 class="signature">get_latest_quote(client, mic, isin)</h1>
+
+      <a href="https://github.com/daskycodes/lemon.markets_ex/blob/master/lib/lemon_markets_ex/data.ex#L24" class="view-source" rel="help" title="View Source">
+       <span class="icon-code" aria-hidden="true"></span>
+       <span class="sr-only">View Source</span>
+     </a>
+
+
+  </div>
+
+  <section class="docstring">
+
+      <h2>Specs</h2>
+      <div class="specs">
+
+          <pre>get_latest_quote(<a href="LemonMarketsEx.Client.html#t:t/0">LemonMarketsEx.Client.t</a>(), <a href="https://hexdocs.pm/elixir/String.html#t:t/0">String.t</a>(), <a href="https://hexdocs.pm/elixir/String.html#t:t/0">String.t</a>()) ::
+  {:error, <a href="LemonMarketsEx.Error.html#t:t/0">LemonMarketsEx.Error.t</a>()} | {:ok, <a href="https://hexdocs.pm/elixir/typespecs.html#basic-types">map</a>()}</pre>
+
+      </div>
+
+<p>Retrieve the latest quotes for a specific instrument and use the information for your trading strategy.</p><h2 id="get_latest_quote/3-examples" class="section-heading">
+  <a href="#get_latest_quote/3-examples" class="hover-link"><span class="icon-link" aria-hidden="true"></span></a>
+  Examples
+</h2>
+<pre><code class="makeup elixir"><span class="gp unselectable">iex&gt; </span><span class="nc">LemonMarketsEx.Data</span><span class="o">.</span><span class="n">get_latest_quote</span><span class="p" data-group-id="7687590387-1">(</span><span class="n">client</span><span class="p">,</span><span class="w"> </span><span class="s">&quot;XMUN&quot;</span><span class="p">,</span><span class="w"> </span><span class="s">&quot;US0090661010&quot;</span><span class="p" data-group-id="7687590387-1">)</span><span class="w">
+</span><span class="p" data-group-id="7687590387-2">{</span><span class="ss">:ok</span><span class="p">,</span><span class="w"> </span><span class="p" data-group-id="7687590387-3">%{</span><span class="ss">a</span><span class="p">:</span><span class="w"> </span><span class="mf">118.64</span><span class="p">,</span><span class="w"> </span><span class="ss">a_v</span><span class="p">:</span><span class="w"> </span><span class="mi">590</span><span class="p">,</span><span class="w"> </span><span class="ss">b</span><span class="p">:</span><span class="w"> </span><span class="mf">118.44</span><span class="p">,</span><span class="w"> </span><span class="ss">b_v</span><span class="p">:</span><span class="w"> </span><span class="mi">590</span><span class="p">,</span><span class="w"> </span><span class="ss">t</span><span class="p">:</span><span class="w"> </span><span class="mf">1626896210.796</span><span class="p" data-group-id="7687590387-3">}</span><span class="p" data-group-id="7687590387-2">}</span></code></pre><h3 id="get_latest_quote/3-parameters" class="section-heading">
+  <a href="#get_latest_quote/3-parameters" class="hover-link"><span class="icon-link" aria-hidden="true"></span></a>
+  Parameters
+</h3>
+<ul><li><code class="inline">client</code> - <a href="LemonMarketsEx.Client.html#t:t/0"><code class="inline">LemonMarketsEx.Client.t/0</code></a></li><li><code class="inline">mic</code> - Abbreviation of Trading Venue. Currently, only XMUN is supported.</li><li><code class="inline">isin</code> - The ISIN of the instrument you want to get the latest quote for</li></ul>
+  </section>
+</section>
+<section class="detail" id="get_latest_trade/3">
+
+  <div class="detail-header">
+    <a href="#get_latest_trade/3" class="detail-link" title="Link to this function">
+      <span class="icon-link" aria-hidden="true"></span>
+      <span class="sr-only">Link to this function</span>
+    </a>
+    <h1 class="signature">get_latest_trade(client, mic, isin)</h1>
+
+      <a href="https://github.com/daskycodes/lemon.markets_ex/blob/master/lib/lemon_markets_ex/data.ex#L46" class="view-source" rel="help" title="View Source">
+       <span class="icon-code" aria-hidden="true"></span>
+       <span class="sr-only">View Source</span>
+     </a>
+
+
+  </div>
+
+  <section class="docstring">
+
+      <h2>Specs</h2>
+      <div class="specs">
+
+          <pre>get_latest_trade(<a href="LemonMarketsEx.Client.html#t:t/0">LemonMarketsEx.Client.t</a>(), <a href="https://hexdocs.pm/elixir/String.html#t:t/0">String.t</a>(), <a href="https://hexdocs.pm/elixir/String.html#t:t/0">String.t</a>()) ::
+  {:error, <a href="LemonMarketsEx.Error.html#t:t/0">LemonMarketsEx.Error.t</a>()} | {:ok, <a href="https://hexdocs.pm/elixir/typespecs.html#basic-types">map</a>()}</pre>
+
+      </div>
+
+<p>Retrieve the latest trade for a specific instrument.</p><h2 id="get_latest_trade/3-examples" class="section-heading">
+  <a href="#get_latest_trade/3-examples" class="hover-link"><span class="icon-link" aria-hidden="true"></span></a>
+  Examples
+</h2>
+<pre><code class="makeup elixir"><span class="gp unselectable">iex&gt; </span><span class="nc">LemonMarketsEx.Data</span><span class="o">.</span><span class="n">get_latest_trade</span><span class="p" data-group-id="1143841883-1">(</span><span class="n">client</span><span class="p">,</span><span class="w"> </span><span class="s">&quot;XMUN&quot;</span><span class="p">,</span><span class="w"> </span><span class="s">&quot;US0090661010&quot;</span><span class="p" data-group-id="1143841883-1">)</span><span class="w">
+</span><span class="p" data-group-id="1143841883-2">{</span><span class="ss">:ok</span><span class="p">,</span><span class="w"> </span><span class="p" data-group-id="1143841883-3">%{</span><span class="ss">p</span><span class="p">:</span><span class="w"> </span><span class="mf">118.48</span><span class="p">,</span><span class="w"> </span><span class="ss">t</span><span class="p">:</span><span class="w"> </span><span class="mf">1626896169.054</span><span class="p">,</span><span class="w"> </span><span class="ss">v</span><span class="p">:</span><span class="w"> </span><span class="mi">3</span><span class="p" data-group-id="1143841883-3">}</span><span class="p" data-group-id="1143841883-2">}</span></code></pre><h3 id="get_latest_trade/3-parameters" class="section-heading">
+  <a href="#get_latest_trade/3-parameters" class="hover-link"><span class="icon-link" aria-hidden="true"></span></a>
+  Parameters
+</h3>
+<ul><li><code class="inline">client</code> - <a href="LemonMarketsEx.Client.html#t:t/0"><code class="inline">LemonMarketsEx.Client.t/0</code></a></li><li><code class="inline">mic</code> - Abbreviation of Trading Venue. Currently, only XMUN is supported.</li><li><code class="inline">isin</code> - The ISIN of the instrument you want to get the latest quote for.</li></ul>
+  </section>
+</section>
+<section class="detail" id="get_ohlc_data/5">
+
+    <span id="get_ohlc_data/4"></span>
+
+  <div class="detail-header">
+    <a href="#get_ohlc_data/5" class="detail-link" title="Link to this function">
+      <span class="icon-link" aria-hidden="true"></span>
+      <span class="sr-only">Link to this function</span>
+    </a>
+    <h1 class="signature">get_ohlc_data(client, mic, isin, x1, params \\ [])</h1>
+
+      <a href="https://github.com/daskycodes/lemon.markets_ex/blob/master/lib/lemon_markets_ex/data.ex#L87" class="view-source" rel="help" title="View Source">
+       <span class="icon-code" aria-hidden="true"></span>
+       <span class="sr-only">View Source</span>
+     </a>
+
+
+  </div>
+
+  <section class="docstring">
+
+      <h2>Specs</h2>
+      <div class="specs">
+
+          <pre>get_ohlc_data(
+  <a href="LemonMarketsEx.Client.html#t:t/0">LemonMarketsEx.Client.t</a>(),
+  <a href="https://hexdocs.pm/elixir/String.html#t:t/0">String.t</a>(),
+  <a href="https://hexdocs.pm/elixir/String.html#t:t/0">String.t</a>(),
+  <a href="https://hexdocs.pm/elixir/String.html#t:t/0">String.t</a>(),
+  <a href="https://hexdocs.pm/elixir/typespecs.html#built-in-types">keyword</a>()
+) ::
+  {:error, <a href="LemonMarketsEx.Error.html#t:t/0">LemonMarketsEx.Error.t</a>()}
+  | {:ok, %{next: <a href="https://hexdocs.pm/elixir/typespecs.html#built-in-types">boolean</a>(), previous: <a href="https://hexdocs.pm/elixir/typespecs.html#built-in-types">boolean</a>(), results: [<a href="https://hexdocs.pm/elixir/typespecs.html#basic-types">map</a>()]}}</pre>
+
+      </div>
+
+<p>Get the historic OHLC data for the given ISIN.</p><h2 id="get_ohlc_data/5-examples" class="section-heading">
+  <a href="#get_ohlc_data/5-examples" class="hover-link"><span class="icon-link" aria-hidden="true"></span></a>
+  Examples
+</h2>
+<pre><code class="makeup elixir"><span class="gp unselectable">iex&gt; </span><span class="nc">LemonMarketsEx.Data</span><span class="o">.</span><span class="n">get_ohlc_data</span><span class="p" data-group-id="1358703644-1">(</span><span class="n">client</span><span class="p">,</span><span class="w"> </span><span class="s">&quot;XMUN&quot;</span><span class="p">,</span><span class="w"> </span><span class="s">&quot;US0090661010&quot;</span><span class="p">,</span><span class="w"> </span><span class="s">&quot;m1&quot;</span><span class="p" data-group-id="1358703644-1">)</span><span class="w">
+</span><span class="p" data-group-id="1358703644-2">%{</span><span class="ss">:ok</span><span class="p">,</span><span class="w">
+  </span><span class="p" data-group-id="1358703644-3">%{</span><span class="w">
+    </span><span class="ss">next</span><span class="p">:</span><span class="w"> </span><span class="p" data-group-id="1358703644-4">#</span><span class="nc" data-group-id="1358703644-4">Function</span><span class="p" data-group-id="1358703644-4">&lt;</span><span class="mf">4.108004987</span><span class="o">/</span><span class="mi">0</span><span class="w"> </span><span class="ow">in</span><span class="w"> </span><span class="nc">LemonMarketsEx.Utils</span><span class="o">.</span><span class="n">pagination_link_to_fun</span><span class="o">/</span><span class="mi">2</span><span class="p" data-group-id="1358703644-4">&gt;</span><span class="p">,</span><span class="w">
+    </span><span class="ss">previous</span><span class="p">:</span><span class="w"> </span><span class="p" data-group-id="1358703644-5">#</span><span class="nc" data-group-id="1358703644-5">Function</span><span class="p" data-group-id="1358703644-5">&lt;</span><span class="mf">4.108004987</span><span class="o">/</span><span class="mi">0</span><span class="w"> </span><span class="ow">in</span><span class="w"> </span><span class="nc">LemonMarketsEx.Utils</span><span class="o">.</span><span class="n">pagination_link_to_fun</span><span class="o">/</span><span class="mi">2</span><span class="p" data-group-id="1358703644-5">&gt;</span><span class="p">,</span><span class="w">
+    </span><span class="ss">results</span><span class="p">:</span><span class="w"> </span><span class="p" data-group-id="1358703644-6">[</span><span class="w">
+      </span><span class="p" data-group-id="1358703644-7">%{</span><span class="ss">c</span><span class="p">:</span><span class="w"> </span><span class="mf">117.56</span><span class="p">,</span><span class="w"> </span><span class="ss">h</span><span class="p">:</span><span class="w"> </span><span class="mf">117.56</span><span class="p">,</span><span class="w"> </span><span class="ss">l</span><span class="p">:</span><span class="w"> </span><span class="mf">117.56</span><span class="p">,</span><span class="w"> </span><span class="ss">o</span><span class="p">:</span><span class="w"> </span><span class="mf">117.56</span><span class="p">,</span><span class="w"> </span><span class="ss">t</span><span class="p">:</span><span class="w"> </span><span class="mf">1626883320.0</span><span class="p" data-group-id="1358703644-7">}</span><span class="p">,</span><span class="w">
+      </span><span class="p" data-group-id="1358703644-8">%{</span><span class="ss">c</span><span class="p">:</span><span class="w"> </span><span class="mf">117.58</span><span class="p">,</span><span class="w"> </span><span class="ss">h</span><span class="p">:</span><span class="w"> </span><span class="mf">117.86</span><span class="p">,</span><span class="w"> </span><span class="ss">l</span><span class="p">:</span><span class="w"> </span><span class="mf">117.58</span><span class="p">,</span><span class="w"> </span><span class="ss">o</span><span class="p">:</span><span class="w"> </span><span class="mf">117.86</span><span class="p">,</span><span class="w"> </span><span class="ss">t</span><span class="p">:</span><span class="w"> </span><span class="mf">1626883260.0</span><span class="p" data-group-id="1358703644-8">}</span><span class="p">,</span><span class="w">
+      </span><span class="p" data-group-id="1358703644-9">%{</span><span class="ss">c</span><span class="p">:</span><span class="w"> </span><span class="mf">117.92</span><span class="p">,</span><span class="w"> </span><span class="ss">h</span><span class="p">:</span><span class="w"> </span><span class="mf">117.92</span><span class="p">,</span><span class="w"> </span><span class="ss">l</span><span class="p">:</span><span class="w"> </span><span class="mf">117.92</span><span class="p">,</span><span class="w"> </span><span class="ss">o</span><span class="p">:</span><span class="w"> </span><span class="mf">117.92</span><span class="p">,</span><span class="w"> </span><span class="ss">t</span><span class="p">:</span><span class="w"> </span><span class="mf">1.6268832e9</span><span class="p" data-group-id="1358703644-9">}</span><span class="p">,</span><span class="w">
+      </span><span class="p" data-group-id="1358703644-10">%{</span><span class="ss">c</span><span class="p">:</span><span class="w"> </span><span class="mf">118.2</span><span class="p">,</span><span class="w"> </span><span class="ss">h</span><span class="p">:</span><span class="w"> </span><span class="mf">118.2</span><span class="p">,</span><span class="w"> </span><span class="ss">l</span><span class="p">:</span><span class="w"> </span><span class="mf">118.2</span><span class="p">,</span><span class="w"> </span><span class="ss">o</span><span class="p">:</span><span class="w"> </span><span class="mf">118.2</span><span class="p">,</span><span class="w"> </span><span class="ss">t</span><span class="p">:</span><span class="w"> </span><span class="mf">1626882240.0</span><span class="p" data-group-id="1358703644-10">}</span><span class="p">,</span><span class="w">
+      </span><span class="p" data-group-id="1358703644-11">%{</span><span class="ss">c</span><span class="p">:</span><span class="w"> </span><span class="mf">118.02</span><span class="p">,</span><span class="w"> </span><span class="ss">h</span><span class="p">:</span><span class="w"> </span><span class="mf">118.02</span><span class="p">,</span><span class="w"> </span><span class="ss">l</span><span class="p">:</span><span class="w"> </span><span class="mf">118.02</span><span class="p">,</span><span class="w"> </span><span class="ss">o</span><span class="p">:</span><span class="w"> </span><span class="mf">118.02</span><span class="p">,</span><span class="w"> </span><span class="ss">t</span><span class="p">:</span><span class="w"> </span><span class="mf">1626882060.0</span><span class="p" data-group-id="1358703644-11">}</span><span class="p">,</span><span class="w">
+      </span><span class="n">...</span><span class="w">
+    </span><span class="p" data-group-id="1358703644-6">]</span><span class="w">
+  </span><span class="p" data-group-id="1358703644-3">}</span><span class="p" data-group-id="1358703644-2">}</span></code></pre><h3 id="get_ohlc_data/5-parameters" class="section-heading">
+  <a href="#get_ohlc_data/5-parameters" class="hover-link"><span class="icon-link" aria-hidden="true"></span></a>
+  Parameters
+</h3>
+<ul><li><code class="inline">client</code> - <a href="LemonMarketsEx.Client.html#t:t/0"><code class="inline">LemonMarketsEx.Client.t/0</code></a></li><li><code class="inline">mic</code> - Abbreviation of Trading Venue. Currently, only XMUN is supported.</li><li><code class="inline">isin</code> - The ISIN of the instrument you want to get the latest quote for.</li><li><code class="inline">x1</code> - Specify the type of data you want: <code class="inline">&quot;m1&quot;</code>, <code class="inline">&quot;h1&quot;</code>, or <code class="inline">&quot;d1&quot;</code>.</li><li><code class="inline">params</code> - A keyword list of query parameters.<ul><li><code class="inline">ordering</code> (optional) - By default, the data is not ordered. Choose between <code class="inline">&quot;date&quot;</code> (oldest to newest) or <code class="inline">&quot;-date&quot;</code> (newest to oldest).</li><li><code class="inline">date_from</code> (optional) - UTC UNIX Timestamp. Filter to get data from a specific date.</li><li><code class="inline">date_until</code> (optional) - UTC UNIX Timestamp. Filter to get data from a specific date.</li></ul></li></ul>
+  </section>
+</section>
+
+          </div>
+        </section>
+
+      <footer class="footer">
+        <p>
+          <span class="line">
+            Built using
+            <a href="https://github.com/elixir-lang/ex_doc" title="ExDoc" target="_blank" rel="help noopener">ExDoc</a> (v0.25.0) for the
+            <a href="https://elixir-lang.org" title="Elixir" target="_blank">Elixir programming language</a>.
+          </span>
+          <span class="line">
+            Designed by
+            <a href="https://twitter.com/dignifiedquire" target="_blank" rel="noopener" title="@dignifiedquire">Friedel Ziegelmayer</a>.
+          </span>
+        </p>
+        <p>
+
+          <button class="line footer-button display-shortcuts-help">
+            Display keyboard shortcuts
+          </button>
+          <button class="line footer-button night-mode-toggle">
+            Toggle night mode
+          </button>
+          <button class="line footer-button display-quick-switch">
+            Go to a HexDocs package
+          </button>
+          <button class="line footer-button tooltips-toggle">
+            <span class="tooltips-option-disable">Disable tooltips</span>
+            <span class="tooltips-option-enable">Enable tooltips</span>
+          </button>
+        </p>
+      </footer>
+    </div>
+  </div>
+</section>
+</div>
+
+
+  </body>
+</html>

@@ -1,0 +1,483 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="generator" content="ExDoc v0.25.0">
+    <meta name="project" content="LemonMarketsEx v0.1.0">
+
+    <title>LemonMarketsEx.Orders — LemonMarketsEx v0.1.0</title>
+    <link rel="stylesheet" href="dist/elixir-a172fe91e725dcb259e2.css" />
+
+    <script src="dist/sidebar_items-905c31c8e5.js"></script>
+
+      <script src="docs_config.js"></script>
+
+    <script async src="dist/app-f27ff079945e43879c46.js"></script>
+
+
+  </head>
+  <body data-type="modules">
+    <script>
+
+      try {
+        if (localStorage.getItem('night-mode') === 'true') {
+          document.body.classList.add('night-mode');
+        }
+      } catch (error) { }
+    </script>
+
+<div class="main">
+
+<button class="sidebar-button sidebar-toggle">
+  <span class="icon-menu" title="Collapse/expand sidebar"></span>
+</button>
+
+<section class="sidebar">
+  <form class="sidebar-search" action="search.html">
+    <button type="submit" class="search-button" aria-label="Submit Search">
+      <span class="icon-search" aria-hidden="true" title="Submit search"></span>
+    </button>
+    <button type="button" tabindex="-1" class="search-close-button" aria-label="Cancel Search">
+      <span class="icon-cross" aria-hidden="true" title="Cancel search"></span>
+    </button>
+    <label class="search-label">
+      <input name="q" type="text" class="search-input" placeholder="Search..." aria-label="Input your search terms" autocomplete="off" />
+    </label>
+  </form>
+
+  <div class="autocomplete">
+    <div class="autocomplete-results">
+    </div>
+  </div>
+
+  <div class="sidebar-header">
+    <div class="sidebar-projectDetails">
+      <a href="readme.html" class="sidebar-projectName">
+LemonMarketsEx
+      </a>
+      <strong class="sidebar-projectVersion">
+        v0.1.0
+      </strong>
+    </div>
+
+  </div>
+
+  <ul class="sidebar-listNav">
+    <li><a id="extras-list-link" href="#full-list">Pages</a></li>
+
+      <li><a id="modules-list-link" href="#full-list">Modules</a></li>
+
+
+  </ul>
+  <div class="gradient"></div>
+  <ul id="full-list" class="sidebar-fullList"></ul>
+</section>
+
+<section class="content">
+  <div class="content-outer">
+    <div id="content" class="content-inner">
+
+      <h1>
+LemonMarketsEx.Orders <small class="app-vsn">(LemonMarketsEx v0.1.0)</small>
+
+          <a href="https://github.com/daskycodes/lemon.markets_ex/blob/master/lib/lemon_markets_ex/orders.ex#L1" title="View Source" class="view-source" rel="help">
+            <span class="icon-code" aria-hidden="true"></span>
+            <span class="sr-only">View Source</span>
+          </a>
+
+      </h1>
+
+
+        <section id="moduledoc">
+<p>This module provides order requests for the lemon.markets API. See <a href="https://docs.lemon.markets/working-with-orders">here</a> for more information.</p>
+        </section>
+
+
+        <section id="summary" class="details-list">
+          <h1 class="section-heading">
+            <a class="hover-link" href="#summary">
+              <span class="icon-link" aria-hidden="true"></span>
+              <span class="sr-only">Link to this section</span>
+            </a>
+            Summary
+          </h1>
+
+  <div class="summary-functions summary">
+    <h2>
+      <a href="#functions">Functions</a>
+    </h2>
+<div class="summary-row">
+  <div class="summary-signature">
+    <a href="#activate_order/2">activate_order(client, order)</a>
+
+  </div>
+
+    <div class="summary-synopsis"><p>Activates a created <a href="LemonMarketsEx.Order.html#t:t/0"><code class="inline">LemonMarketsEx.Order.t/0</code></a> with the API scoped to the given space in the client.</p></div>
+
+</div>
+<div class="summary-row">
+  <div class="summary-signature">
+    <a href="#create_order/2">create_order(client, create_order_params)</a>
+
+  </div>
+
+    <div class="summary-synopsis"><p>Create a new <a href="LemonMarketsEx.Order.html#t:t/0"><code class="inline">LemonMarketsEx.Order.t/0</code></a> with the API scoped to the given space in the client.</p></div>
+
+</div>
+<div class="summary-row">
+  <div class="summary-signature">
+    <a href="#delete_order/2">delete_order(client, order_uuid)</a>
+
+  </div>
+
+    <div class="summary-synopsis"><p>Delete an <a href="LemonMarketsEx.Order.html#t:t/0"><code class="inline">LemonMarketsEx.Order.t/0</code></a> with the API scoped to the given space in the client.
+The order's status has to be <code class="inline">&quot;inactive&quot;</code> or <code class="inline">&quot;active&quot;</code>.</p></div>
+
+</div>
+<div class="summary-row">
+  <div class="summary-signature">
+    <a href="#get_order/2">get_order(client, order_uuid)</a>
+
+  </div>
+
+    <div class="summary-synopsis"><p>Get a single <a href="LemonMarketsEx.Order.html#t:t/0"><code class="inline">LemonMarketsEx.Order.t/0</code></a> by UUID placed with the API scoped to the given space in the client.</p></div>
+
+</div>
+<div class="summary-row">
+  <div class="summary-signature">
+    <a href="#get_orders/2">get_orders(client, params \\ [])</a>
+
+  </div>
+
+    <div class="summary-synopsis"><p>Get a list of all orders that you placed with the API scoped to the given space in the client.
+Additonally, you also have the option to filter the response to only get the orders you are specifically interested in.</p></div>
+
+</div>
+
+  </div>
+
+        </section>
+
+
+        <section id="functions" class="details-list">
+          <h1 class="section-heading">
+            <a class="hover-link" href="#functions">
+              <span class="icon-link" aria-hidden="true"></span>
+              <span class="sr-only">Link to this section</span>
+            </a>
+Functions
+          </h1>
+          <div class="functions-list">
+<section class="detail" id="activate_order/2">
+
+  <div class="detail-header">
+    <a href="#activate_order/2" class="detail-link" title="Link to this function">
+      <span class="icon-link" aria-hidden="true"></span>
+      <span class="sr-only">Link to this function</span>
+    </a>
+    <h1 class="signature">activate_order(client, order)</h1>
+
+      <a href="https://github.com/daskycodes/lemon.markets_ex/blob/master/lib/lemon_markets_ex/orders.ex#L179" class="view-source" rel="help" title="View Source">
+       <span class="icon-code" aria-hidden="true"></span>
+       <span class="sr-only">View Source</span>
+     </a>
+
+
+  </div>
+
+  <section class="docstring">
+
+      <h2>Specs</h2>
+      <div class="specs">
+
+          <pre>activate_order(<a href="LemonMarketsEx.Client.html#t:t/0">LemonMarketsEx.Client.t</a>(), <a href="LemonMarketsEx.Order.html#t:t/0">LemonMarketsEx.Order.t</a>() | <a href="https://hexdocs.pm/elixir/String.html#t:t/0">String.t</a>()) ::
+  {:error, <a href="LemonMarketsEx.Error.html#t:t/0">LemonMarketsEx.Error.t</a>()} | {:ok, <a href="https://hexdocs.pm/elixir/typespecs.html#basic-types">map</a>()}</pre>
+
+      </div>
+
+<p>Activates a created <a href="LemonMarketsEx.Order.html#t:t/0"><code class="inline">LemonMarketsEx.Order.t/0</code></a> with the API scoped to the given space in the client.</p><p>You can either pass the <a href="LemonMarketsEx.Order.html#t:t/0"><code class="inline">LemonMarketsEx.Order.t/0</code></a> struct or the UUID of the order to activate.</p><ul><li>Returns <code class="inline">{:ok, %{status: &quot;activated&quot;}}</code> on success.</li><li>Returns <code class="inline">{:error, Error.t()}</code> on failure.</li></ul><h2 id="activate_order/2-examples" class="section-heading">
+  <a href="#activate_order/2-examples" class="hover-link"><span class="icon-link" aria-hidden="true"></span></a>
+  Examples
+</h2>
+<pre><code class="makeup elixir"><span class="gp unselectable">iex&gt; </span><span class="n">order</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="p" data-group-id="8516650697-1">%</span><span class="nc" data-group-id="8516650697-1">Order</span><span class="p" data-group-id="8516650697-1">{</span><span class="ss">uuid</span><span class="p">:</span><span class="w"> </span><span class="s">&quot;0f91b8f4-8524-4692-a26c-586a800570ae&quot;</span><span class="p" data-group-id="8516650697-1">}</span><span class="w">
+</span><span class="gp unselectable">iex&gt; </span><span class="nc">LemonMarketsEx.Spaces</span><span class="o">.</span><span class="n">activate_order</span><span class="p" data-group-id="8516650697-2">(</span><span class="n">client</span><span class="p">,</span><span class="w"> </span><span class="n">order</span><span class="p" data-group-id="8516650697-2">)</span><span class="w">
+</span><span class="p" data-group-id="8516650697-3">{</span><span class="ss">:ok</span><span class="p">,</span><span class="w"> </span><span class="p" data-group-id="8516650697-4">%{</span><span class="ss">status</span><span class="p">:</span><span class="w"> </span><span class="s">&quot;activated&quot;</span><span class="p" data-group-id="8516650697-4">}</span><span class="p" data-group-id="8516650697-3">}</span><span class="w">
+
+</span><span class="gp unselectable">iex&gt; </span><span class="nc">LemonMarketsEx.Spaces</span><span class="o">.</span><span class="n">activate_order</span><span class="p" data-group-id="8516650697-5">(</span><span class="n">client</span><span class="p">,</span><span class="w"> </span><span class="s">&quot;0f91b8f4-8524-4692-a26c-586a800570ae&quot;</span><span class="p" data-group-id="8516650697-5">)</span><span class="w">
+</span><span class="p" data-group-id="8516650697-6">{</span><span class="ss">:ok</span><span class="p">,</span><span class="w"> </span><span class="p" data-group-id="8516650697-7">%{</span><span class="ss">status</span><span class="p">:</span><span class="w"> </span><span class="s">&quot;activated&quot;</span><span class="p" data-group-id="8516650697-7">}</span><span class="p" data-group-id="8516650697-6">}</span></code></pre><h3 id="activate_order/2-parameters" class="section-heading">
+  <a href="#activate_order/2-parameters" class="hover-link"><span class="icon-link" aria-hidden="true"></span></a>
+  Parameters
+</h3>
+<ul><li><code class="inline">client</code> - <a href="LemonMarketsEx.Client.html#t:t/0"><code class="inline">LemonMarketsEx.Client.t/0</code></a></li><li><code class="inline">order</code> - The <code class="inline">Order.t()</code> to activate | <code class="inline">order_uuid</code> - The UUID of the order to activate.</li></ul>
+  </section>
+</section>
+<section class="detail" id="create_order/2">
+
+  <div class="detail-header">
+    <a href="#create_order/2" class="detail-link" title="Link to this function">
+      <span class="icon-link" aria-hidden="true"></span>
+      <span class="sr-only">Link to this function</span>
+    </a>
+    <h1 class="signature">create_order(client, create_order_params)</h1>
+
+      <a href="https://github.com/daskycodes/lemon.markets_ex/blob/master/lib/lemon_markets_ex/orders.ex#L146" class="view-source" rel="help" title="View Source">
+       <span class="icon-code" aria-hidden="true"></span>
+       <span class="sr-only">View Source</span>
+     </a>
+
+
+  </div>
+
+  <section class="docstring">
+
+      <h2>Specs</h2>
+      <div class="specs">
+
+          <pre>create_order(<a href="LemonMarketsEx.Client.html#t:t/0">LemonMarketsEx.Client.t</a>(), <a href="https://hexdocs.pm/elixir/typespecs.html#basic-types">map</a>()) ::
+  {:error, <a href="LemonMarketsEx.Error.html#t:t/0">LemonMarketsEx.Error.t</a>()} | {:ok, <a href="LemonMarketsEx.Order.html#t:t/0">LemonMarketsEx.Order.t</a>()}</pre>
+
+      </div>
+
+<p>Create a new <a href="LemonMarketsEx.Order.html#t:t/0"><code class="inline">LemonMarketsEx.Order.t/0</code></a> with the API scoped to the given space in the client.</p><h2 id="create_order/2-examples" class="section-heading">
+  <a href="#create_order/2-examples" class="hover-link"><span class="icon-link" aria-hidden="true"></span></a>
+  Examples
+</h2>
+<pre><code class="makeup elixir"><span class="gp unselectable">iex&gt; </span><span class="n">isin</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s">&quot;US0090661010&quot;</span><span class="w">
+</span><span class="gp unselectable">iex&gt; </span><span class="n">valid_until</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="ss">:os</span><span class="o">.</span><span class="n">system_time</span><span class="p" data-group-id="0465065131-1">(</span><span class="ss">:seconds</span><span class="p" data-group-id="0465065131-1">)</span><span class="w"> </span><span class="o">+</span><span class="w"> </span><span class="mi">3600</span><span class="w">
+</span><span class="gp unselectable">iex&gt; </span><span class="nc">LemonMarketsEx.Spaces</span><span class="o">.</span><span class="n">create_order</span><span class="p" data-group-id="0465065131-2">(</span><span class="n">client</span><span class="p">,</span><span class="w"> </span><span class="p" data-group-id="0465065131-3">%{</span><span class="ss">isin</span><span class="p">:</span><span class="w"> </span><span class="n">isin</span><span class="p">,</span><span class="w"> </span><span class="ss">valid_until</span><span class="p">:</span><span class="w"> </span><span class="n">valid_until</span><span class="p">,</span><span class="w"> </span><span class="ss">side</span><span class="p">:</span><span class="w"> </span><span class="s">&quot;buy&quot;</span><span class="p">,</span><span class="w"> </span><span class="ss">quantity</span><span class="p">:</span><span class="w"> </span><span class="mi">1</span><span class="p" data-group-id="0465065131-3">}</span><span class="p" data-group-id="0465065131-2">)</span><span class="w">
+</span><span class="p" data-group-id="0465065131-4">{</span><span class="ss">:ok</span><span class="p">,</span><span class="w">
+</span><span class="p" data-group-id="0465065131-5">%</span><span class="nc" data-group-id="0465065131-5">LemonMarketsEx.Order</span><span class="p" data-group-id="0465065131-5">{</span><span class="w">
+  </span><span class="ss">average_price</span><span class="p">:</span><span class="w"> </span><span class="no">nil</span><span class="p">,</span><span class="w">
+  </span><span class="ss">created_at</span><span class="p">:</span><span class="w"> </span><span class="no">nil</span><span class="p">,</span><span class="w">
+  </span><span class="ss">instrument</span><span class="p">:</span><span class="w"> </span><span class="p" data-group-id="0465065131-6">%{</span><span class="ss">isin</span><span class="p">:</span><span class="w"> </span><span class="s">&quot;US0090661010&quot;</span><span class="p">,</span><span class="w"> </span><span class="ss">title</span><span class="p">:</span><span class="w"> </span><span class="no">nil</span><span class="p" data-group-id="0465065131-6">}</span><span class="p">,</span><span class="w">
+  </span><span class="ss">limit_price</span><span class="p">:</span><span class="w"> </span><span class="no">nil</span><span class="p">,</span><span class="w">
+  </span><span class="ss">processed_at</span><span class="p">:</span><span class="w"> </span><span class="no">nil</span><span class="p">,</span><span class="w">
+  </span><span class="ss">processed_quantity</span><span class="p">:</span><span class="w"> </span><span class="no">nil</span><span class="p">,</span><span class="w">
+  </span><span class="ss">quantity</span><span class="p">:</span><span class="w"> </span><span class="mi">1</span><span class="p">,</span><span class="w">
+  </span><span class="ss">side</span><span class="p">:</span><span class="w"> </span><span class="s">&quot;buy&quot;</span><span class="p">,</span><span class="w">
+  </span><span class="ss">status</span><span class="p">:</span><span class="w"> </span><span class="s">&quot;inactive&quot;</span><span class="p">,</span><span class="w">
+  </span><span class="ss">stop_price</span><span class="p">:</span><span class="w"> </span><span class="no">nil</span><span class="p">,</span><span class="w">
+  </span><span class="ss">trading_venue_mic</span><span class="p">:</span><span class="w"> </span><span class="s">&quot;XMUN&quot;</span><span class="p">,</span><span class="w">
+  </span><span class="ss">type</span><span class="p">:</span><span class="w"> </span><span class="no">nil</span><span class="p">,</span><span class="w">
+  </span><span class="ss">uuid</span><span class="p">:</span><span class="w"> </span><span class="s">&quot;0f91b8f4-8524-4692-a26c-586a800570ae&quot;</span><span class="p">,</span><span class="w">
+  </span><span class="ss">valid_until</span><span class="p">:</span><span class="w"> </span><span class="mf">1626809265.0</span><span class="w">
+</span><span class="p" data-group-id="0465065131-5">}</span><span class="p" data-group-id="0465065131-4">}</span></code></pre><h3 id="create_order/2-parameters" class="section-heading">
+  <a href="#create_order/2-parameters" class="hover-link"><span class="icon-link" aria-hidden="true"></span></a>
+  Parameters
+</h3>
+<ul><li><code class="inline">client</code> - <a href="LemonMarketsEx.Client.html#t:t/0"><code class="inline">LemonMarketsEx.Client.t/0</code></a></li><li><code class="inline">create_order_params</code> - A map of query parameters to create the order.<ul><li><code class="inline">isin</code> (required) - ISIN of an instrument.</li><li><code class="inline">valid_until</code> (required) - UTC UNIX Timestamp in seconds or JS Timestamp (see <a href="https://docs.lemon.markets/pagination-numbers">here</a>). Can be any date in the future.</li><li><code class="inline">side</code> (required) - <code class="inline">&quot;buy&quot;</code> or <code class="inline">&quot;sell&quot;</code>.</li><li><code class="inline">quantity</code> (required) - The amount of shares you want to buy.</li><li><code class="inline">stop_price</code> (optional) - See <a href="https://docs.lemon.markets/pagination-numbers">here</a> for information on numbers format.</li><li><code class="inline">limit_price</code> (optional) - See <a href="https://docs.lemon.markets/pagination-numbers">here</a> for information on numbers format.</li></ul></li></ul>
+  </section>
+</section>
+<section class="detail" id="delete_order/2">
+
+  <div class="detail-header">
+    <a href="#delete_order/2" class="detail-link" title="Link to this function">
+      <span class="icon-link" aria-hidden="true"></span>
+      <span class="sr-only">Link to this function</span>
+    </a>
+    <h1 class="signature">delete_order(client, order_uuid)</h1>
+
+      <a href="https://github.com/daskycodes/lemon.markets_ex/blob/master/lib/lemon_markets_ex/orders.ex#L213" class="view-source" rel="help" title="View Source">
+       <span class="icon-code" aria-hidden="true"></span>
+       <span class="sr-only">View Source</span>
+     </a>
+
+
+  </div>
+
+  <section class="docstring">
+
+      <h2>Specs</h2>
+      <div class="specs">
+
+          <pre>delete_order(<a href="LemonMarketsEx.Client.html#t:t/0">LemonMarketsEx.Client.t</a>(), <a href="LemonMarketsEx.Order.html#t:t/0">LemonMarketsEx.Order.t</a>() | <a href="https://hexdocs.pm/elixir/String.html#t:t/0">String.t</a>()) ::
+  {:error, <a href="LemonMarketsEx.Error.html#t:t/0">LemonMarketsEx.Error.t</a>()} | :ok</pre>
+
+      </div>
+
+<p>Delete an <a href="LemonMarketsEx.Order.html#t:t/0"><code class="inline">LemonMarketsEx.Order.t/0</code></a> with the API scoped to the given space in the client.
+The order's status has to be <code class="inline">&quot;inactive&quot;</code> or <code class="inline">&quot;active&quot;</code>.</p><p>You can either pass the <code class="inline">Order.t()</code> struct or the UUID of the order to be deleted.</p><ul><li>Returns <code class="inline">:ok</code> on success.</li><li>Returns <code class="inline">{:error, Error.t()}</code> on failure.</li></ul><h2 id="delete_order/2-examples" class="section-heading">
+  <a href="#delete_order/2-examples" class="hover-link"><span class="icon-link" aria-hidden="true"></span></a>
+  Examples
+</h2>
+<pre><code class="makeup elixir"><span class="gp unselectable">iex&gt; </span><span class="n">order</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="p" data-group-id="1612514187-1">%</span><span class="nc" data-group-id="1612514187-1">Order</span><span class="p" data-group-id="1612514187-1">{</span><span class="ss">uuid</span><span class="p">:</span><span class="w"> </span><span class="s">&quot;0f91b8f4-8524-4692-a26c-586a800570ae&quot;</span><span class="p" data-group-id="1612514187-1">}</span><span class="w">
+</span><span class="gp unselectable">iex&gt; </span><span class="nc">LemonMarketsEx.Spaces</span><span class="o">.</span><span class="n">delete_order</span><span class="p" data-group-id="1612514187-2">(</span><span class="n">client</span><span class="p">,</span><span class="w"> </span><span class="n">order</span><span class="p" data-group-id="1612514187-2">)</span><span class="w">
+</span><span class="ss">:ok</span><span class="w">
+
+</span><span class="gp unselectable">iex&gt; </span><span class="nc">LemonMarketsEx.Spaces</span><span class="o">.</span><span class="n">delete_order</span><span class="p" data-group-id="1612514187-3">(</span><span class="n">client</span><span class="p">,</span><span class="w"> </span><span class="s">&quot;0f91b8f4-8524-4692-a26c-586a800570ae&quot;</span><span class="p" data-group-id="1612514187-3">)</span><span class="w">
+</span><span class="ss">:ok</span></code></pre><h3 id="delete_order/2-parameters" class="section-heading">
+  <a href="#delete_order/2-parameters" class="hover-link"><span class="icon-link" aria-hidden="true"></span></a>
+  Parameters
+</h3>
+<ul><li><code class="inline">client</code> - <a href="LemonMarketsEx.Client.html#t:t/0"><code class="inline">LemonMarketsEx.Client.t/0</code></a></li><li><code class="inline">order</code> - The <code class="inline">Order.t()</code> to delete | <code class="inline">order_uuid</code> - The UUID of the order to delete.</li></ul>
+  </section>
+</section>
+<section class="detail" id="get_order/2">
+
+  <div class="detail-header">
+    <a href="#get_order/2" class="detail-link" title="Link to this function">
+      <span class="icon-link" aria-hidden="true"></span>
+      <span class="sr-only">Link to this function</span>
+    </a>
+    <h1 class="signature">get_order(client, order_uuid)</h1>
+
+      <a href="https://github.com/daskycodes/lemon.markets_ex/blob/master/lib/lemon_markets_ex/orders.ex#L101" class="view-source" rel="help" title="View Source">
+       <span class="icon-code" aria-hidden="true"></span>
+       <span class="sr-only">View Source</span>
+     </a>
+
+
+  </div>
+
+  <section class="docstring">
+
+      <h2>Specs</h2>
+      <div class="specs">
+
+          <pre>get_order(<a href="LemonMarketsEx.Client.html#t:t/0">LemonMarketsEx.Client.t</a>(), <a href="https://hexdocs.pm/elixir/String.html#t:t/0">String.t</a>()) ::
+  {:error, <a href="LemonMarketsEx.Error.html#t:t/0">LemonMarketsEx.Error.t</a>()} | {:ok, <a href="LemonMarketsEx.Order.html#t:t/0">LemonMarketsEx.Order.t</a>()}</pre>
+
+      </div>
+
+<p>Get a single <a href="LemonMarketsEx.Order.html#t:t/0"><code class="inline">LemonMarketsEx.Order.t/0</code></a> by UUID placed with the API scoped to the given space in the client.</p><h2 id="get_order/2-examples" class="section-heading">
+  <a href="#get_order/2-examples" class="hover-link"><span class="icon-link" aria-hidden="true"></span></a>
+  Examples
+</h2>
+<pre><code class="makeup elixir"><span class="gp unselectable">iex&gt; </span><span class="nc">LemonMarketsEx.Spaces</span><span class="o">.</span><span class="n">get_order</span><span class="p" data-group-id="2085384745-1">(</span><span class="n">client</span><span class="p">,</span><span class="w"> </span><span class="s">&quot;f4515dd5-bb80-4fb2-8e76-43e1b63dfe91&quot;</span><span class="p" data-group-id="2085384745-1">)</span><span class="w">
+</span><span class="p" data-group-id="2085384745-2">{</span><span class="ss">:ok</span><span class="p">,</span><span class="w">
+</span><span class="p" data-group-id="2085384745-3">%</span><span class="nc" data-group-id="2085384745-3">LemonMarketsEx.Order</span><span class="p" data-group-id="2085384745-3">{</span><span class="w">
+  </span><span class="ss">average_price</span><span class="p">:</span><span class="w"> </span><span class="s">&quot;117.4600&quot;</span><span class="p">,</span><span class="w">
+  </span><span class="ss">created_at</span><span class="p">:</span><span class="w"> </span><span class="mf">1626444099.043547</span><span class="p">,</span><span class="w">
+  </span><span class="ss">instrument</span><span class="p">:</span><span class="w"> </span><span class="p" data-group-id="2085384745-4">%{</span><span class="ss">isin</span><span class="p">:</span><span class="w"> </span><span class="s">&quot;US0090661010&quot;</span><span class="p">,</span><span class="w"> </span><span class="ss">title</span><span class="p">:</span><span class="w"> </span><span class="s">&quot;AIRBNB INC.&quot;</span><span class="p" data-group-id="2085384745-4">}</span><span class="p">,</span><span class="w">
+  </span><span class="ss">limit_price</span><span class="p">:</span><span class="w"> </span><span class="no">nil</span><span class="p">,</span><span class="w">
+  </span><span class="ss">processed_at</span><span class="p">:</span><span class="w"> </span><span class="mf">1626444132.988</span><span class="p">,</span><span class="w">
+  </span><span class="ss">processed_quantity</span><span class="p">:</span><span class="w"> </span><span class="mi">4</span><span class="p">,</span><span class="w">
+  </span><span class="ss">quantity</span><span class="p">:</span><span class="w"> </span><span class="mi">4</span><span class="p">,</span><span class="w">
+  </span><span class="ss">side</span><span class="p">:</span><span class="w"> </span><span class="s">&quot;buy&quot;</span><span class="p">,</span><span class="w">
+  </span><span class="ss">status</span><span class="p">:</span><span class="w"> </span><span class="s">&quot;executed&quot;</span><span class="p">,</span><span class="w">
+  </span><span class="ss">stop_price</span><span class="p">:</span><span class="w"> </span><span class="no">nil</span><span class="p">,</span><span class="w">
+  </span><span class="ss">type</span><span class="p">:</span><span class="w"> </span><span class="s">&quot;market&quot;</span><span class="p">,</span><span class="w">
+  </span><span class="ss">trading_venue_mic</span><span class="p">:</span><span class="w"> </span><span class="s">&quot;XMUN&quot;</span><span class="p">,</span><span class="w">
+  </span><span class="ss">uuid</span><span class="p">:</span><span class="w"> </span><span class="s">&quot;f4515dd5-bb80-4fb2-8e76-43e1b63dfe91&quot;</span><span class="p">,</span><span class="w">
+  </span><span class="ss">valid_until</span><span class="p">:</span><span class="w"> </span><span class="mf">1629115248.0</span><span class="w">
+</span><span class="p" data-group-id="2085384745-3">}</span><span class="p" data-group-id="2085384745-2">}</span></code></pre><h3 id="get_order/2-parameters" class="section-heading">
+  <a href="#get_order/2-parameters" class="hover-link"><span class="icon-link" aria-hidden="true"></span></a>
+  Parameters
+</h3>
+<ul><li><code class="inline">client</code> - <a href="LemonMarketsEx.Client.html#t:t/0"><code class="inline">LemonMarketsEx.Client.t/0</code></a></li><li><code class="inline">order_uuid</code> - The UUID of the order to get.</li></ul>
+  </section>
+</section>
+<section class="detail" id="get_orders/2">
+
+    <span id="get_orders/1"></span>
+
+  <div class="detail-header">
+    <a href="#get_orders/2" class="detail-link" title="Link to this function">
+      <span class="icon-link" aria-hidden="true"></span>
+      <span class="sr-only">Link to this function</span>
+    </a>
+    <h1 class="signature">get_orders(client, params \\ [])</h1>
+
+      <a href="https://github.com/daskycodes/lemon.markets_ex/blob/master/lib/lemon_markets_ex/orders.ex#L60" class="view-source" rel="help" title="View Source">
+       <span class="icon-code" aria-hidden="true"></span>
+       <span class="sr-only">View Source</span>
+     </a>
+
+
+  </div>
+
+  <section class="docstring">
+
+      <h2>Specs</h2>
+      <div class="specs">
+
+          <pre>get_orders(<a href="LemonMarketsEx.Client.html#t:t/0">LemonMarketsEx.Client.t</a>(), <a href="https://hexdocs.pm/elixir/typespecs.html#built-in-types">keyword</a>()) ::
+  {:error, <a href="LemonMarketsEx.Error.html#t:t/0">LemonMarketsEx.Error.t</a>()}
+  | {:ok,
+     %{
+       next: <a href="https://hexdocs.pm/elixir/String.html#t:t/0">String.t</a>(),
+       previous: <a href="https://hexdocs.pm/elixir/String.html#t:t/0">String.t</a>(),
+       results: [<a href="LemonMarketsEx.Order.html#t:t/0">LemonMarketsEx.Order.t</a>()]
+     }}</pre>
+
+      </div>
+
+<p>Get a list of all orders that you placed with the API scoped to the given space in the client.
+Additonally, you also have the option to filter the response to only get the orders you are specifically interested in.</p><h2 id="get_orders/2-examples" class="section-heading">
+  <a href="#get_orders/2-examples" class="hover-link"><span class="icon-link" aria-hidden="true"></span></a>
+  Examples
+</h2>
+<pre><code class="makeup elixir"><span class="gp unselectable">iex&gt; </span><span class="nc">LemonMarketsEx.Spaces</span><span class="o">.</span><span class="n">get_orders</span><span class="p" data-group-id="5777258278-1">(</span><span class="n">client</span><span class="p" data-group-id="5777258278-1">)</span><span class="w">
+</span><span class="p" data-group-id="5777258278-2">{</span><span class="ss">:ok</span><span class="p">,</span><span class="w">
+</span><span class="p" data-group-id="5777258278-3">%{</span><span class="w">
+  </span><span class="ss">next</span><span class="p">:</span><span class="w"> </span><span class="no">nil</span><span class="p">,</span><span class="w">
+  </span><span class="ss">previous</span><span class="p">:</span><span class="w"> </span><span class="no">nil</span><span class="p">,</span><span class="w">
+  </span><span class="ss">results</span><span class="p">:</span><span class="w"> </span><span class="p" data-group-id="5777258278-4">[</span><span class="w">
+    </span><span class="p" data-group-id="5777258278-5">%</span><span class="nc" data-group-id="5777258278-5">LemonMarketsEx.Order</span><span class="p" data-group-id="5777258278-5">{</span><span class="w">
+      </span><span class="ss">average_price</span><span class="p">:</span><span class="w"> </span><span class="s">&quot;117.4600&quot;</span><span class="p">,</span><span class="w">
+      </span><span class="ss">created_at</span><span class="p">:</span><span class="w"> </span><span class="mf">1626444099.043547</span><span class="p">,</span><span class="w">
+      </span><span class="ss">instrument</span><span class="p">:</span><span class="w"> </span><span class="p" data-group-id="5777258278-6">%{</span><span class="ss">isin</span><span class="p">:</span><span class="w"> </span><span class="s">&quot;US0090661010&quot;</span><span class="p">,</span><span class="w"> </span><span class="ss">title</span><span class="p">:</span><span class="w"> </span><span class="s">&quot;AIRBNB INC.&quot;</span><span class="p" data-group-id="5777258278-6">}</span><span class="p">,</span><span class="w">
+      </span><span class="ss">limit_price</span><span class="p">:</span><span class="w"> </span><span class="no">nil</span><span class="p">,</span><span class="w">
+      </span><span class="ss">processed_at</span><span class="p">:</span><span class="w"> </span><span class="mf">1626444132.988</span><span class="p">,</span><span class="w">
+      </span><span class="ss">processed_quantity</span><span class="p">:</span><span class="w"> </span><span class="mi">4</span><span class="p">,</span><span class="w">
+      </span><span class="ss">quantity</span><span class="p">:</span><span class="w"> </span><span class="mi">4</span><span class="p">,</span><span class="w">
+      </span><span class="ss">side</span><span class="p">:</span><span class="w"> </span><span class="s">&quot;buy&quot;</span><span class="p">,</span><span class="w">
+      </span><span class="ss">status</span><span class="p">:</span><span class="w"> </span><span class="s">&quot;executed&quot;</span><span class="p">,</span><span class="w">
+      </span><span class="ss">stop_price</span><span class="p">:</span><span class="w"> </span><span class="no">nil</span><span class="p">,</span><span class="w">
+      </span><span class="ss">type</span><span class="p">:</span><span class="w"> </span><span class="s">&quot;market&quot;</span><span class="p">,</span><span class="w">
+      </span><span class="ss">trading_venue_mic</span><span class="p">:</span><span class="w"> </span><span class="s">&quot;XMUN&quot;</span><span class="p">,</span><span class="w">
+      </span><span class="ss">uuid</span><span class="p">:</span><span class="w"> </span><span class="s">&quot;f4515dd5-bb80-4fb2-8e76-43e1b63dfe91&quot;</span><span class="p">,</span><span class="w">
+      </span><span class="ss">valid_until</span><span class="p">:</span><span class="w"> </span><span class="mf">1629115248.0</span><span class="w">
+    </span><span class="p" data-group-id="5777258278-5">}</span><span class="p">,</span><span class="w">
+    </span><span class="n">...</span><span class="w">
+  </span><span class="p" data-group-id="5777258278-4">]</span><span class="w">
+</span><span class="p" data-group-id="5777258278-3">}</span><span class="p" data-group-id="5777258278-2">}</span></code></pre><h3 id="get_orders/2-parameters" class="section-heading">
+  <a href="#get_orders/2-parameters" class="hover-link"><span class="icon-link" aria-hidden="true"></span></a>
+  Parameters
+</h3>
+<ul><li><code class="inline">client</code> - <a href="LemonMarketsEx.Client.html#t:t/0"><code class="inline">LemonMarketsEx.Client.t/0</code></a></li><li><code class="inline">params</code> - A keyword list of query parameters.<ul><li><code class="inline">created_at_until</code> (optional) - UTC UNIX Timestamp in seconds or JS Timestamp (see <a href="https://docs.lemon.markets/pagination-numbers">here</a>). Can be any date in the future.</li><li><code class="inline">created_at_from</code> (optional) - UTC UNIX Timestamp in seconds or JS Timestamp (see <a href="https://docs.lemon.markets/pagination-numbers">here</a>). Can be any date in the future.</li><li><code class="inline">side</code> (optional) - <code class="inline">&quot;buy&quot;</code> or <code class="inline">&quot;sell&quot;</code>.</li><li><code class="inline">type</code> (optional) - Filter for order type: <code class="inline">&quot;limit&quot;</code>, <code class="inline">&quot;market&quot;</code>, <code class="inline">&quot;stop_limit&quot;</code>, <code class="inline">&quot;stop_market&quot;</code>.</li><li><code class="inline">status</code> (optional) - Filter for status: <code class="inline">&quot;inactive&quot;</code>, <code class="inline">&quot;active&quot;</code>, <code class="inline">&quot;in_progress&quot;</code>, <code class="inline">&quot;executed&quot;</code>, <code class="inline">&quot;deleted&quot;</code>, <code class="inline">&quot;expired&quot;</code>.</li><li><code class="inline">limit</code> (optional) - Required for pagination; default is 200.</li><li><code class="inline">offset</code> (optional) - Required for pagination.</li></ul></li></ul>
+  </section>
+</section>
+
+          </div>
+        </section>
+
+      <footer class="footer">
+        <p>
+          <span class="line">
+            Built using
+            <a href="https://github.com/elixir-lang/ex_doc" title="ExDoc" target="_blank" rel="help noopener">ExDoc</a> (v0.25.0) for the
+            <a href="https://elixir-lang.org" title="Elixir" target="_blank">Elixir programming language</a>.
+          </span>
+          <span class="line">
+            Designed by
+            <a href="https://twitter.com/dignifiedquire" target="_blank" rel="noopener" title="@dignifiedquire">Friedel Ziegelmayer</a>.
+          </span>
+        </p>
+        <p>
+
+          <button class="line footer-button display-shortcuts-help">
+            Display keyboard shortcuts
+          </button>
+          <button class="line footer-button night-mode-toggle">
+            Toggle night mode
+          </button>
+          <button class="line footer-button display-quick-switch">
+            Go to a HexDocs package
+          </button>
+          <button class="line footer-button tooltips-toggle">
+            <span class="tooltips-option-disable">Disable tooltips</span>
+            <span class="tooltips-option-enable">Enable tooltips</span>
+          </button>
+        </p>
+      </footer>
+    </div>
+  </div>
+</section>
+</div>
+
+
+  </body>
+</html>
