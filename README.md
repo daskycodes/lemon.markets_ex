@@ -130,11 +130,11 @@ The second argument can either be the newly created `%Order{}` struct or just th
 
 ```elixir
 iex> order = %Order{uuid: "0f91b8f4-8524-4692-a26c-586a800570ae"}
-iex> LemonMarketsEx.Spaces.activate_order(client, order)
+iex> LemonMarketsEx.activate_order(client, order)
 {:ok, %{status: "activated"}}
 
 iex> order = "0f91b8f4-8524-4692-a26c-586a800570ae"
-iex> LemonMarketsEx.Spaces.activate_order(client, order)
+iex> LemonMarketsEx.activate_order(client, order)
 {:ok, %{status: "activated"}}
 ```
 
