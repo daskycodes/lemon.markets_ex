@@ -91,7 +91,7 @@ LemonMarketsEx <small class="app-vsn">(LemonMarketsEx v0.1.0)</small>
 
 
         <section id="moduledoc">
-<p>Elixir client for the <a href="https://lemon.markets">lemon.markets</a> API.</p><p>This module provides all requests to the <a href="https://lemon.markets">lemon.markets</a> API.</p><p>Please check the <a href="/doc/readme.html#content">README</a> for more information and refer to the Modules <a href="LemonMarketsEx.Authentication.html"><code class="inline">LemonMarketsEx.Authentication</code></a>, <a href="LemonMarketsEx.Data.html"><code class="inline">LemonMarketsEx.Data</code></a>, <a href="LemonMarketsEx.Orders.html"><code class="inline">LemonMarketsEx.Orders</code></a>, <a href="LemonMarketsEx.Spaces.html"><code class="inline">LemonMarketsEx.Spaces</code></a> and <a href="LemonMarketsEx.TradingVenues.html"><code class="inline">LemonMarketsEx.TradingVenues</code></a> for more details and examples.</p>
+<p>Elixir client for the <a href="https://lemon.markets">lemon.markets</a> API.</p><p>This module provides all requests to the <a href="https://lemon.markets">lemon.markets</a> API.</p><p>Please check the <a href="https://daskycodes.github.io/lemon.markets_ex/readme.html">README</a> for more information and refer to the Modules <a href="LemonMarketsEx.Authentication.html"><code class="inline">LemonMarketsEx.Authentication</code></a>, <a href="LemonMarketsEx.Data.html"><code class="inline">LemonMarketsEx.Data</code></a>, <a href="LemonMarketsEx.Orders.html"><code class="inline">LemonMarketsEx.Orders</code></a>, <a href="LemonMarketsEx.Spaces.html"><code class="inline">LemonMarketsEx.Spaces</code></a> and <a href="LemonMarketsEx.TradingVenues.html"><code class="inline">LemonMarketsEx.TradingVenues</code></a> for more details and examples.</p>
         </section>
 
 
@@ -422,7 +422,7 @@ Spaces
     </a>
     <h1 class="signature">get_portfolio(client, params \\ [])</h1>
 
-      <a href="https://github.com/daskycodes/lemon.markets_ex/blob/master/lib/lemon_markets_ex.ex#L29" class="view-source" rel="help" title="View Source">
+      <a href="https://github.com/daskycodes/lemon.markets_ex/blob/master/lib/lemon_markets_ex.ex#L31" class="view-source" rel="help" title="View Source">
        <span class="icon-code" aria-hidden="true"></span>
        <span class="sr-only">View Source</span>
      </a>
@@ -446,7 +446,7 @@ Spaces
     </a>
     <h1 class="signature">get_portfolio_transactions(client, params \\ [])</h1>
 
-      <a href="https://github.com/daskycodes/lemon.markets_ex/blob/master/lib/lemon_markets_ex.ex#L31" class="view-source" rel="help" title="View Source">
+      <a href="https://github.com/daskycodes/lemon.markets_ex/blob/master/lib/lemon_markets_ex.ex#L33" class="view-source" rel="help" title="View Source">
        <span class="icon-code" aria-hidden="true"></span>
        <span class="sr-only">View Source</span>
      </a>
@@ -490,7 +490,7 @@ Spaces
     </a>
     <h1 class="signature">get_space_state(client, space_uuid)</h1>
 
-      <a href="https://github.com/daskycodes/lemon.markets_ex/blob/master/lib/lemon_markets_ex.ex#L27" class="view-source" rel="help" title="View Source">
+      <a href="https://github.com/daskycodes/lemon.markets_ex/blob/master/lib/lemon_markets_ex.ex#L29" class="view-source" rel="help" title="View Source">
        <span class="icon-code" aria-hidden="true"></span>
        <span class="sr-only">View Source</span>
      </a>
@@ -499,6 +499,14 @@ Spaces
   </div>
 
   <section class="docstring">
+
+      <h2>Specs</h2>
+      <div class="specs">
+
+          <pre>get_space_state(<a href="LemonMarketsEx.Client.html#t:t/0">LemonMarketsEx.Client.t</a>(), <a href="https://hexdocs.pm/elixir/typespecs.html#built-in-types">binary</a>()) ::
+  {:error, <a href="LemonMarketsEx.Error.html#t:t/0">LemonMarketsEx.Error.t</a>()} | {:ok, <a href="https://hexdocs.pm/elixir/typespecs.html#basic-types">map</a>()}</pre>
+
+      </div>
 
 <p>See <a href="LemonMarketsEx.Spaces.html#get_space_state/2"><code class="inline">LemonMarketsEx.Spaces.get_space_state/2</code></a>.</p>
   </section>
@@ -556,7 +564,7 @@ Spaces
     </a>
     <h1 class="signature">get_transaction(client, transaction_uuid)</h1>
 
-      <a href="https://github.com/daskycodes/lemon.markets_ex/blob/master/lib/lemon_markets_ex.ex#L35" class="view-source" rel="help" title="View Source">
+      <a href="https://github.com/daskycodes/lemon.markets_ex/blob/master/lib/lemon_markets_ex.ex#L37" class="view-source" rel="help" title="View Source">
        <span class="icon-code" aria-hidden="true"></span>
        <span class="sr-only">View Source</span>
      </a>
@@ -580,7 +588,7 @@ Spaces
     </a>
     <h1 class="signature">get_transactions(client, params \\ [])</h1>
 
-      <a href="https://github.com/daskycodes/lemon.markets_ex/blob/master/lib/lemon_markets_ex.ex#L33" class="view-source" rel="help" title="View Source">
+      <a href="https://github.com/daskycodes/lemon.markets_ex/blob/master/lib/lemon_markets_ex.ex#L35" class="view-source" rel="help" title="View Source">
        <span class="icon-code" aria-hidden="true"></span>
        <span class="sr-only">View Source</span>
      </a>
@@ -615,7 +623,7 @@ Orders
     </a>
     <h1 class="signature">activate_order(client, order)</h1>
 
-      <a href="https://github.com/daskycodes/lemon.markets_ex/blob/master/lib/lemon_markets_ex.ex#L43" class="view-source" rel="help" title="View Source">
+      <a href="https://github.com/daskycodes/lemon.markets_ex/blob/master/lib/lemon_markets_ex.ex#L45" class="view-source" rel="help" title="View Source">
        <span class="icon-code" aria-hidden="true"></span>
        <span class="sr-only">View Source</span>
      </a>
@@ -637,7 +645,7 @@ Orders
     </a>
     <h1 class="signature">create_order(client, create_order_params)</h1>
 
-      <a href="https://github.com/daskycodes/lemon.markets_ex/blob/master/lib/lemon_markets_ex.ex#L41" class="view-source" rel="help" title="View Source">
+      <a href="https://github.com/daskycodes/lemon.markets_ex/blob/master/lib/lemon_markets_ex.ex#L43" class="view-source" rel="help" title="View Source">
        <span class="icon-code" aria-hidden="true"></span>
        <span class="sr-only">View Source</span>
      </a>
@@ -659,7 +667,7 @@ Orders
     </a>
     <h1 class="signature">delete_order(client, order)</h1>
 
-      <a href="https://github.com/daskycodes/lemon.markets_ex/blob/master/lib/lemon_markets_ex.ex#L45" class="view-source" rel="help" title="View Source">
+      <a href="https://github.com/daskycodes/lemon.markets_ex/blob/master/lib/lemon_markets_ex.ex#L47" class="view-source" rel="help" title="View Source">
        <span class="icon-code" aria-hidden="true"></span>
        <span class="sr-only">View Source</span>
      </a>
@@ -681,7 +689,7 @@ Orders
     </a>
     <h1 class="signature">get_order(client, order_uuid)</h1>
 
-      <a href="https://github.com/daskycodes/lemon.markets_ex/blob/master/lib/lemon_markets_ex.ex#L39" class="view-source" rel="help" title="View Source">
+      <a href="https://github.com/daskycodes/lemon.markets_ex/blob/master/lib/lemon_markets_ex.ex#L41" class="view-source" rel="help" title="View Source">
        <span class="icon-code" aria-hidden="true"></span>
        <span class="sr-only">View Source</span>
      </a>
@@ -705,7 +713,7 @@ Orders
     </a>
     <h1 class="signature">get_orders(client, params \\ [])</h1>
 
-      <a href="https://github.com/daskycodes/lemon.markets_ex/blob/master/lib/lemon_markets_ex.ex#L37" class="view-source" rel="help" title="View Source">
+      <a href="https://github.com/daskycodes/lemon.markets_ex/blob/master/lib/lemon_markets_ex.ex#L39" class="view-source" rel="help" title="View Source">
        <span class="icon-code" aria-hidden="true"></span>
        <span class="sr-only">View Source</span>
      </a>
@@ -742,7 +750,7 @@ TradingVenues
     </a>
     <h1 class="signature">get_instruments(client, params \\ [])</h1>
 
-      <a href="https://github.com/daskycodes/lemon.markets_ex/blob/master/lib/lemon_markets_ex.ex#L47" class="view-source" rel="help" title="View Source">
+      <a href="https://github.com/daskycodes/lemon.markets_ex/blob/master/lib/lemon_markets_ex.ex#L49" class="view-source" rel="help" title="View Source">
        <span class="icon-code" aria-hidden="true"></span>
        <span class="sr-only">View Source</span>
      </a>
@@ -764,7 +772,7 @@ TradingVenues
     </a>
     <h1 class="signature">get_opening_days(client, mic)</h1>
 
-      <a href="https://github.com/daskycodes/lemon.markets_ex/blob/master/lib/lemon_markets_ex.ex#L49" class="view-source" rel="help" title="View Source">
+      <a href="https://github.com/daskycodes/lemon.markets_ex/blob/master/lib/lemon_markets_ex.ex#L51" class="view-source" rel="help" title="View Source">
        <span class="icon-code" aria-hidden="true"></span>
        <span class="sr-only">View Source</span>
      </a>
@@ -786,7 +794,7 @@ TradingVenues
     </a>
     <h1 class="signature">get_trading_venue(client, mic)</h1>
 
-      <a href="https://github.com/daskycodes/lemon.markets_ex/blob/master/lib/lemon_markets_ex.ex#L51" class="view-source" rel="help" title="View Source">
+      <a href="https://github.com/daskycodes/lemon.markets_ex/blob/master/lib/lemon_markets_ex.ex#L53" class="view-source" rel="help" title="View Source">
        <span class="icon-code" aria-hidden="true"></span>
        <span class="sr-only">View Source</span>
      </a>
@@ -808,7 +816,7 @@ TradingVenues
     </a>
     <h1 class="signature">get_trading_venue_instrument(client, mic, isin)</h1>
 
-      <a href="https://github.com/daskycodes/lemon.markets_ex/blob/master/lib/lemon_markets_ex.ex#L53" class="view-source" rel="help" title="View Source">
+      <a href="https://github.com/daskycodes/lemon.markets_ex/blob/master/lib/lemon_markets_ex.ex#L55" class="view-source" rel="help" title="View Source">
        <span class="icon-code" aria-hidden="true"></span>
        <span class="sr-only">View Source</span>
      </a>
@@ -832,7 +840,7 @@ TradingVenues
     </a>
     <h1 class="signature">get_trading_venue_instrument_warrants(client, mic, isin, params \\ [])</h1>
 
-      <a href="https://github.com/daskycodes/lemon.markets_ex/blob/master/lib/lemon_markets_ex.ex#L57" class="view-source" rel="help" title="View Source">
+      <a href="https://github.com/daskycodes/lemon.markets_ex/blob/master/lib/lemon_markets_ex.ex#L59" class="view-source" rel="help" title="View Source">
        <span class="icon-code" aria-hidden="true"></span>
        <span class="sr-only">View Source</span>
      </a>
@@ -856,7 +864,7 @@ TradingVenues
     </a>
     <h1 class="signature">get_trading_venue_instruments(client, mic, params \\ [])</h1>
 
-      <a href="https://github.com/daskycodes/lemon.markets_ex/blob/master/lib/lemon_markets_ex.ex#L61" class="view-source" rel="help" title="View Source">
+      <a href="https://github.com/daskycodes/lemon.markets_ex/blob/master/lib/lemon_markets_ex.ex#L63" class="view-source" rel="help" title="View Source">
        <span class="icon-code" aria-hidden="true"></span>
        <span class="sr-only">View Source</span>
      </a>
@@ -878,7 +886,7 @@ TradingVenues
     </a>
     <h1 class="signature">get_trading_venues(client)</h1>
 
-      <a href="https://github.com/daskycodes/lemon.markets_ex/blob/master/lib/lemon_markets_ex.ex#L63" class="view-source" rel="help" title="View Source">
+      <a href="https://github.com/daskycodes/lemon.markets_ex/blob/master/lib/lemon_markets_ex.ex#L65" class="view-source" rel="help" title="View Source">
        <span class="icon-code" aria-hidden="true"></span>
        <span class="sr-only">View Source</span>
      </a>
@@ -913,7 +921,7 @@ Data
     </a>
     <h1 class="signature">get_latest_ohlc_data(client, mic, isin, x1)</h1>
 
-      <a href="https://github.com/daskycodes/lemon.markets_ex/blob/master/lib/lemon_markets_ex.ex#L66" class="view-source" rel="help" title="View Source">
+      <a href="https://github.com/daskycodes/lemon.markets_ex/blob/master/lib/lemon_markets_ex.ex#L68" class="view-source" rel="help" title="View Source">
        <span class="icon-code" aria-hidden="true"></span>
        <span class="sr-only">View Source</span>
      </a>
@@ -935,7 +943,7 @@ Data
     </a>
     <h1 class="signature">get_latest_quote(client, mic, isin)</h1>
 
-      <a href="https://github.com/daskycodes/lemon.markets_ex/blob/master/lib/lemon_markets_ex.ex#L68" class="view-source" rel="help" title="View Source">
+      <a href="https://github.com/daskycodes/lemon.markets_ex/blob/master/lib/lemon_markets_ex.ex#L70" class="view-source" rel="help" title="View Source">
        <span class="icon-code" aria-hidden="true"></span>
        <span class="sr-only">View Source</span>
      </a>
@@ -957,7 +965,7 @@ Data
     </a>
     <h1 class="signature">get_latest_trade(client, mic, isin)</h1>
 
-      <a href="https://github.com/daskycodes/lemon.markets_ex/blob/master/lib/lemon_markets_ex.ex#L70" class="view-source" rel="help" title="View Source">
+      <a href="https://github.com/daskycodes/lemon.markets_ex/blob/master/lib/lemon_markets_ex.ex#L72" class="view-source" rel="help" title="View Source">
        <span class="icon-code" aria-hidden="true"></span>
        <span class="sr-only">View Source</span>
      </a>
@@ -981,7 +989,7 @@ Data
     </a>
     <h1 class="signature">get_ohlc_data(client, mic, isin, x1, params \\ [])</h1>
 
-      <a href="https://github.com/daskycodes/lemon.markets_ex/blob/master/lib/lemon_markets_ex.ex#L72" class="view-source" rel="help" title="View Source">
+      <a href="https://github.com/daskycodes/lemon.markets_ex/blob/master/lib/lemon_markets_ex.ex#L74" class="view-source" rel="help" title="View Source">
        <span class="icon-code" aria-hidden="true"></span>
        <span class="sr-only">View Source</span>
      </a>
