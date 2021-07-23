@@ -229,25 +229,25 @@ Functions
   <a href="#get_instruments/2-examples" class="hover-link"><span class="icon-link" aria-hidden="true"></span></a>
   Examples
 </h2>
-<pre><code class="makeup elixir"><span class="gp unselectable">iex&gt; </span><span class="nc">LemonMarketsEx.Instruments</span><span class="o">.</span><span class="n">get_instruments</span><span class="p" data-group-id="3663644023-1">(</span><span class="n">client</span><span class="p">,</span><span class="w"> </span><span class="ss">search</span><span class="p">:</span><span class="w"> </span><span class="s">&quot;AIRBNB&quot;</span><span class="p">,</span><span class="w"> </span><span class="ss">type</span><span class="p">:</span><span class="w"> </span><span class="s">&quot;stock&quot;</span><span class="p" data-group-id="3663644023-1">)</span><span class="w">
-</span><span class="p" data-group-id="3663644023-2">{</span><span class="ss">:ok</span><span class="p">,</span><span class="w">
-</span><span class="p" data-group-id="3663644023-3">%{</span><span class="w">
+<pre><code class="makeup elixir"><span class="gp unselectable">iex&gt; </span><span class="nc">LemonMarketsEx.Instruments</span><span class="o">.</span><span class="n">get_instruments</span><span class="p" data-group-id="9568326548-1">(</span><span class="n">client</span><span class="p">,</span><span class="w"> </span><span class="ss">search</span><span class="p">:</span><span class="w"> </span><span class="s">&quot;AIRBNB&quot;</span><span class="p">,</span><span class="w"> </span><span class="ss">type</span><span class="p">:</span><span class="w"> </span><span class="s">&quot;stock&quot;</span><span class="p" data-group-id="9568326548-1">)</span><span class="w">
+</span><span class="p" data-group-id="9568326548-2">{</span><span class="ss">:ok</span><span class="p">,</span><span class="w">
+</span><span class="p" data-group-id="9568326548-3">%{</span><span class="w">
   </span><span class="ss">next</span><span class="p">:</span><span class="w"> </span><span class="no">nil</span><span class="p">,</span><span class="w">
   </span><span class="ss">previous</span><span class="p">:</span><span class="w"> </span><span class="no">nil</span><span class="p">,</span><span class="w">
-  </span><span class="ss">results</span><span class="p">:</span><span class="w"> </span><span class="p" data-group-id="3663644023-4">[</span><span class="w">
-    </span><span class="p" data-group-id="3663644023-5">%</span><span class="nc" data-group-id="3663644023-5">LemonMarketsEx.Instrument</span><span class="p" data-group-id="3663644023-5">{</span><span class="w">
+  </span><span class="ss">results</span><span class="p">:</span><span class="w"> </span><span class="p" data-group-id="9568326548-4">[</span><span class="w">
+    </span><span class="p" data-group-id="9568326548-5">%</span><span class="nc" data-group-id="9568326548-5">LemonMarketsEx.Instrument</span><span class="p" data-group-id="9568326548-5">{</span><span class="w">
       </span><span class="ss">currency</span><span class="p">:</span><span class="w"> </span><span class="s">&quot;EUR&quot;</span><span class="p">,</span><span class="w">
       </span><span class="ss">isin</span><span class="p">:</span><span class="w"> </span><span class="s">&quot;US0090661010&quot;</span><span class="p">,</span><span class="w">
       </span><span class="ss">name</span><span class="p">:</span><span class="w"> </span><span class="s">&quot;AIRBNB INC. DL-,01&quot;</span><span class="p">,</span><span class="w">
       </span><span class="ss">symbol</span><span class="p">:</span><span class="w"> </span><span class="s">&quot;6Z1&quot;</span><span class="p">,</span><span class="w">
       </span><span class="ss">title</span><span class="p">:</span><span class="w"> </span><span class="s">&quot;AIRBNB INC.&quot;</span><span class="p">,</span><span class="w">
       </span><span class="ss">tradable</span><span class="p">:</span><span class="w"> </span><span class="no">true</span><span class="p">,</span><span class="w">
-      </span><span class="ss">trading_venues</span><span class="p">:</span><span class="w"> </span><span class="p" data-group-id="3663644023-6">[</span><span class="p" data-group-id="3663644023-7">%{</span><span class="ss">mic</span><span class="p">:</span><span class="w"> </span><span class="s">&quot;XMUN&quot;</span><span class="p">,</span><span class="w"> </span><span class="ss">title</span><span class="p">:</span><span class="w"> </span><span class="s">&quot;Gettex&quot;</span><span class="p" data-group-id="3663644023-7">}</span><span class="p" data-group-id="3663644023-6">]</span><span class="p">,</span><span class="w">
+      </span><span class="ss">trading_venues</span><span class="p">:</span><span class="w"> </span><span class="p" data-group-id="9568326548-6">[</span><span class="p" data-group-id="9568326548-7">%{</span><span class="ss">mic</span><span class="p">:</span><span class="w"> </span><span class="s">&quot;XMUN&quot;</span><span class="p">,</span><span class="w"> </span><span class="ss">title</span><span class="p">:</span><span class="w"> </span><span class="s">&quot;Gettex&quot;</span><span class="p" data-group-id="9568326548-7">}</span><span class="p" data-group-id="9568326548-6">]</span><span class="p">,</span><span class="w">
       </span><span class="ss">type</span><span class="p">:</span><span class="w"> </span><span class="s">&quot;stock&quot;</span><span class="p">,</span><span class="w">
       </span><span class="ss">wkn</span><span class="p">:</span><span class="w"> </span><span class="s">&quot;A2QG35&quot;</span><span class="w">
-    </span><span class="p" data-group-id="3663644023-5">}</span><span class="w">
-  </span><span class="p" data-group-id="3663644023-4">]</span><span class="w">
-</span><span class="p" data-group-id="3663644023-3">}</span><span class="p" data-group-id="3663644023-2">}</span></code></pre><h4>Parameters</h4><ul><li><code class="inline">client</code> - <a href="LemonMarketsEx.Client.html#t:t/0"><code class="inline">LemonMarketsEx.Client.t/0</code></a></li><li><code class="inline">params</code>: A keyword list of parameters.<ul><li><code class="inline">tradable</code>: If true, only tradable instruments are returned.</li><li><code class="inline">search</code>: Search for Name/Title, ISIN, WKN or symbol</li><li><code class="inline">currency</code>: 3 letter abbreviation, e.g. <code class="inline">&quot;EUR&quot;</code> or <code class="inline">&quot;USD&quot;</code></li><li><code class="inline">type</code>: <code class="inline">&quot;stock&quot;</code>, <code class="inline">&quot;bond&quot;</code>, <code class="inline">&quot;fund&quot;</code>, <code class="inline">&quot;ETF&quot;</code>, or <code class="inline">&quot;warrant&quot;</code></li><li><code class="inline">limit</code>: The maximum number of instruments to return.</li><li><code class="inline">offset</code>: The offset of the first instrument to return.</li></ul></li></ul>
+    </span><span class="p" data-group-id="9568326548-5">}</span><span class="w">
+  </span><span class="p" data-group-id="9568326548-4">]</span><span class="w">
+</span><span class="p" data-group-id="9568326548-3">}</span><span class="p" data-group-id="9568326548-2">}</span></code></pre><h4>Parameters</h4><ul><li><code class="inline">client</code> - <a href="LemonMarketsEx.Client.html#t:t/0"><code class="inline">LemonMarketsEx.Client.t/0</code></a></li><li><code class="inline">params</code>: A keyword list of parameters.<ul><li><code class="inline">tradable</code>: If true, only tradable instruments are returned.</li><li><code class="inline">search</code>: Search for Name/Title, ISIN, WKN or symbol</li><li><code class="inline">currency</code>: 3 letter abbreviation, e.g. <code class="inline">&quot;EUR&quot;</code> or <code class="inline">&quot;USD&quot;</code></li><li><code class="inline">type</code>: <code class="inline">&quot;stock&quot;</code>, <code class="inline">&quot;bond&quot;</code>, <code class="inline">&quot;fund&quot;</code>, <code class="inline">&quot;ETF&quot;</code>, or <code class="inline">&quot;warrant&quot;</code></li><li><code class="inline">limit</code>: The maximum number of instruments to return.</li><li><code class="inline">offset</code>: The offset of the first instrument to return.</li></ul></li></ul>
   </section>
 </section>
 <section class="detail" id="get_opening_days/2">
@@ -287,23 +287,23 @@ Functions
   <a href="#get_opening_days/2-examples" class="hover-link"><span class="icon-link" aria-hidden="true"></span></a>
   Examples
 </h2>
-<pre><code class="makeup elixir"><span class="gp unselectable">iex&gt; </span><span class="nc">LemonMarketsEx.TradingVenues</span><span class="o">.</span><span class="n">get_trading_venue_opening_days</span><span class="p" data-group-id="8096283327-1">(</span><span class="n">client</span><span class="p">,</span><span class="w"> </span><span class="s">&quot;XMUN&quot;</span><span class="p" data-group-id="8096283327-1">)</span><span class="w">
-</span><span class="p" data-group-id="8096283327-2">{</span><span class="ss">:ok</span><span class="p">,</span><span class="w">
- </span><span class="p" data-group-id="8096283327-3">%{</span><span class="w">
+<pre><code class="makeup elixir"><span class="gp unselectable">iex&gt; </span><span class="nc">LemonMarketsEx.TradingVenues</span><span class="o">.</span><span class="n">get_trading_venue_opening_days</span><span class="p" data-group-id="4845850735-1">(</span><span class="n">client</span><span class="p">,</span><span class="w"> </span><span class="s">&quot;XMUN&quot;</span><span class="p" data-group-id="4845850735-1">)</span><span class="w">
+</span><span class="p" data-group-id="4845850735-2">{</span><span class="ss">:ok</span><span class="p">,</span><span class="w">
+ </span><span class="p" data-group-id="4845850735-3">%{</span><span class="w">
    </span><span class="ss">next</span><span class="p">:</span><span class="w"> </span><span class="no">nil</span><span class="p">,</span><span class="w">
    </span><span class="ss">previous</span><span class="p">:</span><span class="w"> </span><span class="no">nil</span><span class="p">,</span><span class="w">
-   </span><span class="ss">results</span><span class="p">:</span><span class="w"> </span><span class="p" data-group-id="8096283327-4">[</span><span class="w">
-     </span><span class="p" data-group-id="8096283327-5">%{</span><span class="w">
+   </span><span class="ss">results</span><span class="p">:</span><span class="w"> </span><span class="p" data-group-id="4845850735-4">[</span><span class="w">
+     </span><span class="p" data-group-id="4845850735-5">%{</span><span class="w">
        </span><span class="ss">closing_time</span><span class="p">:</span><span class="w"> </span><span class="mf">1.6268976e9</span><span class="p">,</span><span class="w">
        </span><span class="ss">day_iso</span><span class="p">:</span><span class="w"> </span><span class="s">&quot;2021-07-21&quot;</span><span class="p">,</span><span class="w">
        </span><span class="ss">opening_time</span><span class="p">:</span><span class="w"> </span><span class="mf">1.6268472e9</span><span class="w">
-     </span><span class="p" data-group-id="8096283327-5">}</span><span class="p">,</span><span class="w">
-     </span><span class="p" data-group-id="8096283327-6">%{</span><span class="ss">closing_time</span><span class="p">:</span><span class="w"> </span><span class="mf">1.6319088e9</span><span class="p">,</span><span class="w"> </span><span class="ss">day_iso</span><span class="p">:</span><span class="w"> </span><span class="s">&quot;2021-09-17&quot;</span><span class="p">,</span><span class="w"> </span><span class="n">...</span><span class="p" data-group-id="8096283327-6">}</span><span class="p">,</span><span class="w">
-     </span><span class="p" data-group-id="8096283327-7">%{</span><span class="ss">closing_time</span><span class="p">:</span><span class="w"> </span><span class="mf">1.632168e9</span><span class="p">,</span><span class="w"> </span><span class="n">...</span><span class="p" data-group-id="8096283327-7">}</span><span class="p">,</span><span class="w">
-     </span><span class="p" data-group-id="8096283327-8">%{</span><span class="n">...</span><span class="p" data-group-id="8096283327-8">}</span><span class="p">,</span><span class="w">
+     </span><span class="p" data-group-id="4845850735-5">}</span><span class="p">,</span><span class="w">
+     </span><span class="p" data-group-id="4845850735-6">%{</span><span class="ss">closing_time</span><span class="p">:</span><span class="w"> </span><span class="mf">1.6319088e9</span><span class="p">,</span><span class="w"> </span><span class="ss">day_iso</span><span class="p">:</span><span class="w"> </span><span class="s">&quot;2021-09-17&quot;</span><span class="p">,</span><span class="w"> </span><span class="n">...</span><span class="p" data-group-id="4845850735-6">}</span><span class="p">,</span><span class="w">
+     </span><span class="p" data-group-id="4845850735-7">%{</span><span class="ss">closing_time</span><span class="p">:</span><span class="w"> </span><span class="mf">1.632168e9</span><span class="p">,</span><span class="w"> </span><span class="n">...</span><span class="p" data-group-id="4845850735-7">}</span><span class="p">,</span><span class="w">
+     </span><span class="p" data-group-id="4845850735-8">%{</span><span class="n">...</span><span class="p" data-group-id="4845850735-8">}</span><span class="p">,</span><span class="w">
      </span><span class="n">...</span><span class="w">
-   </span><span class="p" data-group-id="8096283327-4">]</span><span class="w">
- </span><span class="p" data-group-id="8096283327-3">}</span><span class="p" data-group-id="8096283327-2">}</span></code></pre><h3 id="get_opening_days/2-parameters" class="section-heading">
+   </span><span class="p" data-group-id="4845850735-4">]</span><span class="w">
+ </span><span class="p" data-group-id="4845850735-3">}</span><span class="p" data-group-id="4845850735-2">}</span></code></pre><h3 id="get_opening_days/2-parameters" class="section-heading">
   <a href="#get_opening_days/2-parameters" class="hover-link"><span class="icon-link" aria-hidden="true"></span></a>
   Parameters
 </h3>
@@ -341,14 +341,14 @@ Functions
   <a href="#get_trading_venue/2-examples" class="hover-link"><span class="icon-link" aria-hidden="true"></span></a>
   Examples
 </h2>
-<pre><code class="makeup elixir"><span class="gp unselectable">iex&gt; </span><span class="nc">LemonMarketsEx.TradingVenues</span><span class="o">.</span><span class="n">get_trading_venue</span><span class="p" data-group-id="0486894456-1">(</span><span class="n">client</span><span class="p">,</span><span class="w"> </span><span class="s">&quot;XMUN&quot;</span><span class="p" data-group-id="0486894456-1">)</span><span class="w">
-</span><span class="p" data-group-id="0486894456-2">{</span><span class="ss">:ok</span><span class="p">,</span><span class="w">
- </span><span class="p" data-group-id="0486894456-3">%</span><span class="nc" data-group-id="0486894456-3">LemonMarketsEx.TradingVenue</span><span class="p" data-group-id="0486894456-3">{</span><span class="w">
+<pre><code class="makeup elixir"><span class="gp unselectable">iex&gt; </span><span class="nc">LemonMarketsEx.TradingVenues</span><span class="o">.</span><span class="n">get_trading_venue</span><span class="p" data-group-id="9051503159-1">(</span><span class="n">client</span><span class="p">,</span><span class="w"> </span><span class="s">&quot;XMUN&quot;</span><span class="p" data-group-id="9051503159-1">)</span><span class="w">
+</span><span class="p" data-group-id="9051503159-2">{</span><span class="ss">:ok</span><span class="p">,</span><span class="w">
+ </span><span class="p" data-group-id="9051503159-3">%</span><span class="nc" data-group-id="9051503159-3">LemonMarketsEx.TradingVenue</span><span class="p" data-group-id="9051503159-3">{</span><span class="w">
    </span><span class="ss">is_open</span><span class="p">:</span><span class="w"> </span><span class="no">false</span><span class="p">,</span><span class="w">
    </span><span class="ss">mic</span><span class="p">:</span><span class="w"> </span><span class="s">&quot;XMUN&quot;</span><span class="p">,</span><span class="w">
    </span><span class="ss">name</span><span class="p">:</span><span class="w"> </span><span class="s">&quot;Börse München - Gettex&quot;</span><span class="p">,</span><span class="w">
    </span><span class="ss">title</span><span class="p">:</span><span class="w"> </span><span class="s">&quot;Gettex&quot;</span><span class="w">
- </span><span class="p" data-group-id="0486894456-3">}</span><span class="p" data-group-id="0486894456-2">}</span></code></pre><h3 id="get_trading_venue/2-parameters" class="section-heading">
+ </span><span class="p" data-group-id="9051503159-3">}</span><span class="p" data-group-id="9051503159-2">}</span></code></pre><h3 id="get_trading_venue/2-parameters" class="section-heading">
   <a href="#get_trading_venue/2-parameters" class="hover-link"><span class="icon-link" aria-hidden="true"></span></a>
   Parameters
 </h3>
@@ -386,19 +386,19 @@ Functions
   <a href="#get_trading_venue_instrument/3-examples" class="hover-link"><span class="icon-link" aria-hidden="true"></span></a>
   Examples
 </h2>
-<pre><code class="makeup elixir"><span class="gp unselectable">iex&gt; </span><span class="nc">LemonMarketsEx.TradingVenues</span><span class="o">.</span><span class="n">get_trading_venue_instrument</span><span class="p" data-group-id="2221101344-1">(</span><span class="n">client</span><span class="p">,</span><span class="w"> </span><span class="s">&quot;XMUN&quot;</span><span class="p">,</span><span class="w"> </span><span class="s">&quot;US0090661010&quot;</span><span class="p" data-group-id="2221101344-1">)</span><span class="w">
-</span><span class="p" data-group-id="2221101344-2">{</span><span class="ss">:ok</span><span class="p">,</span><span class="w">
- </span><span class="p" data-group-id="2221101344-3">%</span><span class="nc" data-group-id="2221101344-3">LemonMarketsEx.Instrument</span><span class="p" data-group-id="2221101344-3">{</span><span class="w">
+<pre><code class="makeup elixir"><span class="gp unselectable">iex&gt; </span><span class="nc">LemonMarketsEx.TradingVenues</span><span class="o">.</span><span class="n">get_trading_venue_instrument</span><span class="p" data-group-id="7606673848-1">(</span><span class="n">client</span><span class="p">,</span><span class="w"> </span><span class="s">&quot;XMUN&quot;</span><span class="p">,</span><span class="w"> </span><span class="s">&quot;US0090661010&quot;</span><span class="p" data-group-id="7606673848-1">)</span><span class="w">
+</span><span class="p" data-group-id="7606673848-2">{</span><span class="ss">:ok</span><span class="p">,</span><span class="w">
+ </span><span class="p" data-group-id="7606673848-3">%</span><span class="nc" data-group-id="7606673848-3">LemonMarketsEx.Instrument</span><span class="p" data-group-id="7606673848-3">{</span><span class="w">
    </span><span class="ss">currency</span><span class="p">:</span><span class="w"> </span><span class="s">&quot;EUR&quot;</span><span class="p">,</span><span class="w">
    </span><span class="ss">isin</span><span class="p">:</span><span class="w"> </span><span class="s">&quot;US0090661010&quot;</span><span class="p">,</span><span class="w">
    </span><span class="ss">name</span><span class="p">:</span><span class="w"> </span><span class="s">&quot;AIRBNB INC. DL-,01&quot;</span><span class="p">,</span><span class="w">
    </span><span class="ss">symbol</span><span class="p">:</span><span class="w"> </span><span class="s">&quot;6Z1&quot;</span><span class="p">,</span><span class="w">
    </span><span class="ss">title</span><span class="p">:</span><span class="w"> </span><span class="s">&quot;AIRBNB INC.&quot;</span><span class="p">,</span><span class="w">
    </span><span class="ss">tradable</span><span class="p">:</span><span class="w"> </span><span class="no">true</span><span class="p">,</span><span class="w">
-   </span><span class="ss">trading_venues</span><span class="p">:</span><span class="w"> </span><span class="p" data-group-id="2221101344-4">[</span><span class="p" data-group-id="2221101344-4">]</span><span class="p">,</span><span class="w">
+   </span><span class="ss">trading_venues</span><span class="p">:</span><span class="w"> </span><span class="p" data-group-id="7606673848-4">[</span><span class="p" data-group-id="7606673848-4">]</span><span class="p">,</span><span class="w">
    </span><span class="ss">type</span><span class="p">:</span><span class="w"> </span><span class="s">&quot;stock&quot;</span><span class="p">,</span><span class="w">
    </span><span class="ss">wkn</span><span class="p">:</span><span class="w"> </span><span class="s">&quot;A2QG35&quot;</span><span class="w">
- </span><span class="p" data-group-id="2221101344-3">}</span><span class="p" data-group-id="2221101344-2">}</span></code></pre><h3 id="get_trading_venue_instrument/3-parameters" class="section-heading">
+ </span><span class="p" data-group-id="7606673848-3">}</span><span class="p" data-group-id="7606673848-2">}</span></code></pre><h3 id="get_trading_venue_instrument/3-parameters" class="section-heading">
   <a href="#get_trading_venue_instrument/3-parameters" class="hover-link"><span class="icon-link" aria-hidden="true"></span></a>
   Parameters
 </h3>
@@ -449,13 +449,13 @@ Functions
   <a href="#get_trading_venue_instrument_warrants/4-examples" class="hover-link"><span class="icon-link" aria-hidden="true"></span></a>
   Examples
 </h2>
-<pre><code class="makeup elixir"><span class="gp unselectable">iex&gt; </span><span class="nc">LemonMarketsEx.TradingVenues</span><span class="o">.</span><span class="n">get_trading_venue_instrument_warrants</span><span class="p" data-group-id="7628673792-1">(</span><span class="n">client</span><span class="p">,</span><span class="w"> </span><span class="s">&quot;XMUN&quot;</span><span class="p">,</span><span class="w"> </span><span class="s">&quot;US0090661010&quot;</span><span class="p">,</span><span class="w"> </span><span class="ss">limit</span><span class="p">:</span><span class="w"> </span><span class="mi">1</span><span class="p" data-group-id="7628673792-1">)</span><span class="w">
-</span><span class="p" data-group-id="7628673792-2">{</span><span class="ss">:ok</span><span class="p">,</span><span class="w">
- </span><span class="p" data-group-id="7628673792-3">%{</span><span class="w">
-   </span><span class="ss">next</span><span class="p">:</span><span class="w"> </span><span class="p" data-group-id="7628673792-4">#</span><span class="nc" data-group-id="7628673792-4">Function</span><span class="p" data-group-id="7628673792-4">&lt;</span><span class="mf">4.108004987</span><span class="o">/</span><span class="mi">0</span><span class="w"> </span><span class="ow">in</span><span class="w"> </span><span class="nc">LemonMarketsEx.Utils</span><span class="o">.</span><span class="n">pagination_link_to_fun</span><span class="o">/</span><span class="mi">2</span><span class="p" data-group-id="7628673792-4">&gt;</span><span class="p">,</span><span class="w">
+<pre><code class="makeup elixir"><span class="gp unselectable">iex&gt; </span><span class="nc">LemonMarketsEx.TradingVenues</span><span class="o">.</span><span class="n">get_trading_venue_instrument_warrants</span><span class="p" data-group-id="5926319250-1">(</span><span class="n">client</span><span class="p">,</span><span class="w"> </span><span class="s">&quot;XMUN&quot;</span><span class="p">,</span><span class="w"> </span><span class="s">&quot;US0090661010&quot;</span><span class="p">,</span><span class="w"> </span><span class="ss">limit</span><span class="p">:</span><span class="w"> </span><span class="mi">1</span><span class="p" data-group-id="5926319250-1">)</span><span class="w">
+</span><span class="p" data-group-id="5926319250-2">{</span><span class="ss">:ok</span><span class="p">,</span><span class="w">
+ </span><span class="p" data-group-id="5926319250-3">%{</span><span class="w">
+   </span><span class="ss">next</span><span class="p">:</span><span class="w"> </span><span class="p" data-group-id="5926319250-4">#</span><span class="nc" data-group-id="5926319250-4">Function</span><span class="p" data-group-id="5926319250-4">&lt;</span><span class="mf">4.108004987</span><span class="o">/</span><span class="mi">0</span><span class="w"> </span><span class="ow">in</span><span class="w"> </span><span class="nc">LemonMarketsEx.Utils</span><span class="o">.</span><span class="n">pagination_link_to_fun</span><span class="o">/</span><span class="mi">2</span><span class="p" data-group-id="5926319250-4">&gt;</span><span class="p">,</span><span class="w">
    </span><span class="ss">previous</span><span class="p">:</span><span class="w"> </span><span class="no">nil</span><span class="p">,</span><span class="w">
-   </span><span class="ss">results</span><span class="p">:</span><span class="w"> </span><span class="p" data-group-id="7628673792-5">[</span><span class="w">
-     </span><span class="p" data-group-id="7628673792-6">%{</span><span class="w">
+   </span><span class="ss">results</span><span class="p">:</span><span class="w"> </span><span class="p" data-group-id="5926319250-5">[</span><span class="w">
+     </span><span class="p" data-group-id="5926319250-6">%{</span><span class="w">
        </span><span class="ss">currency</span><span class="p">:</span><span class="w"> </span><span class="s">&quot;EUR&quot;</span><span class="p">,</span><span class="w">
        </span><span class="ss">isin</span><span class="p">:</span><span class="w"> </span><span class="s">&quot;DE000TT7PD71&quot;</span><span class="p">,</span><span class="w">
        </span><span class="ss">name</span><span class="p">:</span><span class="w"> </span><span class="s">&quot;HSBC TO. BULL 6Z1&quot;</span><span class="p">,</span><span class="w">
@@ -464,9 +464,9 @@ Functions
        </span><span class="ss">tradable</span><span class="p">:</span><span class="w"> </span><span class="no">false</span><span class="p">,</span><span class="w">
        </span><span class="ss">type</span><span class="p">:</span><span class="w"> </span><span class="s">&quot;warrant&quot;</span><span class="p">,</span><span class="w">
        </span><span class="ss">wkn</span><span class="p">:</span><span class="w"> </span><span class="s">&quot;TT7PD7&quot;</span><span class="w">
-     </span><span class="p" data-group-id="7628673792-6">}</span><span class="w">
-   </span><span class="p" data-group-id="7628673792-5">]</span><span class="w">
- </span><span class="p" data-group-id="7628673792-3">}</span><span class="p" data-group-id="7628673792-2">}</span></code></pre><h3 id="get_trading_venue_instrument_warrants/4-parameters" class="section-heading">
+     </span><span class="p" data-group-id="5926319250-6">}</span><span class="w">
+   </span><span class="p" data-group-id="5926319250-5">]</span><span class="w">
+ </span><span class="p" data-group-id="5926319250-3">}</span><span class="p" data-group-id="5926319250-2">}</span></code></pre><h3 id="get_trading_venue_instrument_warrants/4-parameters" class="section-heading">
   <a href="#get_trading_venue_instrument_warrants/4-parameters" class="hover-link"><span class="icon-link" aria-hidden="true"></span></a>
   Parameters
 </h3>
@@ -512,25 +512,25 @@ Functions
   <a href="#get_trading_venue_instruments/3-examples" class="hover-link"><span class="icon-link" aria-hidden="true"></span></a>
   Examples
 </h2>
-<pre><code class="makeup elixir"><span class="gp unselectable">iex&gt; </span><span class="nc">LemonMarketsEx.TradingVenues</span><span class="o">.</span><span class="n">get_trading_venue_instruments</span><span class="p" data-group-id="0728748017-1">(</span><span class="n">client</span><span class="p">,</span><span class="w"> </span><span class="s">&quot;XMUN&quot;</span><span class="p">,</span><span class="w"> </span><span class="ss">search</span><span class="p">:</span><span class="w"> </span><span class="s">&quot;AIRBNB&quot;</span><span class="p">,</span><span class="w"> </span><span class="ss">type</span><span class="p">:</span><span class="w"> </span><span class="s">&quot;stock&quot;</span><span class="p" data-group-id="0728748017-1">)</span><span class="w">
-</span><span class="p" data-group-id="0728748017-2">{</span><span class="ss">:ok</span><span class="p">,</span><span class="w">
- </span><span class="p" data-group-id="0728748017-3">%{</span><span class="w">
+<pre><code class="makeup elixir"><span class="gp unselectable">iex&gt; </span><span class="nc">LemonMarketsEx.TradingVenues</span><span class="o">.</span><span class="n">get_trading_venue_instruments</span><span class="p" data-group-id="4725960215-1">(</span><span class="n">client</span><span class="p">,</span><span class="w"> </span><span class="s">&quot;XMUN&quot;</span><span class="p">,</span><span class="w"> </span><span class="ss">search</span><span class="p">:</span><span class="w"> </span><span class="s">&quot;AIRBNB&quot;</span><span class="p">,</span><span class="w"> </span><span class="ss">type</span><span class="p">:</span><span class="w"> </span><span class="s">&quot;stock&quot;</span><span class="p" data-group-id="4725960215-1">)</span><span class="w">
+</span><span class="p" data-group-id="4725960215-2">{</span><span class="ss">:ok</span><span class="p">,</span><span class="w">
+ </span><span class="p" data-group-id="4725960215-3">%{</span><span class="w">
    </span><span class="ss">next</span><span class="p">:</span><span class="w"> </span><span class="no">nil</span><span class="p">,</span><span class="w">
    </span><span class="ss">previous</span><span class="p">:</span><span class="w"> </span><span class="no">nil</span><span class="p">,</span><span class="w">
-   </span><span class="ss">results</span><span class="p">:</span><span class="w"> </span><span class="p" data-group-id="0728748017-4">[</span><span class="w">
-     </span><span class="p" data-group-id="0728748017-5">%</span><span class="nc" data-group-id="0728748017-5">LemonMarketsEx.Instrument</span><span class="p" data-group-id="0728748017-5">{</span><span class="w">
+   </span><span class="ss">results</span><span class="p">:</span><span class="w"> </span><span class="p" data-group-id="4725960215-4">[</span><span class="w">
+     </span><span class="p" data-group-id="4725960215-5">%</span><span class="nc" data-group-id="4725960215-5">LemonMarketsEx.Instrument</span><span class="p" data-group-id="4725960215-5">{</span><span class="w">
        </span><span class="ss">currency</span><span class="p">:</span><span class="w"> </span><span class="s">&quot;EUR&quot;</span><span class="p">,</span><span class="w">
        </span><span class="ss">isin</span><span class="p">:</span><span class="w"> </span><span class="s">&quot;US0090661010&quot;</span><span class="p">,</span><span class="w">
        </span><span class="ss">name</span><span class="p">:</span><span class="w"> </span><span class="s">&quot;AIRBNB INC. DL-,01&quot;</span><span class="p">,</span><span class="w">
        </span><span class="ss">symbol</span><span class="p">:</span><span class="w"> </span><span class="s">&quot;6Z1&quot;</span><span class="p">,</span><span class="w">
        </span><span class="ss">title</span><span class="p">:</span><span class="w"> </span><span class="s">&quot;AIRBNB INC.&quot;</span><span class="p">,</span><span class="w">
        </span><span class="ss">tradable</span><span class="p">:</span><span class="w"> </span><span class="no">true</span><span class="p">,</span><span class="w">
-       </span><span class="ss">trading_venues</span><span class="p">:</span><span class="w"> </span><span class="p" data-group-id="0728748017-6">[</span><span class="p" data-group-id="0728748017-6">]</span><span class="p">,</span><span class="w">
+       </span><span class="ss">trading_venues</span><span class="p">:</span><span class="w"> </span><span class="p" data-group-id="4725960215-6">[</span><span class="p" data-group-id="4725960215-6">]</span><span class="p">,</span><span class="w">
        </span><span class="ss">type</span><span class="p">:</span><span class="w"> </span><span class="s">&quot;stock&quot;</span><span class="p">,</span><span class="w">
        </span><span class="ss">wkn</span><span class="p">:</span><span class="w"> </span><span class="s">&quot;A2QG35&quot;</span><span class="w">
-     </span><span class="p" data-group-id="0728748017-5">}</span><span class="w">
-   </span><span class="p" data-group-id="0728748017-4">]</span><span class="w">
- </span><span class="p" data-group-id="0728748017-3">}</span><span class="p" data-group-id="0728748017-2">}</span></code></pre><h4>Parameters</h4><ul><li><code class="inline">client</code> - <a href="LemonMarketsEx.Client.html#t:t/0"><code class="inline">LemonMarketsEx.Client.t/0</code></a></li><li><code class="inline">mic</code> - The trading venue abbreviation. Currently, only <code class="inline">&quot;XMUN&quot;</code> is supported.</li><li><code class="inline">params</code> - A keyword list of parameters.<ul><li><code class="inline">tradable</code> (optional) - If true, only tradable instruments are returned.</li><li><code class="inline">search</code> (optional) - Search for Name/Title, ISIN, WKN or symbol</li><li><code class="inline">currency</code> (optional) - 3 letter abbreviation, e.g. <code class="inline">&quot;EUR&quot;</code> or <code class="inline">&quot;USD&quot;</code></li><li><code class="inline">type</code> (optional) - <code class="inline">&quot;stock&quot;</code>, <code class="inline">&quot;bond&quot;</code>, <code class="inline">&quot;fund&quot;</code>, <code class="inline">&quot;ETF&quot;</code>, or <code class="inline">&quot;warrant&quot;</code></li><li><code class="inline">limit</code> (optional) - The maximum number of instruments to return.</li><li><code class="inline">offset</code> (optional) - The offset of the first instrument to return.</li></ul></li></ul>
+     </span><span class="p" data-group-id="4725960215-5">}</span><span class="w">
+   </span><span class="p" data-group-id="4725960215-4">]</span><span class="w">
+ </span><span class="p" data-group-id="4725960215-3">}</span><span class="p" data-group-id="4725960215-2">}</span></code></pre><h4>Parameters</h4><ul><li><code class="inline">client</code> - <a href="LemonMarketsEx.Client.html#t:t/0"><code class="inline">LemonMarketsEx.Client.t/0</code></a></li><li><code class="inline">mic</code> - The trading venue abbreviation. Currently, only <code class="inline">&quot;XMUN&quot;</code> is supported.</li><li><code class="inline">params</code> - A keyword list of parameters.<ul><li><code class="inline">tradable</code> (optional) - If true, only tradable instruments are returned.</li><li><code class="inline">search</code> (optional) - Search for Name/Title, ISIN, WKN or symbol</li><li><code class="inline">currency</code> (optional) - 3 letter abbreviation, e.g. <code class="inline">&quot;EUR&quot;</code> or <code class="inline">&quot;USD&quot;</code></li><li><code class="inline">type</code> (optional) - <code class="inline">&quot;stock&quot;</code>, <code class="inline">&quot;bond&quot;</code>, <code class="inline">&quot;fund&quot;</code>, <code class="inline">&quot;ETF&quot;</code>, or <code class="inline">&quot;warrant&quot;</code></li><li><code class="inline">limit</code> (optional) - The maximum number of instruments to return.</li><li><code class="inline">offset</code> (optional) - The offset of the first instrument to return.</li></ul></li></ul>
   </section>
 </section>
 <section class="detail" id="get_trading_venues/1">
@@ -570,20 +570,20 @@ Functions
   <a href="#get_trading_venues/1-examples" class="hover-link"><span class="icon-link" aria-hidden="true"></span></a>
   Examples
 </h2>
-<pre><code class="makeup elixir"><span class="gp unselectable">iex&gt; </span><span class="nc">LemonMarketsEx.TradingVenues</span><span class="o">.</span><span class="n">get_trading_venues</span><span class="p" data-group-id="7764429461-1">(</span><span class="n">client</span><span class="p" data-group-id="7764429461-1">)</span><span class="w">
-</span><span class="p" data-group-id="7764429461-2">{</span><span class="ss">:ok</span><span class="p">,</span><span class="w">
- </span><span class="p" data-group-id="7764429461-3">%{</span><span class="w">
+<pre><code class="makeup elixir"><span class="gp unselectable">iex&gt; </span><span class="nc">LemonMarketsEx.TradingVenues</span><span class="o">.</span><span class="n">get_trading_venues</span><span class="p" data-group-id="9988600606-1">(</span><span class="n">client</span><span class="p" data-group-id="9988600606-1">)</span><span class="w">
+</span><span class="p" data-group-id="9988600606-2">{</span><span class="ss">:ok</span><span class="p">,</span><span class="w">
+ </span><span class="p" data-group-id="9988600606-3">%{</span><span class="w">
    </span><span class="ss">next</span><span class="p">:</span><span class="w"> </span><span class="no">nil</span><span class="p">,</span><span class="w">
    </span><span class="ss">previous</span><span class="p">:</span><span class="w"> </span><span class="no">nil</span><span class="p">,</span><span class="w">
-   </span><span class="ss">results</span><span class="p">:</span><span class="w"> </span><span class="p" data-group-id="7764429461-4">[</span><span class="w">
-     </span><span class="p" data-group-id="7764429461-5">%</span><span class="nc" data-group-id="7764429461-5">LemonMarketsEx.TradingVenue</span><span class="p" data-group-id="7764429461-5">{</span><span class="w">
+   </span><span class="ss">results</span><span class="p">:</span><span class="w"> </span><span class="p" data-group-id="9988600606-4">[</span><span class="w">
+     </span><span class="p" data-group-id="9988600606-5">%</span><span class="nc" data-group-id="9988600606-5">LemonMarketsEx.TradingVenue</span><span class="p" data-group-id="9988600606-5">{</span><span class="w">
        </span><span class="ss">is_open</span><span class="p">:</span><span class="w"> </span><span class="no">false</span><span class="p">,</span><span class="w">
        </span><span class="ss">mic</span><span class="p">:</span><span class="w"> </span><span class="s">&quot;XMUN&quot;</span><span class="p">,</span><span class="w">
        </span><span class="ss">name</span><span class="p">:</span><span class="w"> </span><span class="s">&quot;Börse München - Gettex&quot;</span><span class="p">,</span><span class="w">
        </span><span class="ss">title</span><span class="p">:</span><span class="w"> </span><span class="s">&quot;Gettex&quot;</span><span class="w">
-     </span><span class="p" data-group-id="7764429461-5">}</span><span class="w">
-   </span><span class="p" data-group-id="7764429461-4">]</span><span class="w">
- </span><span class="p" data-group-id="7764429461-3">}</span><span class="p" data-group-id="7764429461-2">}</span></code></pre><h3 id="get_trading_venues/1-parameters" class="section-heading">
+     </span><span class="p" data-group-id="9988600606-5">}</span><span class="w">
+   </span><span class="p" data-group-id="9988600606-4">]</span><span class="w">
+ </span><span class="p" data-group-id="9988600606-3">}</span><span class="p" data-group-id="9988600606-2">}</span></code></pre><h3 id="get_trading_venues/1-parameters" class="section-heading">
   <a href="#get_trading_venues/1-parameters" class="hover-link"><span class="icon-link" aria-hidden="true"></span></a>
   Parameters
 </h3>
