@@ -4,7 +4,7 @@ defmodule LemonMarketsEx do
 
   This module provides all requests to the [lemon.markets](https://lemon.markets) API.
 
-  Please check the [README](/doc/readme.html#content) for more information and refer to the Modules `LemonMarketsEx.Authentication`, `LemonMarketsEx.Data`, `LemonMarketsEx.Orders`, `LemonMarketsEx.Spaces` and `LemonMarketsEx.TradingVenues` for more details and examples.
+  Please check the [README](https://daskycodes.github.io/lemon.markets_ex/readme.html) for more information and refer to the Modules `LemonMarketsEx.Authentication`, `LemonMarketsEx.Data`, `LemonMarketsEx.Orders`, `LemonMarketsEx.Spaces` and `LemonMarketsEx.TradingVenues` for more details and examples.
   """
 
   alias LemonMarketsEx.{
@@ -24,6 +24,8 @@ defmodule LemonMarketsEx do
   @doc section: :spaces
   defdelegate get_space(client, space_uuid), to: Spaces
   @doc section: :spaces
+  @spec get_space_state(LemonMarketsEx.Client.t(), binary) ::
+          {:error, LemonMarketsEx.Error.t()} | {:ok, map}
   defdelegate get_space_state(client, space_uuid), to: Spaces
   @doc section: :spaces
   defdelegate get_portfolio(client, params \\ []), to: Spaces
