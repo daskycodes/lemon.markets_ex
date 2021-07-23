@@ -1,0 +1,16 @@
+{
+  "isin": "US19260Q1076",
+  "wkn": "A2QP7J",
+  "name": "COINBASE GLB.CL.A -,00001",
+  "title": "COINBASE GLOBAL INC.",
+  "symbol": "1QZ",
+  "type": "stock",
+  "currency": "EUR",
+  "tradable": true,
+  "trading_venues": [{ "title": "Gettex", "mic": "XMUN" }],
+  "unit": 1,
+  "last_updated": "2021-07-09T05:41:35.800227",
+  "reference": { "name": "stock" },
+  "market": "MUND",
+  "interest_rate": 0.0
+}

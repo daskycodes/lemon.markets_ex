@@ -1,0 +1,16 @@
+{
+  "instrument": { "title": "AIRBNB INC.", "isin": "US0090661010" },
+  "valid_until": 1626869086.0,
+  "side": "buy",
+  "quantity": 1,
+  "stop_price": "100.0000",
+  "limit_price": "120.0000",
+  "uuid": "4c4cc6a3-1692-4487-99fb-198b8e2d490a",
+  "status": "expired",
+  "average_price": "0.0000",
+  "created_at": 1626865486.688425,
+  "type": "stop_limit",
+  "processed_at": null,
+  "processed_quantity": 0,
+  "trading_venue_mic": "XMUN"
+}
