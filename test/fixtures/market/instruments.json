@@ -1,0 +1,27 @@
+{
+  "results": [
+    {
+      "isin": "CA82509L1076",
+      "wkn": "A14TJP",
+      "name": "SHOPIFY A SUB.VTG",
+      "title": "SHOPIFY INC.",
+      "symbol": "307",
+      "type": "stock",
+      "venues": [
+        {
+          "name": "Börse München - Gettex",
+          "title": "Gettex",
+          "mic": "XMUN",
+          "is_open": true,
+          "tradable": true,
+          "currency": "EUR"
+        }
+      ]
+    }
+  ],
+  "previous": null,
+  "next": null,
+  "total": 1,
+  "page": 1,
+  "pages": 1
+}

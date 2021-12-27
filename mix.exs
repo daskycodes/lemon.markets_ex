@@ -4,48 +4,60 @@ defmodule LemonMarketsEx.MixProject do
   def project do
     [
       app: :lemon_markets_ex,
-      version: "0.1.0",
+      version: "0.2.0",
       elixir: "~> 1.12",
       start_permanent: Mix.env() == :prod,
-      description: description(),
-      package: package(),
       deps: deps(),
+      package: package(),
+      description: "Elixir client for the lemon.markets API.",
       name: "LemonMarketsEx",
       source_url: "https://github.com/daskycodes/lemon.markets_ex",
-
-      # Docs
       docs: [
         extras: ["README.md"],
         api_reference: false,
         main: "readme",
         groups_for_modules: [
-          Collections: [
-            LemonMarketsEx.Authentication,
-            LemonMarketsEx.Data,
-            LemonMarketsEx.Orders,
-            LemonMarketsEx.Spaces,
-            LemonMarketsEx.TradingVenues
+          APIs: [
+            LemonMarketsEx.Trading,
+            LemonMarketsEx.Market
           ],
-          "Data types": [
-            LemonMarketsEx.Client,
-            LemonMarketsEx.Error,
-            LemonMarketsEx.Instrument,
+          "Data Types": [
             LemonMarketsEx.Order,
             LemonMarketsEx.PortfolioItem,
-            LemonMarketsEx.PortfolioTransaction,
+            LemonMarketsEx.Bankstatement,
+            LemonMarketsEx.Document,
+            LemonMarketsEx.User,
             LemonMarketsEx.Space,
-            LemonMarketsEx.State,
-            LemonMarketsEx.Token,
-            LemonMarketsEx.TradingVenue,
-            LemonMarketsEx.Transaction
+            LemonMarketsEx.Order,
+            LemonMarketsEx.Account,
+            LemonMarketsEx.RegulatoryInformation,
+            LemonMarketsEx.Withdrawal,
+            LemonMarketsEx.Venue,
+            LemonMarketsEx.Instrument,
+            LemonMarketsEx.Trade,
+            LemonMarketsEx.Quote,
+            LemonMarketsEx.Ohlc
+          ],
+          "Error Types": [
+            LemonMarketsEx.Trading.Error,
+            LemonMarketsEx.Market.Error
+          ],
+          "HTTP Clients": [
+            LemonMarketsEx.Trading.Client,
+            LemonMarketsEx.Market.Client
           ]
         ],
         groups_for_functions: [
-          Authentication: &(&1[:section] == :authentication),
-          Spaces: &(&1[:section] == :spaces),
-          Orders: &(&1[:section] == :orders),
-          TradingVenues: &(&1[:section] == :trading_venues),
-          Data: &(&1[:section] == :data)
+          Account: &(&1[:tags] == [:account]),
+          Order: &(&1[:tags] == [:order]),
+          Portfolio: &(&1[:tags] == [:portfolio]),
+          Space: &(&1[:tags] == [:space]),
+          User: &(&1[:tags] == [:user]),
+          Venues: &(&1[:tags] == [:venues]),
+          Instruments: &(&1[:tags] == [:instruments]),
+          Trades: &(&1[:tags] == [:trades]),
+          Quotes: &(&1[:tags] == [:quotes]),
+          OHLC: &(&1[:tags] == [:ohlc])
         ]
       ]
     ]
@@ -54,8 +66,7 @@ defmodule LemonMarketsEx.MixProject do
   # Run "mix help compile.app" to learn about applications.
   def application do
     [
-      extra_applications: [:logger],
-      mod: {LemonMarketsEx.Application, []}
+      extra_applications: [:logger]
     ]
   end
 
@@ -68,12 +79,6 @@ defmodule LemonMarketsEx.MixProject do
       {:exconstructor, "~> 1.2.3"},
       {:ex_doc, "~> 0.24", only: :dev, runtime: false}
     ]
-  end
-
-  defp description do
-    """
-    Elixir client for the lemon.markets API.
-    """
   end
 
   defp package do

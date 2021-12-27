@@ -1,0 +1,14 @@
+{
+  "time": "2021-12-27T17:11:06.455+00:00",
+  "mode": "paper",
+  "status": "ok",
+  "results": {
+    "id": "string",
+    "name": "string",
+    "created_at": "2021-12-27T17:14:15.315Z",
+    "category": "string",
+    "link": "string",
+    "viewed_first_at": "2021-12-27T17:14:15.315Z",
+    "viewed_last_at": "2021-12-27T17:14:15.315Z"
+  }
+}

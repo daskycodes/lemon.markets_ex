@@ -1,0 +1,16 @@
+{
+  "results": [
+    {
+      "isin": "US19260Q1076",
+      "p": 248.0,
+      "v": 3,
+      "t": "2021-12-27T17:56:43.834+00:00",
+      "mic": "XMUN"
+    }
+  ],
+  "previous": null,
+  "next": null,
+  "total": 1,
+  "page": 1,
+  "pages": 1
+}

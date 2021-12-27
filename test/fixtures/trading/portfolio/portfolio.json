@@ -1,0 +1,30 @@
+{
+  "time": "2021-12-27T17:34:50.989+00:00",
+  "status": "ok",
+  "mode": "paper",
+  "results": [
+    {
+      "space_id": "sp_1337",
+      "isin": "US19260Q1076",
+      "isin_title": "COINBASE GLOBAL INC.",
+      "quantity": 1,
+      "buy_quantity": 1,
+      "sell_quantity": 0,
+      "buy_price_avg": 2475000,
+      "buy_price_min": 2475000,
+      "buy_price_max": 2475000,
+      "buy_price_avg_historical": 2475000,
+      "sell_price_min": null,
+      "sell_price_max": null,
+      "sell_price_avg_historical": null,
+      "orders_total": 1,
+      "sell_orders_total": 0,
+      "buy_orders_total": 1
+    }
+  ],
+  "previous": null,
+  "next": null,
+  "total": 1,
+  "page": 1,
+  "pages": 1
+}
