@@ -225,7 +225,7 @@ defmodule LemonMarketsEx.Trading do
   end
 
   @doc """
-  Retrieves a single from the lemon.markets Trading API.
+  Retrieves a single document from the lemon.markets Trading API.
 
   See: https://docs.lemon.markets/trading/account#get-documents
 
