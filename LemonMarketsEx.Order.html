@@ -4,17 +4,17 @@
     <meta charset="utf-8">
     <meta http-equiv="x-ua-compatible" content="ie=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="generator" content="ExDoc v0.25.0">
-    <meta name="project" content="LemonMarketsEx v0.1.0">
+    <meta name="generator" content="ExDoc v0.26.0">
+    <meta name="project" content="LemonMarketsEx v0.2.0">
 
-    <title>LemonMarketsEx.Order — LemonMarketsEx v0.1.0</title>
-    <link rel="stylesheet" href="dist/elixir-a172fe91e725dcb259e2.css" />
+    <title>LemonMarketsEx.Order — LemonMarketsEx v0.2.0</title>
+    <link rel="stylesheet" href="dist/elixir-b5076885a795c65e636c.css" />
 
-    <script src="dist/sidebar_items-905c31c8e5.js"></script>
+    <script src="dist/sidebar_items-42d81a20c9.js"></script>
 
       <script src="docs_config.js"></script>
 
-    <script async src="dist/app-f27ff079945e43879c46.js"></script>
+    <script async src="dist/app-a404e1e870b77c874f9e.js"></script>
 
 
   </head>
@@ -54,11 +54,11 @@
 
   <div class="sidebar-header">
     <div class="sidebar-projectDetails">
-      <a href="readme.html" class="sidebar-projectName">
+      <a href="readme.html" class="sidebar-projectName" translate="no">
 LemonMarketsEx
       </a>
-      <strong class="sidebar-projectVersion">
-        v0.1.0
+      <strong class="sidebar-projectVersion" translate="no">
+        v0.2.0
       </strong>
     </div>
 
@@ -79,38 +79,45 @@ LemonMarketsEx
   <div class="content-outer">
     <div id="content" class="content-inner">
 
-      <h1>
-LemonMarketsEx.Order <small class="app-vsn">(LemonMarketsEx v0.1.0)</small>
+<h1>
+  <span translate="no">LemonMarketsEx.Order</span> 
+  <small class="app-vsn" translate="no">(LemonMarketsEx v0.2.0)</small>
 
-          <a href="https://github.com/daskycodes/lemon.markets_ex/blob/master/lib/lemon_markets_ex/orders/order.ex#L1" title="View Source" class="view-source" rel="help">
-            <span class="icon-code" aria-hidden="true"></span>
-            <span class="sr-only">View Source</span>
-          </a>
-
-      </h1>
-
+    <a href="https://github.com/daskycodes/lemon.markets_ex/blob/main/lib/trading/orders/order.ex#L1" title="View Source" class="view-source" rel="help">
+      <span class="icon-code" aria-hidden="true"></span>
+      <span class="sr-only">View Source</span>
+    </a>
 
 
-        <section id="summary" class="details-list">
-          <h1 class="section-heading">
-            <a class="hover-link" href="#summary">
-              <span class="icon-link" aria-hidden="true"></span>
-              <span class="sr-only">Link to this section</span>
-            </a>
-            Summary
-          </h1>
+</h1>
+
+
+  <section id="moduledoc">
+<p>See: <a href="https://docs.lemon.markets/trading/orders">https://docs.lemon.markets/trading/orders</a></p>
+  </section>
+
+
+  <section id="summary" class="details-list">
+    <h1 class="section-heading">
+      <a class="hover-link" href="#summary">
+        <span class="icon-link" aria-hidden="true"></span>
+        <span class="sr-only">Link to this section</span>
+      </a>
+      Summary
+    </h1>
 
   <div class="summary-types summary">
     <h2>
       <a href="#types">Types</a>
     </h2>
-<div class="summary-row">
-  <div class="summary-signature">
-    <a href="#t:t/0">t()</a>
 
-  </div>
+      <div class="summary-row">
+        <div class="summary-signature">
+          <a href="#t:t/0" translate="no">t()</a>
 
-</div>
+        </div>
+
+      </div>
 
   </div>
 
@@ -118,42 +125,45 @@ LemonMarketsEx.Order <small class="app-vsn">(LemonMarketsEx v0.1.0)</small>
     <h2>
       <a href="#functions">Functions</a>
     </h2>
-<div class="summary-row">
-  <div class="summary-signature">
-    <a href="#from_body/1">from_body(map)</a>
+
+      <div class="summary-row">
+        <div class="summary-signature">
+          <a href="#create/1" translate="no">create(map)</a>
+
+        </div>
+
+      </div>
+
+      <div class="summary-row">
+        <div class="summary-signature">
+          <a href="#from_response_body/1" translate="no">from_response_body(body)</a>
+
+        </div>
+
+      </div>
+
+      <div class="summary-row">
+        <div class="summary-signature">
+          <a href="#new/2" translate="no">new(map_or_kwlist, opts \\ [])</a>
+
+        </div>
+
+      </div>
 
   </div>
 
-</div>
-<div class="summary-row">
-  <div class="summary-signature">
-    <a href="#from_create/1">from_create(map)</a>
-
-  </div>
-
-</div>
-<div class="summary-row">
-  <div class="summary-signature">
-    <a href="#new/2">new(map_or_kwlist, opts \\ [])</a>
-
-  </div>
-
-</div>
-
-  </div>
-
-        </section>
+  </section>
 
 
-        <section id="types" class="details-list">
-          <h1 class="section-heading">
-            <a class="hover-link" href="#types">
-              <span class="icon-link" aria-hidden="true"></span>
-              <span class="sr-only">Link to this section</span>
-            </a>
+  <section id="types" class="details-list">
+    <h1 class="section-heading">
+      <a class="hover-link" href="#types">
+        <span class="icon-link" aria-hidden="true"></span>
+        <span class="sr-only">Link to this section</span>
+      </a>
 Types
-          </h1>
-          <div class="types-list">
+    </h1>
+    <div class="types-list">
 <section class="detail" id="t:t/0">
 
   <div class="detail-header">
@@ -161,9 +171,9 @@ Types
       <span class="icon-link" aria-hidden="true"></span>
       <span class="sr-only">Link to this type</span>
     </a>
-    <h1 class="signature">t()</h1>
+    <h1 class="signature" translate="no">t()</h1>
 
-      <a href="https://github.com/daskycodes/lemon.markets_ex/blob/master/lib/lemon_markets_ex/orders/order.ex#L23" class="view-source" rel="help" title="View Source">
+      <a href="https://github.com/daskycodes/lemon.markets_ex/blob/main/lib/trading/orders/order.ex#L35" class="view-source" rel="help" title="View Source">
        <span class="icon-code" aria-hidden="true"></span>
        <span class="sr-only">View Source</span>
      </a>
@@ -176,21 +186,33 @@ Types
       <h2>Specs</h2>
       <div class="specs">
 
-          <pre>t() :: %LemonMarketsEx.Order{
-  average_price: <a href="https://hexdocs.pm/elixir/String.html#t:t/0">String.t</a>(),
-  created_at: <a href="https://hexdocs.pm/elixir/typespecs.html#basic-types">float</a>(),
-  instrument: %{isin: <a href="https://hexdocs.pm/elixir/String.html#t:t/0">String.t</a>(), title: <a href="https://hexdocs.pm/elixir/String.html#t:t/0">String.t</a>() | nil},
-  limit_price: <a href="https://hexdocs.pm/elixir/String.html#t:t/0">String.t</a>(),
-  processed_at: <a href="https://hexdocs.pm/elixir/typespecs.html#basic-types">float</a>(),
-  processed_quantity: <a href="https://hexdocs.pm/elixir/typespecs.html#basic-types">integer</a>(),
-  quantity: <a href="https://hexdocs.pm/elixir/typespecs.html#basic-types">pos_integer</a>(),
+          <pre translate="no">t() :: %LemonMarketsEx.Order{
+  activated_at: <a href="https://hexdocs.pm/elixir/String.html#t:t/0">String.t</a>() | nil,
+  chargable_at: <a href="https://hexdocs.pm/elixir/String.html#t:t/0">String.t</a>(),
+  charge: <a href="https://hexdocs.pm/elixir/typespecs.html#basic-types">integer</a>(),
+  created_at: <a href="https://hexdocs.pm/elixir/String.html#t:t/0">String.t</a>(),
+  estimated_price: <a href="https://hexdocs.pm/elixir/typespecs.html#basic-types">integer</a>(),
+  executed_at: <a href="https://hexdocs.pm/elixir/String.html#t:t/0">String.t</a>() | nil,
+  executed_price: <a href="https://hexdocs.pm/elixir/typespecs.html#basic-types">integer</a>(),
+  executed_quantity: <a href="https://hexdocs.pm/elixir/typespecs.html#basic-types">integer</a>(),
+  expires_at: <a href="https://hexdocs.pm/elixir/String.html#t:t/0">String.t</a>(),
+  id: <a href="https://hexdocs.pm/elixir/String.html#t:t/0">String.t</a>(),
+  idempotency: <a href="https://hexdocs.pm/elixir/String.html#t:t/0">String.t</a>(),
+  isin: <a href="https://hexdocs.pm/elixir/String.html#t:t/0">String.t</a>(),
+  isin_title: <a href="https://hexdocs.pm/elixir/String.html#t:t/0">String.t</a>(),
+  key_activation_id: Stringt.t(),
+  key_creation_id: <a href="https://hexdocs.pm/elixir/String.html#t:t/0">String.t</a>(),
+  limit_price: <a href="https://hexdocs.pm/elixir/typespecs.html#basic-types">integer</a>(),
+  notes: <a href="https://hexdocs.pm/elixir/String.html#t:t/0">String.t</a>(),
+  quantity: <a href="https://hexdocs.pm/elixir/typespecs.html#basic-types">integer</a>(),
+  regulatory_information: <a href="LemonMarketsEx.RegulatoryInformation.html#t:t/0">LemonMarketsEx.RegulatoryInformation.t</a>(),
+  rejected_at: <a href="https://hexdocs.pm/elixir/String.html#t:t/0">String.t</a>() | nil,
   side: <a href="https://hexdocs.pm/elixir/String.html#t:t/0">String.t</a>(),
+  space_id: <a href="https://hexdocs.pm/elixir/String.html#t:t/0">String.t</a>(),
   status: <a href="https://hexdocs.pm/elixir/String.html#t:t/0">String.t</a>(),
-  stop_price: <a href="https://hexdocs.pm/elixir/String.html#t:t/0">String.t</a>(),
-  trading_venue_mic: <a href="https://hexdocs.pm/elixir/String.html#t:t/0">String.t</a>(),
+  stop_price: <a href="https://hexdocs.pm/elixir/typespecs.html#basic-types">integer</a>(),
   type: <a href="https://hexdocs.pm/elixir/String.html#t:t/0">String.t</a>(),
-  uuid: <a href="https://hexdocs.pm/elixir/String.html#t:t/0">String.t</a>(),
-  valid_until: <a href="https://hexdocs.pm/elixir/typespecs.html#basic-types">float</a>()
+  venue: <a href="https://hexdocs.pm/elixir/String.html#t:t/0">String.t</a>()
 }</pre>
 
       </div>
@@ -199,50 +221,28 @@ Types
   </section>
 </section>
 
-          </div>
-        </section>
-
-        <section id="functions" class="details-list">
-          <h1 class="section-heading">
-            <a class="hover-link" href="#functions">
-              <span class="icon-link" aria-hidden="true"></span>
-              <span class="sr-only">Link to this section</span>
-            </a>
-Functions
-          </h1>
-          <div class="functions-list">
-<section class="detail" id="from_body/1">
-
-  <div class="detail-header">
-    <a href="#from_body/1" class="detail-link" title="Link to this function">
-      <span class="icon-link" aria-hidden="true"></span>
-      <span class="sr-only">Link to this function</span>
-    </a>
-    <h1 class="signature">from_body(map)</h1>
-
-      <a href="https://github.com/daskycodes/lemon.markets_ex/blob/master/lib/lemon_markets_ex/orders/order.ex#L43" class="view-source" rel="help" title="View Source">
-       <span class="icon-code" aria-hidden="true"></span>
-       <span class="sr-only">View Source</span>
-     </a>
-
-
-  </div>
-
-  <section class="docstring">
-
-
+    </div>
   </section>
-</section>
-<section class="detail" id="from_create/1">
+
+  <section id="functions" class="details-list">
+    <h1 class="section-heading">
+      <a class="hover-link" href="#functions">
+        <span class="icon-link" aria-hidden="true"></span>
+        <span class="sr-only">Link to this section</span>
+      </a>
+Functions
+    </h1>
+    <div class="functions-list">
+<section class="detail" id="create/1">
 
   <div class="detail-header">
-    <a href="#from_create/1" class="detail-link" title="Link to this function">
+    <a href="#create/1" class="detail-link" title="Link to this function">
       <span class="icon-link" aria-hidden="true"></span>
       <span class="sr-only">Link to this function</span>
     </a>
-    <h1 class="signature">from_create(map)</h1>
+    <h1 class="signature" translate="no">create(map)</h1>
 
-      <a href="https://github.com/daskycodes/lemon.markets_ex/blob/master/lib/lemon_markets_ex/orders/order.ex#L49" class="view-source" rel="help" title="View Source">
+      <a href="https://github.com/daskycodes/lemon.markets_ex/blob/main/lib/trading/orders/order.ex#L109" class="view-source" rel="help" title="View Source">
        <span class="icon-code" aria-hidden="true"></span>
        <span class="sr-only">View Source</span>
      </a>
@@ -255,7 +255,46 @@ Functions
       <h2>Specs</h2>
       <div class="specs">
 
-          <pre>from_create(<a href="https://hexdocs.pm/elixir/typespecs.html#basic-types">map</a>()) :: <a href="#t:t/0">t</a>()</pre>
+          <pre translate="no">create(<a href="https://hexdocs.pm/elixir/typespecs.html#basic-types">map</a>()) :: <a href="#t:t/0">t</a>()</pre>
+
+      </div>
+
+
+  </section>
+</section>
+<section class="detail" id="from_response_body/1">
+
+  <div class="detail-header">
+    <a href="#from_response_body/1" class="detail-link" title="Link to this function">
+      <span class="icon-link" aria-hidden="true"></span>
+      <span class="sr-only">Link to this function</span>
+    </a>
+    <h1 class="signature" translate="no">from_response_body(body)</h1>
+
+      <a href="https://github.com/daskycodes/lemon.markets_ex/blob/main/lib/trading/orders/order.ex#L77" class="view-source" rel="help" title="View Source">
+       <span class="icon-code" aria-hidden="true"></span>
+       <span class="sr-only">View Source</span>
+     </a>
+
+
+  </div>
+
+  <section class="docstring">
+
+      <h2>Specs</h2>
+      <div class="specs">
+
+          <pre translate="no">from_response_body(<a href="https://hexdocs.pm/elixir/typespecs.html#basic-types">map</a>()) :: %{
+  :mode =&gt; <a href="https://hexdocs.pm/elixir/String.html#t:t/0">String.t</a>(),
+  :status =&gt; <a href="https://hexdocs.pm/elixir/String.html#t:t/0">String.t</a>(),
+  :time =&gt; <a href="https://hexdocs.pm/elixir/String.html#t:t/0">String.t</a>(),
+  optional(:next) =&gt; <a href="https://hexdocs.pm/elixir/String.html#t:t/0">String.t</a>() | nil,
+  optional(:page) =&gt; <a href="https://hexdocs.pm/elixir/typespecs.html#basic-types">integer</a>(),
+  optional(:pages) =&gt; <a href="https://hexdocs.pm/elixir/typespecs.html#basic-types">integer</a>(),
+  optional(:previous) =&gt; <a href="https://hexdocs.pm/elixir/String.html#t:t/0">String.t</a>() | nil,
+  optional(:results) =&gt; [<a href="#t:t/0">t</a>(), ...] | <a href="#t:t/0">t</a>(),
+  optional(:total) =&gt; <a href="https://hexdocs.pm/elixir/typespecs.html#basic-types">integer</a>()
+}</pre>
 
       </div>
 
@@ -271,9 +310,9 @@ Functions
       <span class="icon-link" aria-hidden="true"></span>
       <span class="sr-only">Link to this function</span>
     </a>
-    <h1 class="signature">new(map_or_kwlist, opts \\ [])</h1>
+    <h1 class="signature" translate="no">new(map_or_kwlist, opts \\ [])</h1>
 
-      <a href="https://github.com/daskycodes/lemon.markets_ex/blob/master/lib/lemon_markets_ex/orders/order.ex#L19" class="view-source" rel="help" title="View Source">
+      <a href="https://github.com/daskycodes/lemon.markets_ex/blob/main/lib/trading/orders/order.ex#L64" class="view-source" rel="help" title="View Source">
        <span class="icon-code" aria-hidden="true"></span>
        <span class="sr-only">View Source</span>
      </a>
@@ -286,21 +325,33 @@ Functions
       <h2>Specs</h2>
       <div class="specs">
 
-          <pre>new(<a href="https://hexdocs.pm/exconstructor/1.2.3/ExConstructor.html#t:map_or_kwlist/0">ExConstructor.map_or_kwlist</a>(), <a href="https://hexdocs.pm/elixir/Keyword.html#t:t/0">Keyword.t</a>()) :: %LemonMarketsEx.Order{
-  average_price: <a href="https://hexdocs.pm/elixir/typespecs.html#built-in-types">term</a>(),
+          <pre translate="no">new(<a href="https://hexdocs.pm/exconstructor/1.2.5/ExConstructor.html#t:map_or_kwlist/0">ExConstructor.map_or_kwlist</a>(), <a href="https://hexdocs.pm/elixir/Keyword.html#t:t/0">Keyword.t</a>()) :: %LemonMarketsEx.Order{
+  activated_at: <a href="https://hexdocs.pm/elixir/typespecs.html#built-in-types">term</a>(),
+  chargable_at: <a href="https://hexdocs.pm/elixir/typespecs.html#built-in-types">term</a>(),
+  charge: <a href="https://hexdocs.pm/elixir/typespecs.html#built-in-types">term</a>(),
   created_at: <a href="https://hexdocs.pm/elixir/typespecs.html#built-in-types">term</a>(),
-  instrument: <a href="https://hexdocs.pm/elixir/typespecs.html#built-in-types">term</a>(),
+  estimated_price: <a href="https://hexdocs.pm/elixir/typespecs.html#built-in-types">term</a>(),
+  executed_at: <a href="https://hexdocs.pm/elixir/typespecs.html#built-in-types">term</a>(),
+  executed_price: <a href="https://hexdocs.pm/elixir/typespecs.html#built-in-types">term</a>(),
+  executed_quantity: <a href="https://hexdocs.pm/elixir/typespecs.html#built-in-types">term</a>(),
+  expires_at: <a href="https://hexdocs.pm/elixir/typespecs.html#built-in-types">term</a>(),
+  id: <a href="https://hexdocs.pm/elixir/typespecs.html#built-in-types">term</a>(),
+  idempotency: <a href="https://hexdocs.pm/elixir/typespecs.html#built-in-types">term</a>(),
+  isin: <a href="https://hexdocs.pm/elixir/typespecs.html#built-in-types">term</a>(),
+  isin_title: <a href="https://hexdocs.pm/elixir/typespecs.html#built-in-types">term</a>(),
+  key_activation_id: <a href="https://hexdocs.pm/elixir/typespecs.html#built-in-types">term</a>(),
+  key_creation_id: <a href="https://hexdocs.pm/elixir/typespecs.html#built-in-types">term</a>(),
   limit_price: <a href="https://hexdocs.pm/elixir/typespecs.html#built-in-types">term</a>(),
-  processed_at: <a href="https://hexdocs.pm/elixir/typespecs.html#built-in-types">term</a>(),
-  processed_quantity: <a href="https://hexdocs.pm/elixir/typespecs.html#built-in-types">term</a>(),
+  notes: <a href="https://hexdocs.pm/elixir/typespecs.html#built-in-types">term</a>(),
   quantity: <a href="https://hexdocs.pm/elixir/typespecs.html#built-in-types">term</a>(),
+  regulatory_information: <a href="https://hexdocs.pm/elixir/typespecs.html#built-in-types">term</a>(),
+  rejected_at: <a href="https://hexdocs.pm/elixir/typespecs.html#built-in-types">term</a>(),
   side: <a href="https://hexdocs.pm/elixir/typespecs.html#built-in-types">term</a>(),
+  space_id: <a href="https://hexdocs.pm/elixir/typespecs.html#built-in-types">term</a>(),
   status: <a href="https://hexdocs.pm/elixir/typespecs.html#built-in-types">term</a>(),
   stop_price: <a href="https://hexdocs.pm/elixir/typespecs.html#built-in-types">term</a>(),
-  trading_venue_mic: <a href="https://hexdocs.pm/elixir/typespecs.html#built-in-types">term</a>(),
   type: <a href="https://hexdocs.pm/elixir/typespecs.html#built-in-types">term</a>(),
-  uuid: <a href="https://hexdocs.pm/elixir/typespecs.html#built-in-types">term</a>(),
-  valid_until: <a href="https://hexdocs.pm/elixir/typespecs.html#built-in-types">term</a>()
+  venue: <a href="https://hexdocs.pm/elixir/typespecs.html#built-in-types">term</a>()
 }</pre>
 
       </div>
@@ -309,19 +360,29 @@ Functions
   </section>
 </section>
 
-          </div>
-        </section>
+    </div>
+  </section>
 
       <footer class="footer">
+
+        <p>
+          Find it on Hex:
+          <a href="https://hex.pm/packages/lemon_markets_ex/0.2.0" class="line footer-hex-package">Package</a>
+          <a href="https://preview.hex.pm/preview/lemon_markets_ex/0.2.0" class="line">Preview</a>
+
+            <a href="https://preview.hex.pm/preview/lemon_markets_ex/0.2.0/show/lib/trading/orders/order.ex">(current file)</a>
+
+        </p>
+
         <p>
           <span class="line">
             Built using
-            <a href="https://github.com/elixir-lang/ex_doc" title="ExDoc" target="_blank" rel="help noopener">ExDoc</a> (v0.25.0) for the
-            <a href="https://elixir-lang.org" title="Elixir" target="_blank">Elixir programming language</a>.
+            <a href="https://github.com/elixir-lang/ex_doc" title="ExDoc" target="_blank" rel="help noopener" translate="no">ExDoc</a> (v0.26.0) for the
+            <a href="https://elixir-lang.org" title="Elixir" target="_blank" translate="no">Elixir programming language</a>.
           </span>
           <span class="line">
             Designed by
-            <a href="https://twitter.com/dignifiedquire" target="_blank" rel="noopener" title="@dignifiedquire">Friedel Ziegelmayer</a>.
+            <a href="https://twitter.com/dignifiedquire" target="_blank" rel="noopener" title="@dignifiedquire" translate="no">Friedel Ziegelmayer</a>.
           </span>
         </p>
         <p>
@@ -329,15 +390,11 @@ Functions
           <button class="line footer-button display-shortcuts-help">
             Display keyboard shortcuts
           </button>
-          <button class="line footer-button night-mode-toggle">
-            Toggle night mode
-          </button>
           <button class="line footer-button display-quick-switch">
             Go to a HexDocs package
           </button>
-          <button class="line footer-button tooltips-toggle">
-            <span class="tooltips-option-disable">Disable tooltips</span>
-            <span class="tooltips-option-enable">Enable tooltips</span>
+          <button class="line footer-button display-settings">
+            Settings
           </button>
         </p>
       </footer>

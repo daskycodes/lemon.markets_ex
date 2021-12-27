@@ -7,7 +7,7 @@
     <meta name="generator" content="ExDoc v0.26.0">
     <meta name="project" content="LemonMarketsEx v0.2.0">
 
-    <title>LemonMarketsEx.Space — LemonMarketsEx v0.2.0</title>
+    <title>LemonMarketsEx.Venue — LemonMarketsEx v0.2.0</title>
     <link rel="stylesheet" href="dist/elixir-b5076885a795c65e636c.css" />
 
     <script src="dist/sidebar_items-42d81a20c9.js"></script>
@@ -80,10 +80,10 @@ LemonMarketsEx
     <div id="content" class="content-inner">
 
 <h1>
-  <span translate="no">LemonMarketsEx.Space</span> 
+  <span translate="no">LemonMarketsEx.Venue</span> 
   <small class="app-vsn" translate="no">(LemonMarketsEx v0.2.0)</small>
 
-    <a href="https://github.com/daskycodes/lemon.markets_ex/blob/main/lib/trading/space/space.ex#L1" title="View Source" class="view-source" rel="help">
+    <a href="https://github.com/daskycodes/lemon.markets_ex/blob/main/lib/market/venues/venue.ex#L1" title="View Source" class="view-source" rel="help">
       <span class="icon-code" aria-hidden="true"></span>
       <span class="sr-only">View Source</span>
     </a>
@@ -93,7 +93,7 @@ LemonMarketsEx
 
 
   <section id="moduledoc">
-<p>See: <a href="https://docs.lemon.markets/trading/spaces">https://docs.lemon.markets/trading/spaces</a></p>
+<p>See: <a href="https://docs.lemon.markets/market-data/instruments-tradingvenues#trading-venues">https://docs.lemon.markets/market-data/instruments-tradingvenues#trading-venues</a></p>
   </section>
 
 
@@ -125,6 +125,14 @@ LemonMarketsEx
     <h2>
       <a href="#functions">Functions</a>
     </h2>
+
+      <div class="summary-row">
+        <div class="summary-signature">
+          <a href="#create/1" translate="no">create(map)</a>
+
+        </div>
+
+      </div>
 
       <div class="summary-row">
         <div class="summary-signature">
@@ -165,7 +173,7 @@ Types
     </a>
     <h1 class="signature" translate="no">t()</h1>
 
-      <a href="https://github.com/daskycodes/lemon.markets_ex/blob/main/lib/trading/space/space.ex#L9" class="view-source" rel="help" title="View Source">
+      <a href="https://github.com/daskycodes/lemon.markets_ex/blob/main/lib/market/venues/venue.ex#L9" class="view-source" rel="help" title="View Source">
        <span class="icon-code" aria-hidden="true"></span>
        <span class="sr-only">View Source</span>
      </a>
@@ -178,17 +186,12 @@ Types
       <h2>Specs</h2>
       <div class="specs">
 
-          <pre translate="no">t() :: %LemonMarketsEx.Space{
-  backfire: <a href="https://hexdocs.pm/elixir/typespecs.html#basic-types">integer</a>(),
-  buying_power: <a href="https://hexdocs.pm/elixir/typespecs.html#basic-types">integer</a>(),
-  created_at: <a href="https://hexdocs.pm/elixir/String.html#t:t/0">String.t</a>(),
-  description: <a href="https://hexdocs.pm/elixir/String.html#t:t/0">String.t</a>(),
-  earnings: <a href="https://hexdocs.pm/elixir/typespecs.html#basic-types">integer</a>(),
-  id: <a href="https://hexdocs.pm/elixir/String.html#t:t/0">String.t</a>(),
-  linked: <a href="https://hexdocs.pm/elixir/String.html#t:t/0">String.t</a>() | nil,
-  name: <a href="https://hexdocs.pm/elixir/String.html#t:t/0">String.t</a>(),
-  risk_limit: <a href="https://hexdocs.pm/elixir/typespecs.html#basic-types">integer</a>(),
-  type: <a href="https://hexdocs.pm/elixir/String.html#t:t/0">String.t</a>()
+          <pre translate="no">t() :: %LemonMarketsEx.Venue{
+  is_open: <a href="https://hexdocs.pm/elixir/typespecs.html#built-in-types">boolean</a>(),
+  mic: <a href="https://hexdocs.pm/elixir/String.html#t:t/0">String.t</a>(),
+  opening_days: [<a href="https://hexdocs.pm/elixir/String.html#t:t/0">String.t</a>()],
+  opening_hours: %{start: <a href="https://hexdocs.pm/elixir/String.html#t:t/0">String.t</a>(), end: <a href="https://hexdocs.pm/elixir/String.html#t:t/0">String.t</a>(), timezone: <a href="https://hexdocs.pm/elixir/String.html#t:t/0">String.t</a>()},
+  title: <a href="https://hexdocs.pm/elixir/String.html#t:t/0">String.t</a>()
 }</pre>
 
       </div>
@@ -209,6 +212,35 @@ Types
 Functions
     </h1>
     <div class="functions-list">
+<section class="detail" id="create/1">
+
+  <div class="detail-header">
+    <a href="#create/1" class="detail-link" title="Link to this function">
+      <span class="icon-link" aria-hidden="true"></span>
+      <span class="sr-only">Link to this function</span>
+    </a>
+    <h1 class="signature" translate="no">create(map)</h1>
+
+      <a href="https://github.com/daskycodes/lemon.markets_ex/blob/main/lib/market/venues/venue.ex#L41" class="view-source" rel="help" title="View Source">
+       <span class="icon-code" aria-hidden="true"></span>
+       <span class="sr-only">View Source</span>
+     </a>
+
+
+  </div>
+
+  <section class="docstring">
+
+      <h2>Specs</h2>
+      <div class="specs">
+
+          <pre translate="no">create(<a href="https://hexdocs.pm/elixir/typespecs.html#basic-types">map</a>()) :: <a href="#t:t/0">t</a>()</pre>
+
+      </div>
+
+
+  </section>
+</section>
 <section class="detail" id="from_response_body/1">
 
   <div class="detail-header">
@@ -218,7 +250,7 @@ Functions
     </a>
     <h1 class="signature" translate="no">from_response_body(body)</h1>
 
-      <a href="https://github.com/daskycodes/lemon.markets_ex/blob/main/lib/trading/space/space.ex#L33" class="view-source" rel="help" title="View Source">
+      <a href="https://github.com/daskycodes/lemon.markets_ex/blob/main/lib/market/venues/venue.ex#L29" class="view-source" rel="help" title="View Source">
        <span class="icon-code" aria-hidden="true"></span>
        <span class="sr-only">View Source</span>
      </a>
@@ -232,15 +264,12 @@ Functions
       <div class="specs">
 
           <pre translate="no">from_response_body(<a href="https://hexdocs.pm/elixir/typespecs.html#basic-types">map</a>()) :: %{
-  :mode =&gt; <a href="https://hexdocs.pm/elixir/String.html#t:t/0">String.t</a>(),
-  :status =&gt; <a href="https://hexdocs.pm/elixir/String.html#t:t/0">String.t</a>(),
-  :time =&gt; <a href="https://hexdocs.pm/elixir/String.html#t:t/0">String.t</a>(),
-  optional(:next) =&gt; <a href="https://hexdocs.pm/elixir/String.html#t:t/0">String.t</a>() | nil,
-  optional(:page) =&gt; <a href="https://hexdocs.pm/elixir/typespecs.html#basic-types">integer</a>(),
-  optional(:pages) =&gt; <a href="https://hexdocs.pm/elixir/typespecs.html#basic-types">integer</a>(),
-  optional(:previous) =&gt; <a href="https://hexdocs.pm/elixir/String.html#t:t/0">String.t</a>() | nil,
-  optional(:results) =&gt; [<a href="#t:t/0">t</a>(), ...] | <a href="#t:t/0">t</a>(),
-  optional(:total) =&gt; <a href="https://hexdocs.pm/elixir/typespecs.html#basic-types">integer</a>()
+  next: <a href="https://hexdocs.pm/elixir/String.html#t:t/0">String.t</a>() | nil,
+  page: <a href="https://hexdocs.pm/elixir/typespecs.html#basic-types">integer</a>(),
+  pages: <a href="https://hexdocs.pm/elixir/typespecs.html#basic-types">integer</a>(),
+  previous: <a href="https://hexdocs.pm/elixir/String.html#t:t/0">String.t</a>() | nil,
+  results: [<a href="#t:t/0">t</a>(), ...],
+  total: <a href="https://hexdocs.pm/elixir/typespecs.html#basic-types">integer</a>()
 }</pre>
 
       </div>
@@ -259,7 +288,7 @@ Functions
     </a>
     <h1 class="signature" translate="no">new(map_or_kwlist, opts \\ [])</h1>
 
-      <a href="https://github.com/daskycodes/lemon.markets_ex/blob/main/lib/trading/space/space.ex#L7" class="view-source" rel="help" title="View Source">
+      <a href="https://github.com/daskycodes/lemon.markets_ex/blob/main/lib/market/venues/venue.ex#L7" class="view-source" rel="help" title="View Source">
        <span class="icon-code" aria-hidden="true"></span>
        <span class="sr-only">View Source</span>
      </a>
@@ -272,17 +301,12 @@ Functions
       <h2>Specs</h2>
       <div class="specs">
 
-          <pre translate="no">new(<a href="https://hexdocs.pm/exconstructor/1.2.5/ExConstructor.html#t:map_or_kwlist/0">ExConstructor.map_or_kwlist</a>(), <a href="https://hexdocs.pm/elixir/Keyword.html#t:t/0">Keyword.t</a>()) :: %LemonMarketsEx.Space{
-  backfire: <a href="https://hexdocs.pm/elixir/typespecs.html#built-in-types">term</a>(),
-  buying_power: <a href="https://hexdocs.pm/elixir/typespecs.html#built-in-types">term</a>(),
-  created_at: <a href="https://hexdocs.pm/elixir/typespecs.html#built-in-types">term</a>(),
-  description: <a href="https://hexdocs.pm/elixir/typespecs.html#built-in-types">term</a>(),
-  earnings: <a href="https://hexdocs.pm/elixir/typespecs.html#built-in-types">term</a>(),
-  id: <a href="https://hexdocs.pm/elixir/typespecs.html#built-in-types">term</a>(),
-  linked: <a href="https://hexdocs.pm/elixir/typespecs.html#built-in-types">term</a>(),
-  name: <a href="https://hexdocs.pm/elixir/typespecs.html#built-in-types">term</a>(),
-  risk_limit: <a href="https://hexdocs.pm/elixir/typespecs.html#built-in-types">term</a>(),
-  type: <a href="https://hexdocs.pm/elixir/typespecs.html#built-in-types">term</a>()
+          <pre translate="no">new(<a href="https://hexdocs.pm/exconstructor/1.2.5/ExConstructor.html#t:map_or_kwlist/0">ExConstructor.map_or_kwlist</a>(), <a href="https://hexdocs.pm/elixir/Keyword.html#t:t/0">Keyword.t</a>()) :: %LemonMarketsEx.Venue{
+  is_open: <a href="https://hexdocs.pm/elixir/typespecs.html#built-in-types">term</a>(),
+  mic: <a href="https://hexdocs.pm/elixir/typespecs.html#built-in-types">term</a>(),
+  opening_days: <a href="https://hexdocs.pm/elixir/typespecs.html#built-in-types">term</a>(),
+  opening_hours: <a href="https://hexdocs.pm/elixir/typespecs.html#built-in-types">term</a>(),
+  title: <a href="https://hexdocs.pm/elixir/typespecs.html#built-in-types">term</a>()
 }</pre>
 
       </div>
@@ -301,7 +325,7 @@ Functions
           <a href="https://hex.pm/packages/lemon_markets_ex/0.2.0" class="line footer-hex-package">Package</a>
           <a href="https://preview.hex.pm/preview/lemon_markets_ex/0.2.0" class="line">Preview</a>
 
-            <a href="https://preview.hex.pm/preview/lemon_markets_ex/0.2.0/show/lib/trading/space/space.ex">(current file)</a>
+            <a href="https://preview.hex.pm/preview/lemon_markets_ex/0.2.0/show/lib/market/venues/venue.ex">(current file)</a>
 
         </p>
 
