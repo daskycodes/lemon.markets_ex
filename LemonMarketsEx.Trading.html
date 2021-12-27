@@ -369,18 +369,18 @@ Account
   <a href="#create_withdrawal/1-examples" class="hover-link"><span class="icon-link" aria-hidden="true"></span></a>
   Examples
 </h2>
-<pre><code class="makeup elixir"><span class="gp unselectable">iex&gt; </span><span class="nc">LemonMarketsEx.Trading</span><span class="o">.</span><span class="n">create_withdrawal</span><span class="p" data-group-id="9386475266-1">(</span><span class="p" data-group-id="9386475266-2">%{</span><span class="ss">amount</span><span class="p">:</span><span class="w"> </span><span class="mi">1000000</span><span class="p">,</span><span class="w"> </span><span class="ss">pin</span><span class="p">:</span><span class="w"> </span><span class="s">&quot;1337&quot;</span><span class="p" data-group-id="9386475266-2">}</span><span class="p" data-group-id="9386475266-1">)</span><span class="w">
-</span><span class="p" data-group-id="9386475266-3">{</span><span class="ss">:ok</span><span class="p">,</span><span class="w"> </span><span class="p" data-group-id="9386475266-4">%{</span><span class="ss">mode</span><span class="p">:</span><span class="w"> </span><span class="s">&quot;paper&quot;</span><span class="p">,</span><span class="w"> </span><span class="ss">status</span><span class="p">:</span><span class="w"> </span><span class="s">&quot;ok&quot;</span><span class="p">,</span><span class="w"> </span><span class="ss">time</span><span class="p">:</span><span class="w"> </span><span class="s">&quot;2021-12-26T19:08:07.873+00:00&quot;</span><span class="p" data-group-id="9386475266-4">}</span><span class="p" data-group-id="9386475266-3">}</span><span class="w">
+<pre><code class="makeup elixir"><span class="gp unselectable">iex&gt; </span><span class="nc">LemonMarketsEx.Trading</span><span class="o">.</span><span class="n">create_withdrawal</span><span class="p" data-group-id="4775720512-1">(</span><span class="p" data-group-id="4775720512-2">%{</span><span class="ss">amount</span><span class="p">:</span><span class="w"> </span><span class="mi">1000000</span><span class="p">,</span><span class="w"> </span><span class="ss">pin</span><span class="p">:</span><span class="w"> </span><span class="s">&quot;1337&quot;</span><span class="p" data-group-id="4775720512-2">}</span><span class="p" data-group-id="4775720512-1">)</span><span class="w">
+</span><span class="p" data-group-id="4775720512-3">{</span><span class="ss">:ok</span><span class="p">,</span><span class="w"> </span><span class="p" data-group-id="4775720512-4">%{</span><span class="ss">mode</span><span class="p">:</span><span class="w"> </span><span class="s">&quot;paper&quot;</span><span class="p">,</span><span class="w"> </span><span class="ss">status</span><span class="p">:</span><span class="w"> </span><span class="s">&quot;ok&quot;</span><span class="p">,</span><span class="w"> </span><span class="ss">time</span><span class="p">:</span><span class="w"> </span><span class="s">&quot;2021-12-26T19:08:07.873+00:00&quot;</span><span class="p" data-group-id="4775720512-4">}</span><span class="p" data-group-id="4775720512-3">}</span><span class="w">
 
-</span><span class="gp unselectable">iex&gt; </span><span class="nc">LemonMarketsEx.Trading</span><span class="o">.</span><span class="n">create_withdrawal</span><span class="p" data-group-id="9386475266-5">(</span><span class="p" data-group-id="9386475266-6">%{</span><span class="ss">amount</span><span class="p">:</span><span class="w"> </span><span class="mi">100000</span><span class="p">,</span><span class="w"> </span><span class="ss">pin</span><span class="p">:</span><span class="w"> </span><span class="s">&quot;1337&quot;</span><span class="p" data-group-id="9386475266-6">}</span><span class="p" data-group-id="9386475266-5">)</span><span class="w">
-</span><span class="p" data-group-id="9386475266-7">{</span><span class="ss">:error</span><span class="p">,</span><span class="w">
-  </span><span class="p" data-group-id="9386475266-8">%</span><span class="nc" data-group-id="9386475266-8">LemonMarketsEx.Error</span><span class="p" data-group-id="9386475266-8">{</span><span class="w">
+</span><span class="gp unselectable">iex&gt; </span><span class="nc">LemonMarketsEx.Trading</span><span class="o">.</span><span class="n">create_withdrawal</span><span class="p" data-group-id="4775720512-5">(</span><span class="p" data-group-id="4775720512-6">%{</span><span class="ss">amount</span><span class="p">:</span><span class="w"> </span><span class="mi">100000</span><span class="p">,</span><span class="w"> </span><span class="ss">pin</span><span class="p">:</span><span class="w"> </span><span class="s">&quot;1337&quot;</span><span class="p" data-group-id="4775720512-6">}</span><span class="p" data-group-id="4775720512-5">)</span><span class="w">
+</span><span class="p" data-group-id="4775720512-7">{</span><span class="ss">:error</span><span class="p">,</span><span class="w">
+  </span><span class="p" data-group-id="4775720512-8">%</span><span class="nc" data-group-id="4775720512-8">LemonMarketsEx.Error</span><span class="p" data-group-id="4775720512-8">{</span><span class="w">
     </span><span class="ss">error_message</span><span class="p">:</span><span class="w"> </span><span class="s">&quot;Invalid &#39;amount&#39; (Minimum withdraw amount is 100€.)&quot;</span><span class="p">,</span><span class="w">
     </span><span class="ss">error_type</span><span class="p">:</span><span class="w"> </span><span class="s">&quot;invalid_query&quot;</span><span class="p">,</span><span class="w">
     </span><span class="ss">mode</span><span class="p">:</span><span class="w"> </span><span class="s">&quot;paper&quot;</span><span class="p">,</span><span class="w">
     </span><span class="ss">status</span><span class="p">:</span><span class="w"> </span><span class="s">&quot;error&quot;</span><span class="p">,</span><span class="w">
     </span><span class="ss">time</span><span class="p">:</span><span class="w"> </span><span class="s">&quot;2021-12-26T19:04:13.642+00:00&quot;</span><span class="w">
-  </span><span class="p" data-group-id="9386475266-8">}</span><span class="p" data-group-id="9386475266-7">}</span></code></pre>
+  </span><span class="p" data-group-id="4775720512-8">}</span><span class="p" data-group-id="4775720512-7">}</span></code></pre>
   </section>
 </section>
 <section class="detail" id="get_account/0">
@@ -421,7 +421,7 @@ Account
   <a href="#get_account/0-examples" class="hover-link"><span class="icon-link" aria-hidden="true"></span></a>
   Examples
 </h2>
-<pre><code class="makeup elixir"><span class="gp unselectable">iex&gt; </span><span class="p" data-group-id="0224676615-1">{</span><span class="ss">:ok</span><span class="p">,</span><span class="w"> </span><span class="p" data-group-id="0224676615-2">%{</span><span class="ss">results</span><span class="p">:</span><span class="w"> </span><span class="p" data-group-id="0224676615-3">%</span><span class="nc" data-group-id="0224676615-3">LemonMarketsEx.Account</span><span class="p" data-group-id="0224676615-3">{</span><span class="p" data-group-id="0224676615-3">}</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">account</span><span class="p" data-group-id="0224676615-2">}</span><span class="p" data-group-id="0224676615-1">}</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="nc">LemonMarketsEx.Trading</span><span class="o">.</span><span class="n">get_account</span><span class="w">
+<pre><code class="makeup elixir"><span class="gp unselectable">iex&gt; </span><span class="p" data-group-id="7779515113-1">{</span><span class="ss">:ok</span><span class="p">,</span><span class="w"> </span><span class="p" data-group-id="7779515113-2">%{</span><span class="ss">results</span><span class="p">:</span><span class="w"> </span><span class="p" data-group-id="7779515113-3">%</span><span class="nc" data-group-id="7779515113-3">LemonMarketsEx.Account</span><span class="p" data-group-id="7779515113-3">{</span><span class="p" data-group-id="7779515113-3">}</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">account</span><span class="p" data-group-id="7779515113-2">}</span><span class="p" data-group-id="7779515113-1">}</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="nc">LemonMarketsEx.Trading</span><span class="o">.</span><span class="n">get_account</span><span class="w">
 </span><span class="gp unselectable">iex&gt; </span><span class="n">account</span><span class="o">.</span><span class="n">balance</span><span class="w">
 </span><span class="mi">1000000000</span></code></pre>
   </section>
@@ -476,15 +476,15 @@ Account
   Examples
 </h2>
 <pre><code class="makeup elixir"><span class="gp unselectable">iex&gt; </span><span class="nc">LemonMarketsEx.Trading</span><span class="o">.</span><span class="n">get_bankstatements</span><span class="w">
-</span><span class="p" data-group-id="9385099138-1">{</span><span class="ss">:ok</span><span class="p">,</span><span class="w">
-  </span><span class="p" data-group-id="9385099138-2">%{</span><span class="w">
+</span><span class="p" data-group-id="9574383358-1">{</span><span class="ss">:ok</span><span class="p">,</span><span class="w">
+  </span><span class="p" data-group-id="9574383358-2">%{</span><span class="w">
     </span><span class="ss">mode</span><span class="p">:</span><span class="w"> </span><span class="s">&quot;paper&quot;</span><span class="p">,</span><span class="w">
     </span><span class="ss">next</span><span class="p">:</span><span class="w"> </span><span class="no">nil</span><span class="p">,</span><span class="w">
     </span><span class="ss">page</span><span class="p">:</span><span class="w"> </span><span class="mi">1</span><span class="p">,</span><span class="w">
     </span><span class="ss">pages</span><span class="p">:</span><span class="w"> </span><span class="mi">1</span><span class="p">,</span><span class="w">
     </span><span class="ss">previous</span><span class="p">:</span><span class="w"> </span><span class="no">nil</span><span class="p">,</span><span class="w">
-    </span><span class="ss">results</span><span class="p">:</span><span class="w"> </span><span class="p" data-group-id="9385099138-3">[</span><span class="w">
-      </span><span class="p" data-group-id="9385099138-4">%</span><span class="nc" data-group-id="9385099138-4">LemonMarketsEx.Bankstatement</span><span class="p" data-group-id="9385099138-4">{</span><span class="w">
+    </span><span class="ss">results</span><span class="p">:</span><span class="w"> </span><span class="p" data-group-id="9574383358-3">[</span><span class="w">
+      </span><span class="p" data-group-id="9574383358-4">%</span><span class="nc" data-group-id="9574383358-4">LemonMarketsEx.Bankstatement</span><span class="p" data-group-id="9574383358-4">{</span><span class="w">
         </span><span class="ss">account_id</span><span class="p">:</span><span class="w"> </span><span class="s">&quot;acc_1337&quot;</span><span class="p">,</span><span class="w">
         </span><span class="ss">amount</span><span class="p">:</span><span class="w"> </span><span class="mi">1000000000</span><span class="p">,</span><span class="w">
         </span><span class="ss">created_at</span><span class="p">:</span><span class="w"> </span><span class="s">&quot;2021-12-18T21:48:03.257+00:00&quot;</span><span class="p">,</span><span class="w">
@@ -493,8 +493,8 @@ Account
         </span><span class="ss">isin</span><span class="p">:</span><span class="w"> </span><span class="no">nil</span><span class="p">,</span><span class="w">
         </span><span class="ss">isin_title</span><span class="p">:</span><span class="w"> </span><span class="no">nil</span><span class="p">,</span><span class="w">
         </span><span class="ss">type</span><span class="p">:</span><span class="w"> </span><span class="s">&quot;pay_in&quot;</span><span class="w">
-      </span><span class="p" data-group-id="9385099138-4">}</span><span class="p">,</span><span class="w">
-      </span><span class="p" data-group-id="9385099138-5">%</span><span class="nc" data-group-id="9385099138-5">LemonMarketsEx.Bankstatement</span><span class="p" data-group-id="9385099138-5">{</span><span class="w">
+      </span><span class="p" data-group-id="9574383358-4">}</span><span class="p">,</span><span class="w">
+      </span><span class="p" data-group-id="9574383358-5">%</span><span class="nc" data-group-id="9574383358-5">LemonMarketsEx.Bankstatement</span><span class="p" data-group-id="9574383358-5">{</span><span class="w">
         </span><span class="ss">account_id</span><span class="p">:</span><span class="w"> </span><span class="s">&quot;acc_1337&quot;</span><span class="p">,</span><span class="w">
         </span><span class="ss">amount</span><span class="p">:</span><span class="w"> </span><span class="mi">1000000000</span><span class="p">,</span><span class="w">
         </span><span class="ss">created_at</span><span class="p">:</span><span class="w"> </span><span class="s">&quot;2021-12-18T21:48:03.257+00:00&quot;</span><span class="p">,</span><span class="w">
@@ -503,12 +503,12 @@ Account
         </span><span class="ss">isin</span><span class="p">:</span><span class="w"> </span><span class="no">nil</span><span class="p">,</span><span class="w">
         </span><span class="ss">isin_title</span><span class="p">:</span><span class="w"> </span><span class="no">nil</span><span class="p">,</span><span class="w">
         </span><span class="ss">type</span><span class="p">:</span><span class="w"> </span><span class="s">&quot;eod_balance&quot;</span><span class="w">
-      </span><span class="p" data-group-id="9385099138-5">}</span><span class="w">
-    </span><span class="p" data-group-id="9385099138-3">]</span><span class="p">,</span><span class="w">
+      </span><span class="p" data-group-id="9574383358-5">}</span><span class="w">
+    </span><span class="p" data-group-id="9574383358-3">]</span><span class="p">,</span><span class="w">
     </span><span class="ss">status</span><span class="p">:</span><span class="w"> </span><span class="s">&quot;ok&quot;</span><span class="p">,</span><span class="w">
     </span><span class="ss">time</span><span class="p">:</span><span class="w"> </span><span class="s">&quot;2021-12-26T19:27:20.444+00:00&quot;</span><span class="p">,</span><span class="w">
     </span><span class="ss">total</span><span class="p">:</span><span class="w"> </span><span class="mi">2</span><span class="w">
- </span><span class="p" data-group-id="9385099138-2">}</span><span class="p" data-group-id="9385099138-1">}</span></code></pre>
+ </span><span class="p" data-group-id="9574383358-2">}</span><span class="p" data-group-id="9574383358-1">}</span></code></pre>
   </section>
 </section>
 <section class="detail" id="get_document/2">
@@ -555,14 +555,14 @@ Account
   <a href="#get_document/2-examples" class="hover-link"><span class="icon-link" aria-hidden="true"></span></a>
   Examples
 </h2>
-<pre><code class="makeup elixir"><span class="gp unselectable">iex&gt; </span><span class="nc">LemonMarketsEx.Trading</span><span class="o">.</span><span class="n">get_document</span><span class="p" data-group-id="5804298256-1">(</span><span class="n">document_id</span><span class="p" data-group-id="5804298256-1">)</span><span class="w">
-</span><span class="p" data-group-id="5804298256-2">{</span><span class="ss">:ok</span><span class="p">,</span><span class="w">
-  </span><span class="p" data-group-id="5804298256-3">%{</span><span class="w">
+<pre><code class="makeup elixir"><span class="gp unselectable">iex&gt; </span><span class="nc">LemonMarketsEx.Trading</span><span class="o">.</span><span class="n">get_document</span><span class="p" data-group-id="4892246790-1">(</span><span class="n">document_id</span><span class="p" data-group-id="4892246790-1">)</span><span class="w">
+</span><span class="p" data-group-id="4892246790-2">{</span><span class="ss">:ok</span><span class="p">,</span><span class="w">
+  </span><span class="p" data-group-id="4892246790-3">%{</span><span class="w">
     </span><span class="ss">mode</span><span class="p">:</span><span class="w"> </span><span class="s">&quot;paper&quot;</span><span class="p">,</span><span class="w">
-    </span><span class="ss">results</span><span class="p">:</span><span class="w"> </span><span class="p" data-group-id="5804298256-4">%</span><span class="nc" data-group-id="5804298256-4">LemonMarketsEx.Document</span><span class="p" data-group-id="5804298256-4">{</span><span class="p" data-group-id="5804298256-4">}</span><span class="p">,</span><span class="w">
+    </span><span class="ss">results</span><span class="p">:</span><span class="w"> </span><span class="p" data-group-id="4892246790-4">%</span><span class="nc" data-group-id="4892246790-4">LemonMarketsEx.Document</span><span class="p" data-group-id="4892246790-4">{</span><span class="p" data-group-id="4892246790-4">}</span><span class="p">,</span><span class="w">
     </span><span class="ss">status</span><span class="p">:</span><span class="w"> </span><span class="s">&quot;ok&quot;</span><span class="p">,</span><span class="w">
     </span><span class="ss">time</span><span class="p">:</span><span class="w"> </span><span class="s">&quot;2021-12-26T19:40:45.772+00:00&quot;</span><span class="w">
- </span><span class="p" data-group-id="5804298256-3">}</span><span class="p" data-group-id="5804298256-2">}</span></code></pre>
+ </span><span class="p" data-group-id="4892246790-3">}</span><span class="p" data-group-id="4892246790-2">}</span></code></pre>
   </section>
 </section>
 <section class="detail" id="get_documents/0">
@@ -604,13 +604,13 @@ Account
   Examples
 </h2>
 <pre><code class="makeup elixir"><span class="gp unselectable">iex&gt; </span><span class="nc">LemonMarketsEx.Trading</span><span class="o">.</span><span class="n">get_documents</span><span class="w">
-</span><span class="p" data-group-id="1741276885-1">{</span><span class="ss">:ok</span><span class="p">,</span><span class="w">
-  </span><span class="p" data-group-id="1741276885-2">%{</span><span class="w">
+</span><span class="p" data-group-id="0965378489-1">{</span><span class="ss">:ok</span><span class="p">,</span><span class="w">
+  </span><span class="p" data-group-id="0965378489-2">%{</span><span class="w">
     </span><span class="ss">mode</span><span class="p">:</span><span class="w"> </span><span class="s">&quot;paper&quot;</span><span class="p">,</span><span class="w">
-    </span><span class="ss">results</span><span class="p">:</span><span class="w"> </span><span class="p" data-group-id="1741276885-3">[</span><span class="p" data-group-id="1741276885-4">%</span><span class="nc" data-group-id="1741276885-4">LemonMarketsEx.Document</span><span class="p" data-group-id="1741276885-4">{</span><span class="p" data-group-id="1741276885-4">}</span><span class="p">,</span><span class="w"> </span><span class="n">...</span><span class="p" data-group-id="1741276885-3">]</span><span class="p">,</span><span class="w">
+    </span><span class="ss">results</span><span class="p">:</span><span class="w"> </span><span class="p" data-group-id="0965378489-3">[</span><span class="p" data-group-id="0965378489-4">%</span><span class="nc" data-group-id="0965378489-4">LemonMarketsEx.Document</span><span class="p" data-group-id="0965378489-4">{</span><span class="p" data-group-id="0965378489-4">}</span><span class="p">,</span><span class="w"> </span><span class="n">...</span><span class="p" data-group-id="0965378489-3">]</span><span class="p">,</span><span class="w">
     </span><span class="ss">status</span><span class="p">:</span><span class="w"> </span><span class="s">&quot;ok&quot;</span><span class="p">,</span><span class="w">
     </span><span class="ss">time</span><span class="p">:</span><span class="w"> </span><span class="s">&quot;2021-12-26T19:40:45.772+00:00&quot;</span><span class="w">
- </span><span class="p" data-group-id="1741276885-2">}</span><span class="p" data-group-id="1741276885-1">}</span></code></pre>
+ </span><span class="p" data-group-id="0965378489-2">}</span><span class="p" data-group-id="0965378489-1">}</span></code></pre>
   </section>
 </section>
 <section class="detail" id="get_withdrawals/1">
@@ -662,19 +662,19 @@ Account
   <a href="#get_withdrawals/1-examples" class="hover-link"><span class="icon-link" aria-hidden="true"></span></a>
   Examples
 </h2>
-<pre><code class="makeup elixir"><span class="gp unselectable">iex&gt; </span><span class="nc">LemonMarketsEx.Trading</span><span class="o">.</span><span class="n">get_withdrawals</span><span class="p" data-group-id="8826312581-1">(</span><span class="ss">page</span><span class="p">:</span><span class="w"> </span><span class="mi">10</span><span class="p">,</span><span class="w"> </span><span class="ss">limit</span><span class="p">:</span><span class="w"> </span><span class="mi">5</span><span class="p" data-group-id="8826312581-1">)</span><span class="w">
-</span><span class="p" data-group-id="8826312581-2">{</span><span class="ss">:ok</span><span class="p">,</span><span class="w">
-  </span><span class="p" data-group-id="8826312581-3">%{</span><span class="w">
+<pre><code class="makeup elixir"><span class="gp unselectable">iex&gt; </span><span class="nc">LemonMarketsEx.Trading</span><span class="o">.</span><span class="n">get_withdrawals</span><span class="p" data-group-id="9915163272-1">(</span><span class="ss">page</span><span class="p">:</span><span class="w"> </span><span class="mi">10</span><span class="p">,</span><span class="w"> </span><span class="ss">limit</span><span class="p">:</span><span class="w"> </span><span class="mi">5</span><span class="p" data-group-id="9915163272-1">)</span><span class="w">
+</span><span class="p" data-group-id="9915163272-2">{</span><span class="ss">:ok</span><span class="p">,</span><span class="w">
+  </span><span class="p" data-group-id="9915163272-3">%{</span><span class="w">
     </span><span class="ss">mode</span><span class="p">:</span><span class="w"> </span><span class="s">&quot;paper&quot;</span><span class="p">,</span><span class="w">
     </span><span class="ss">next</span><span class="p">:</span><span class="w"> </span><span class="no">nil</span><span class="p">,</span><span class="w">
     </span><span class="ss">page</span><span class="p">:</span><span class="w"> </span><span class="mi">10</span><span class="p">,</span><span class="w">
     </span><span class="ss">pages</span><span class="p">:</span><span class="w"> </span><span class="mi">1</span><span class="p">,</span><span class="w">
     </span><span class="ss">previous</span><span class="p">:</span><span class="w"> </span><span class="s">&quot;https://paper-trading.lemon.markets/v1/account/withdrawals?limit=5&amp;page=0&quot;</span><span class="p">,</span><span class="w">
-    </span><span class="ss">results</span><span class="p">:</span><span class="w"> </span><span class="p" data-group-id="8826312581-4">[</span><span class="p" data-group-id="8826312581-4">]</span><span class="p">,</span><span class="w">
+    </span><span class="ss">results</span><span class="p">:</span><span class="w"> </span><span class="p" data-group-id="9915163272-4">[</span><span class="p" data-group-id="9915163272-4">]</span><span class="p">,</span><span class="w">
     </span><span class="ss">status</span><span class="p">:</span><span class="w"> </span><span class="s">&quot;ok&quot;</span><span class="p">,</span><span class="w">
     </span><span class="ss">time</span><span class="p">:</span><span class="w"> </span><span class="s">&quot;2021-12-26T18:34:14.269+00:00&quot;</span><span class="p">,</span><span class="w">
     </span><span class="ss">total</span><span class="p">:</span><span class="w"> </span><span class="mi">0</span><span class="w">
-  </span><span class="p" data-group-id="8826312581-3">}</span><span class="p" data-group-id="8826312581-2">}</span></code></pre>
+  </span><span class="p" data-group-id="9915163272-3">}</span><span class="p" data-group-id="9915163272-2">}</span></code></pre>
   </section>
 </section>
 
@@ -726,8 +726,8 @@ Order
   <a href="#activate_order/2-examples" class="hover-link"><span class="icon-link" aria-hidden="true"></span></a>
   Examples
 </h2>
-<pre><code class="makeup elixir"><span class="gp unselectable">iex&gt; </span><span class="nc">LemonMarketsEx.Trading</span><span class="o">.</span><span class="n">activate_order</span><span class="p" data-group-id="7038459411-1">(</span><span class="n">order_id</span><span class="p">,</span><span class="w"> </span><span class="p" data-group-id="7038459411-2">%{</span><span class="ss">pin</span><span class="p">:</span><span class="w"> </span><span class="s">&quot;1337&quot;</span><span class="p" data-group-id="7038459411-2">}</span><span class="p" data-group-id="7038459411-1">)</span><span class="w">
-</span><span class="p" data-group-id="7038459411-3">{</span><span class="ss">:ok</span><span class="p">,</span><span class="w"> </span><span class="p" data-group-id="7038459411-4">%{</span><span class="ss">mode</span><span class="p">:</span><span class="w"> </span><span class="s">&quot;paper&quot;</span><span class="p">,</span><span class="w"> </span><span class="ss">status</span><span class="p">:</span><span class="w"> </span><span class="s">&quot;ok&quot;</span><span class="p">,</span><span class="w"> </span><span class="ss">time</span><span class="p">:</span><span class="w"> </span><span class="s">&quot;2021-12-26T22:12:05.023+00:00&quot;</span><span class="p" data-group-id="7038459411-4">}</span><span class="p" data-group-id="7038459411-3">}</span></code></pre>
+<pre><code class="makeup elixir"><span class="gp unselectable">iex&gt; </span><span class="nc">LemonMarketsEx.Trading</span><span class="o">.</span><span class="n">activate_order</span><span class="p" data-group-id="3758233853-1">(</span><span class="n">order_id</span><span class="p">,</span><span class="w"> </span><span class="p" data-group-id="3758233853-2">%{</span><span class="ss">pin</span><span class="p">:</span><span class="w"> </span><span class="s">&quot;1337&quot;</span><span class="p" data-group-id="3758233853-2">}</span><span class="p" data-group-id="3758233853-1">)</span><span class="w">
+</span><span class="p" data-group-id="3758233853-3">{</span><span class="ss">:ok</span><span class="p">,</span><span class="w"> </span><span class="p" data-group-id="3758233853-4">%{</span><span class="ss">mode</span><span class="p">:</span><span class="w"> </span><span class="s">&quot;paper&quot;</span><span class="p">,</span><span class="w"> </span><span class="ss">status</span><span class="p">:</span><span class="w"> </span><span class="s">&quot;ok&quot;</span><span class="p">,</span><span class="w"> </span><span class="ss">time</span><span class="p">:</span><span class="w"> </span><span class="s">&quot;2021-12-26T22:12:05.023+00:00&quot;</span><span class="p" data-group-id="3758233853-4">}</span><span class="p" data-group-id="3758233853-3">}</span></code></pre>
   </section>
 </section>
 <section class="detail" id="create_order/1">
@@ -773,21 +773,21 @@ To do so, use &quot;venue&quot;: &quot;allday&quot; in your request body. The or
   <a href="#create_order/1-examples" class="hover-link"><span class="icon-link" aria-hidden="true"></span></a>
   Examples
 </h2>
-<pre><code class="makeup elixir"><span class="gp unselectable">iex&gt; </span><span class="n">params</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="p" data-group-id="7577164365-1">%{</span><span class="w">
+<pre><code class="makeup elixir"><span class="gp unselectable">iex&gt; </span><span class="n">params</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="p" data-group-id="4527932955-1">%{</span><span class="w">
   </span><span class="ss">expires_at</span><span class="p">:</span><span class="w"> </span><span class="s">&quot;2021-12-27&quot;</span><span class="p">,</span><span class="w">
   </span><span class="ss">isin</span><span class="p">:</span><span class="w"> </span><span class="s">&quot;US19260Q1076&quot;</span><span class="p">,</span><span class="w">
   </span><span class="ss">quantity</span><span class="p">:</span><span class="w"> </span><span class="mi">1</span><span class="p">,</span><span class="w">
   </span><span class="ss">side</span><span class="p">:</span><span class="w"> </span><span class="s">&quot;buy&quot;</span><span class="p">,</span><span class="w">
   </span><span class="ss">space_id</span><span class="p">:</span><span class="w"> </span><span class="s">&quot;sp_1337&quot;</span><span class="w">
-</span><span class="p" data-group-id="7577164365-1">}</span><span class="w">
-</span><span class="gp unselectable">iex&gt; </span><span class="nc">LemonMarketsEx.Trading</span><span class="o">.</span><span class="n">create_order</span><span class="p" data-group-id="7577164365-2">(</span><span class="n">params</span><span class="p" data-group-id="7577164365-2">)</span><span class="w">
-</span><span class="p" data-group-id="7577164365-3">{</span><span class="ss">:ok</span><span class="p">,</span><span class="w">
-  </span><span class="p" data-group-id="7577164365-4">%{</span><span class="w">
+</span><span class="p" data-group-id="4527932955-1">}</span><span class="w">
+</span><span class="gp unselectable">iex&gt; </span><span class="nc">LemonMarketsEx.Trading</span><span class="o">.</span><span class="n">create_order</span><span class="p" data-group-id="4527932955-2">(</span><span class="n">params</span><span class="p" data-group-id="4527932955-2">)</span><span class="w">
+</span><span class="p" data-group-id="4527932955-3">{</span><span class="ss">:ok</span><span class="p">,</span><span class="w">
+  </span><span class="p" data-group-id="4527932955-4">%{</span><span class="w">
   </span><span class="ss">mode</span><span class="p">:</span><span class="w"> </span><span class="s">&quot;paper&quot;</span><span class="p">,</span><span class="w">
-  </span><span class="ss">results</span><span class="p">:</span><span class="w"> </span><span class="p" data-group-id="7577164365-5">%</span><span class="nc" data-group-id="7577164365-5">LemonMarketsEx.Order</span><span class="p" data-group-id="7577164365-5">{</span><span class="p" data-group-id="7577164365-5">}</span><span class="p">,</span><span class="w">
+  </span><span class="ss">results</span><span class="p">:</span><span class="w"> </span><span class="p" data-group-id="4527932955-5">%</span><span class="nc" data-group-id="4527932955-5">LemonMarketsEx.Order</span><span class="p" data-group-id="4527932955-5">{</span><span class="p" data-group-id="4527932955-5">}</span><span class="p">,</span><span class="w">
   </span><span class="ss">status</span><span class="p">:</span><span class="w"> </span><span class="s">&quot;ok&quot;</span><span class="p">,</span><span class="w">
   </span><span class="ss">time</span><span class="p">:</span><span class="w"> </span><span class="s">&quot;2021-12-26T21:35:55.546+00:00&quot;</span><span class="p">,</span><span class="w">
-</span><span class="p" data-group-id="7577164365-4">}</span><span class="p" data-group-id="7577164365-3">}</span></code></pre>
+</span><span class="p" data-group-id="4527932955-4">}</span><span class="p" data-group-id="4527932955-3">}</span></code></pre>
   </section>
 </section>
 <section class="detail" id="delete_order/1">
@@ -822,8 +822,8 @@ To do so, use &quot;venue&quot;: &quot;allday&quot; in your request body. The or
   <a href="#delete_order/1-examples" class="hover-link"><span class="icon-link" aria-hidden="true"></span></a>
   Examples
 </h2>
-<pre><code class="makeup elixir"><span class="gp unselectable">iex&gt; </span><span class="nc">LemonMarketsEx.Trading</span><span class="o">.</span><span class="n">delete_order</span><span class="p" data-group-id="8849762104-1">(</span><span class="n">order_id</span><span class="p" data-group-id="8849762104-1">)</span><span class="w">
-</span><span class="p" data-group-id="8849762104-2">{</span><span class="ss">:ok</span><span class="p">,</span><span class="w"> </span><span class="p" data-group-id="8849762104-3">%{</span><span class="ss">mode</span><span class="p">:</span><span class="w"> </span><span class="s">&quot;paper&quot;</span><span class="p">,</span><span class="w"> </span><span class="ss">status</span><span class="p">:</span><span class="w"> </span><span class="s">&quot;ok&quot;</span><span class="p">,</span><span class="w"> </span><span class="ss">time</span><span class="p">:</span><span class="w"> </span><span class="s">&quot;2021-12-26T22:12:05.023+00:00&quot;</span><span class="p" data-group-id="8849762104-3">}</span><span class="p" data-group-id="8849762104-2">}</span></code></pre>
+<pre><code class="makeup elixir"><span class="gp unselectable">iex&gt; </span><span class="nc">LemonMarketsEx.Trading</span><span class="o">.</span><span class="n">delete_order</span><span class="p" data-group-id="9852658992-1">(</span><span class="n">order_id</span><span class="p" data-group-id="9852658992-1">)</span><span class="w">
+</span><span class="p" data-group-id="9852658992-2">{</span><span class="ss">:ok</span><span class="p">,</span><span class="w"> </span><span class="p" data-group-id="9852658992-3">%{</span><span class="ss">mode</span><span class="p">:</span><span class="w"> </span><span class="s">&quot;paper&quot;</span><span class="p">,</span><span class="w"> </span><span class="ss">status</span><span class="p">:</span><span class="w"> </span><span class="s">&quot;ok&quot;</span><span class="p">,</span><span class="w"> </span><span class="ss">time</span><span class="p">:</span><span class="w"> </span><span class="s">&quot;2021-12-26T22:12:05.023+00:00&quot;</span><span class="p" data-group-id="9852658992-3">}</span><span class="p" data-group-id="9852658992-2">}</span></code></pre>
   </section>
 </section>
 <section class="detail" id="get_order/1">
@@ -864,14 +864,14 @@ To do so, use &quot;venue&quot;: &quot;allday&quot; in your request body. The or
   <a href="#get_order/1-examples" class="hover-link"><span class="icon-link" aria-hidden="true"></span></a>
   Examples
 </h2>
-<pre><code class="makeup elixir"><span class="gp unselectable">iex&gt; </span><span class="nc">LemonMarketsEx.Trading</span><span class="o">.</span><span class="n">get_order</span><span class="p" data-group-id="8537676571-1">(</span><span class="n">order_id</span><span class="p" data-group-id="8537676571-1">)</span><span class="w">
-</span><span class="p" data-group-id="8537676571-2">{</span><span class="ss">:ok</span><span class="p">,</span><span class="w">
-  </span><span class="p" data-group-id="8537676571-3">%{</span><span class="w">
+<pre><code class="makeup elixir"><span class="gp unselectable">iex&gt; </span><span class="nc">LemonMarketsEx.Trading</span><span class="o">.</span><span class="n">get_order</span><span class="p" data-group-id="7215645360-1">(</span><span class="n">order_id</span><span class="p" data-group-id="7215645360-1">)</span><span class="w">
+</span><span class="p" data-group-id="7215645360-2">{</span><span class="ss">:ok</span><span class="p">,</span><span class="w">
+  </span><span class="p" data-group-id="7215645360-3">%{</span><span class="w">
   </span><span class="ss">mode</span><span class="p">:</span><span class="w"> </span><span class="s">&quot;paper&quot;</span><span class="p">,</span><span class="w">
-  </span><span class="ss">results</span><span class="p">:</span><span class="w"> </span><span class="p" data-group-id="8537676571-4">%</span><span class="nc" data-group-id="8537676571-4">LemonMarketsEx.Order</span><span class="p" data-group-id="8537676571-4">{</span><span class="n">...</span><span class="p" data-group-id="8537676571-4">}</span><span class="p">,</span><span class="w">
+  </span><span class="ss">results</span><span class="p">:</span><span class="w"> </span><span class="p" data-group-id="7215645360-4">%</span><span class="nc" data-group-id="7215645360-4">LemonMarketsEx.Order</span><span class="p" data-group-id="7215645360-4">{</span><span class="n">...</span><span class="p" data-group-id="7215645360-4">}</span><span class="p">,</span><span class="w">
   </span><span class="ss">status</span><span class="p">:</span><span class="w"> </span><span class="s">&quot;ok&quot;</span><span class="p">,</span><span class="w">
   </span><span class="ss">time</span><span class="p">:</span><span class="w"> </span><span class="s">&quot;2021-12-26T21:35:55.546+00:00&quot;</span><span class="p">,</span><span class="w">
-</span><span class="p" data-group-id="8537676571-3">}</span><span class="p" data-group-id="8537676571-2">}</span></code></pre>
+</span><span class="p" data-group-id="7215645360-3">}</span><span class="p" data-group-id="7215645360-2">}</span></code></pre>
   </section>
 </section>
 <section class="detail" id="get_orders/1">
@@ -924,18 +924,18 @@ To do so, use &quot;venue&quot;: &quot;allday&quot; in your request body. The or
   Examples
 </h2>
 <pre><code class="makeup elixir"><span class="gp unselectable">iex&gt; </span><span class="nc">LemonMarketsEx.Trading</span><span class="o">.</span><span class="n">get_orders</span><span class="w">
-</span><span class="p" data-group-id="6061798582-1">{</span><span class="ss">:ok</span><span class="p">,</span><span class="w">
-  </span><span class="p" data-group-id="6061798582-2">%{</span><span class="w">
+</span><span class="p" data-group-id="2653232582-1">{</span><span class="ss">:ok</span><span class="p">,</span><span class="w">
+  </span><span class="p" data-group-id="2653232582-2">%{</span><span class="w">
   </span><span class="ss">mode</span><span class="p">:</span><span class="w"> </span><span class="s">&quot;paper&quot;</span><span class="p">,</span><span class="w">
   </span><span class="ss">next</span><span class="p">:</span><span class="w"> </span><span class="no">nil</span><span class="p">,</span><span class="w">
   </span><span class="ss">page</span><span class="p">:</span><span class="w"> </span><span class="mi">1</span><span class="p">,</span><span class="w">
   </span><span class="ss">pages</span><span class="p">:</span><span class="w"> </span><span class="mi">1</span><span class="p">,</span><span class="w">
   </span><span class="ss">previous</span><span class="p">:</span><span class="w"> </span><span class="no">nil</span><span class="p">,</span><span class="w">
-  </span><span class="ss">results</span><span class="p">:</span><span class="w"> </span><span class="p" data-group-id="6061798582-3">[</span><span class="p" data-group-id="6061798582-4">%</span><span class="nc" data-group-id="6061798582-4">LemonMarketsEx.Order</span><span class="p" data-group-id="6061798582-4">{</span><span class="p" data-group-id="6061798582-4">}</span><span class="p">,</span><span class="w"> </span><span class="n">...</span><span class="p" data-group-id="6061798582-3">]</span><span class="p">,</span><span class="w">
+  </span><span class="ss">results</span><span class="p">:</span><span class="w"> </span><span class="p" data-group-id="2653232582-3">[</span><span class="p" data-group-id="2653232582-4">%</span><span class="nc" data-group-id="2653232582-4">LemonMarketsEx.Order</span><span class="p" data-group-id="2653232582-4">{</span><span class="p" data-group-id="2653232582-4">}</span><span class="p">,</span><span class="w"> </span><span class="n">...</span><span class="p" data-group-id="2653232582-3">]</span><span class="p">,</span><span class="w">
   </span><span class="ss">status</span><span class="p">:</span><span class="w"> </span><span class="s">&quot;ok&quot;</span><span class="p">,</span><span class="w">
   </span><span class="ss">time</span><span class="p">:</span><span class="w"> </span><span class="s">&quot;2021-12-26T21:35:55.546+00:00&quot;</span><span class="p">,</span><span class="w">
   </span><span class="ss">total</span><span class="p">:</span><span class="w"> </span><span class="mi">0</span><span class="w">
-</span><span class="p" data-group-id="6061798582-2">}</span><span class="p" data-group-id="6061798582-1">}</span></code></pre>
+</span><span class="p" data-group-id="2653232582-2">}</span><span class="p" data-group-id="2653232582-1">}</span></code></pre>
   </section>
 </section>
 
@@ -1001,18 +1001,18 @@ Portfolio
   Examples
 </h2>
 <pre><code class="makeup elixir"><span class="gp unselectable">iex&gt; </span><span class="nc">LemonMarketsEx.Trading</span><span class="o">.</span><span class="n">get_portfolio</span><span class="w">
-</span><span class="p" data-group-id="8333496356-1">{</span><span class="ss">:ok</span><span class="p">,</span><span class="w">
-  </span><span class="p" data-group-id="8333496356-2">%{</span><span class="w">
+</span><span class="p" data-group-id="7056916412-1">{</span><span class="ss">:ok</span><span class="p">,</span><span class="w">
+  </span><span class="p" data-group-id="7056916412-2">%{</span><span class="w">
   </span><span class="ss">mode</span><span class="p">:</span><span class="w"> </span><span class="s">&quot;paper&quot;</span><span class="p">,</span><span class="w">
   </span><span class="ss">next</span><span class="p">:</span><span class="w"> </span><span class="no">nil</span><span class="p">,</span><span class="w">
   </span><span class="ss">page</span><span class="p">:</span><span class="w"> </span><span class="mi">1</span><span class="p">,</span><span class="w">
   </span><span class="ss">pages</span><span class="p">:</span><span class="w"> </span><span class="mi">1</span><span class="p">,</span><span class="w">
   </span><span class="ss">previous</span><span class="p">:</span><span class="w"> </span><span class="no">nil</span><span class="p">,</span><span class="w">
-  </span><span class="ss">results</span><span class="p">:</span><span class="w"> </span><span class="p" data-group-id="8333496356-3">[</span><span class="p" data-group-id="8333496356-4">%</span><span class="nc" data-group-id="8333496356-4">LemonMarketsEx.PortfolioItem</span><span class="p" data-group-id="8333496356-4">{</span><span class="p" data-group-id="8333496356-4">}</span><span class="p">,</span><span class="w"> </span><span class="n">...</span><span class="p" data-group-id="8333496356-3">]</span><span class="p">,</span><span class="w">
+  </span><span class="ss">results</span><span class="p">:</span><span class="w"> </span><span class="p" data-group-id="7056916412-3">[</span><span class="p" data-group-id="7056916412-4">%</span><span class="nc" data-group-id="7056916412-4">LemonMarketsEx.PortfolioItem</span><span class="p" data-group-id="7056916412-4">{</span><span class="p" data-group-id="7056916412-4">}</span><span class="p">,</span><span class="w"> </span><span class="n">...</span><span class="p" data-group-id="7056916412-3">]</span><span class="p">,</span><span class="w">
   </span><span class="ss">status</span><span class="p">:</span><span class="w"> </span><span class="s">&quot;ok&quot;</span><span class="p">,</span><span class="w">
   </span><span class="ss">time</span><span class="p">:</span><span class="w"> </span><span class="s">&quot;2021-12-26T21:35:55.546+00:00&quot;</span><span class="p">,</span><span class="w">
   </span><span class="ss">total</span><span class="p">:</span><span class="w"> </span><span class="mi">0</span><span class="w">
-</span><span class="p" data-group-id="8333496356-2">}</span><span class="p" data-group-id="8333496356-1">}</span></code></pre>
+</span><span class="p" data-group-id="7056916412-2">}</span><span class="p" data-group-id="7056916412-1">}</span></code></pre>
   </section>
 </section>
 
@@ -1070,15 +1070,15 @@ Space
   <a href="#create_space/1-examples" class="hover-link"><span class="icon-link" aria-hidden="true"></span></a>
   Examples
 </h2>
-<pre><code class="makeup elixir"><span class="gp unselectable">iex&gt; </span><span class="n">params</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="p" data-group-id="4037022269-1">%{</span><span class="ss">name</span><span class="p">:</span><span class="w"> </span><span class="s">&quot;Stonks&quot;</span><span class="p">,</span><span class="w"> </span><span class="ss">type</span><span class="p">:</span><span class="w"> </span><span class="s">&quot;manual&quot;</span><span class="p">,</span><span class="w"> </span><span class="ss">risk_limit</span><span class="p">:</span><span class="w"> </span><span class="mi">100000000</span><span class="p" data-group-id="4037022269-1">}</span><span class="w">
-</span><span class="gp unselectable">iex&gt; </span><span class="nc">LemonMarketsEx.Trading</span><span class="o">.</span><span class="n">create_space</span><span class="p" data-group-id="4037022269-2">(</span><span class="n">params</span><span class="p" data-group-id="4037022269-2">)</span><span class="w">
-</span><span class="p" data-group-id="4037022269-3">{</span><span class="ss">:ok</span><span class="p">,</span><span class="w">
-  </span><span class="p" data-group-id="4037022269-4">%{</span><span class="w">
+<pre><code class="makeup elixir"><span class="gp unselectable">iex&gt; </span><span class="n">params</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="p" data-group-id="5260235593-1">%{</span><span class="ss">name</span><span class="p">:</span><span class="w"> </span><span class="s">&quot;Stonks&quot;</span><span class="p">,</span><span class="w"> </span><span class="ss">type</span><span class="p">:</span><span class="w"> </span><span class="s">&quot;manual&quot;</span><span class="p">,</span><span class="w"> </span><span class="ss">risk_limit</span><span class="p">:</span><span class="w"> </span><span class="mi">100000000</span><span class="p" data-group-id="5260235593-1">}</span><span class="w">
+</span><span class="gp unselectable">iex&gt; </span><span class="nc">LemonMarketsEx.Trading</span><span class="o">.</span><span class="n">create_space</span><span class="p" data-group-id="5260235593-2">(</span><span class="n">params</span><span class="p" data-group-id="5260235593-2">)</span><span class="w">
+</span><span class="p" data-group-id="5260235593-3">{</span><span class="ss">:ok</span><span class="p">,</span><span class="w">
+  </span><span class="p" data-group-id="5260235593-4">%{</span><span class="w">
   </span><span class="ss">mode</span><span class="p">:</span><span class="w"> </span><span class="s">&quot;paper&quot;</span><span class="p">,</span><span class="w">
-  </span><span class="ss">results</span><span class="p">:</span><span class="w"> </span><span class="p" data-group-id="4037022269-5">%</span><span class="nc" data-group-id="4037022269-5">LemonMarketsEx.Space</span><span class="p" data-group-id="4037022269-5">{</span><span class="p" data-group-id="4037022269-5">}</span><span class="p">,</span><span class="w">
+  </span><span class="ss">results</span><span class="p">:</span><span class="w"> </span><span class="p" data-group-id="5260235593-5">%</span><span class="nc" data-group-id="5260235593-5">LemonMarketsEx.Space</span><span class="p" data-group-id="5260235593-5">{</span><span class="p" data-group-id="5260235593-5">}</span><span class="p">,</span><span class="w">
   </span><span class="ss">status</span><span class="p">:</span><span class="w"> </span><span class="s">&quot;ok&quot;</span><span class="p">,</span><span class="w">
   </span><span class="ss">time</span><span class="p">:</span><span class="w"> </span><span class="s">&quot;2021-12-26T21:35:55.546+00:00&quot;</span><span class="p">,</span><span class="w">
-</span><span class="p" data-group-id="4037022269-4">}</span><span class="p" data-group-id="4037022269-3">}</span></code></pre>
+</span><span class="p" data-group-id="5260235593-4">}</span><span class="p" data-group-id="5260235593-3">}</span></code></pre>
   </section>
 </section>
 <section class="detail" id="delete_space/1">
@@ -1110,8 +1110,8 @@ Space
       </div>
 
 <p>Deletes a space from the lemon.markets Trading API.</p><p>You can only delete an empty space, meaning that the space has nothing in its portfolio and no pending orders.
-See: <a href="https://docs.lemon.markets/trading/spaces">https://docs.lemon.markets/trading/spaces</a></p><p> ## Examples</p><pre><code class="makeup elixir"><span class="gp unselectable">iex&gt; </span><span class="nc">LemonMarketsEx.Trading</span><span class="o">.</span><span class="n">delete_space</span><span class="p" data-group-id="0789517774-1">(</span><span class="n">space_id</span><span class="p" data-group-id="0789517774-1">)</span><span class="w">
-</span><span class="p" data-group-id="0789517774-2">{</span><span class="ss">:ok</span><span class="p">,</span><span class="w"> </span><span class="p" data-group-id="0789517774-3">%{</span><span class="ss">mode</span><span class="p">:</span><span class="w"> </span><span class="s">&quot;paper&quot;</span><span class="p">,</span><span class="w"> </span><span class="ss">status</span><span class="p">:</span><span class="w"> </span><span class="s">&quot;ok&quot;</span><span class="p">,</span><span class="w"> </span><span class="ss">time</span><span class="p">:</span><span class="w"> </span><span class="s">&quot;2021-12-26T23:09:51.496+00:00&quot;</span><span class="p" data-group-id="0789517774-3">}</span><span class="p" data-group-id="0789517774-2">}</span></code></pre>
+See: <a href="https://docs.lemon.markets/trading/spaces">https://docs.lemon.markets/trading/spaces</a></p><p> ## Examples</p><pre><code class="makeup elixir"><span class="gp unselectable">iex&gt; </span><span class="nc">LemonMarketsEx.Trading</span><span class="o">.</span><span class="n">delete_space</span><span class="p" data-group-id="5372378465-1">(</span><span class="n">space_id</span><span class="p" data-group-id="5372378465-1">)</span><span class="w">
+</span><span class="p" data-group-id="5372378465-2">{</span><span class="ss">:ok</span><span class="p">,</span><span class="w"> </span><span class="p" data-group-id="5372378465-3">%{</span><span class="ss">mode</span><span class="p">:</span><span class="w"> </span><span class="s">&quot;paper&quot;</span><span class="p">,</span><span class="w"> </span><span class="ss">status</span><span class="p">:</span><span class="w"> </span><span class="s">&quot;ok&quot;</span><span class="p">,</span><span class="w"> </span><span class="ss">time</span><span class="p">:</span><span class="w"> </span><span class="s">&quot;2021-12-26T23:09:51.496+00:00&quot;</span><span class="p" data-group-id="5372378465-3">}</span><span class="p" data-group-id="5372378465-2">}</span></code></pre>
   </section>
 </section>
 <section class="detail" id="get_space/1">
@@ -1152,14 +1152,14 @@ See: <a href="https://docs.lemon.markets/trading/spaces">https://docs.lemon.mark
   <a href="#get_space/1-examples" class="hover-link"><span class="icon-link" aria-hidden="true"></span></a>
   Examples
 </h2>
-<pre><code class="makeup elixir"><span class="gp unselectable">iex&gt; </span><span class="nc">LemonMarketsEx.Trading</span><span class="o">.</span><span class="n">get_space</span><span class="p" data-group-id="4615757352-1">(</span><span class="n">space_id</span><span class="p" data-group-id="4615757352-1">)</span><span class="w">
-</span><span class="p" data-group-id="4615757352-2">{</span><span class="ss">:ok</span><span class="p">,</span><span class="w">
-  </span><span class="p" data-group-id="4615757352-3">%{</span><span class="w">
+<pre><code class="makeup elixir"><span class="gp unselectable">iex&gt; </span><span class="nc">LemonMarketsEx.Trading</span><span class="o">.</span><span class="n">get_space</span><span class="p" data-group-id="1225799240-1">(</span><span class="n">space_id</span><span class="p" data-group-id="1225799240-1">)</span><span class="w">
+</span><span class="p" data-group-id="1225799240-2">{</span><span class="ss">:ok</span><span class="p">,</span><span class="w">
+  </span><span class="p" data-group-id="1225799240-3">%{</span><span class="w">
   </span><span class="ss">mode</span><span class="p">:</span><span class="w"> </span><span class="s">&quot;paper&quot;</span><span class="p">,</span><span class="w">
-  </span><span class="ss">results</span><span class="p">:</span><span class="w"> </span><span class="p" data-group-id="4615757352-4">%</span><span class="nc" data-group-id="4615757352-4">LemonMarketsEx.Space</span><span class="p" data-group-id="4615757352-4">{</span><span class="p" data-group-id="4615757352-4">}</span><span class="p">,</span><span class="w">
+  </span><span class="ss">results</span><span class="p">:</span><span class="w"> </span><span class="p" data-group-id="1225799240-4">%</span><span class="nc" data-group-id="1225799240-4">LemonMarketsEx.Space</span><span class="p" data-group-id="1225799240-4">{</span><span class="p" data-group-id="1225799240-4">}</span><span class="p">,</span><span class="w">
   </span><span class="ss">status</span><span class="p">:</span><span class="w"> </span><span class="s">&quot;ok&quot;</span><span class="p">,</span><span class="w">
   </span><span class="ss">time</span><span class="p">:</span><span class="w"> </span><span class="s">&quot;2021-12-26T21:35:55.546+00:00&quot;</span><span class="p">,</span><span class="w">
-</span><span class="p" data-group-id="4615757352-3">}</span><span class="p" data-group-id="4615757352-2">}</span></code></pre>
+</span><span class="p" data-group-id="1225799240-3">}</span><span class="p" data-group-id="1225799240-2">}</span></code></pre>
   </section>
 </section>
 <section class="detail" id="get_spaces/1">
@@ -1212,18 +1212,18 @@ See: <a href="https://docs.lemon.markets/trading/spaces">https://docs.lemon.mark
   Examples
 </h2>
 <pre><code class="makeup elixir"><span class="gp unselectable">iex&gt; </span><span class="nc">LemonMarketsEx.Trading</span><span class="o">.</span><span class="n">get_spaces</span><span class="w">
-</span><span class="p" data-group-id="3288651918-1">{</span><span class="ss">:ok</span><span class="p">,</span><span class="w">
-  </span><span class="p" data-group-id="3288651918-2">%{</span><span class="w">
+</span><span class="p" data-group-id="1234794641-1">{</span><span class="ss">:ok</span><span class="p">,</span><span class="w">
+  </span><span class="p" data-group-id="1234794641-2">%{</span><span class="w">
   </span><span class="ss">mode</span><span class="p">:</span><span class="w"> </span><span class="s">&quot;paper&quot;</span><span class="p">,</span><span class="w">
   </span><span class="ss">next</span><span class="p">:</span><span class="w"> </span><span class="no">nil</span><span class="p">,</span><span class="w">
   </span><span class="ss">page</span><span class="p">:</span><span class="w"> </span><span class="mi">1</span><span class="p">,</span><span class="w">
   </span><span class="ss">pages</span><span class="p">:</span><span class="w"> </span><span class="mi">1</span><span class="p">,</span><span class="w">
   </span><span class="ss">previous</span><span class="p">:</span><span class="w"> </span><span class="no">nil</span><span class="p">,</span><span class="w">
-  </span><span class="ss">results</span><span class="p">:</span><span class="w"> </span><span class="p" data-group-id="3288651918-3">[</span><span class="p" data-group-id="3288651918-4">%</span><span class="nc" data-group-id="3288651918-4">LemonMarketsEx.Space</span><span class="p" data-group-id="3288651918-4">{</span><span class="p" data-group-id="3288651918-4">}</span><span class="p">,</span><span class="w"> </span><span class="n">...</span><span class="p" data-group-id="3288651918-3">]</span><span class="p">,</span><span class="w">
+  </span><span class="ss">results</span><span class="p">:</span><span class="w"> </span><span class="p" data-group-id="1234794641-3">[</span><span class="p" data-group-id="1234794641-4">%</span><span class="nc" data-group-id="1234794641-4">LemonMarketsEx.Space</span><span class="p" data-group-id="1234794641-4">{</span><span class="p" data-group-id="1234794641-4">}</span><span class="p">,</span><span class="w"> </span><span class="n">...</span><span class="p" data-group-id="1234794641-3">]</span><span class="p">,</span><span class="w">
   </span><span class="ss">status</span><span class="p">:</span><span class="w"> </span><span class="s">&quot;ok&quot;</span><span class="p">,</span><span class="w">
   </span><span class="ss">time</span><span class="p">:</span><span class="w"> </span><span class="s">&quot;2021-12-26T21:35:55.546+00:00&quot;</span><span class="p">,</span><span class="w">
   </span><span class="ss">total</span><span class="p">:</span><span class="w"> </span><span class="mi">0</span><span class="w">
-</span><span class="p" data-group-id="3288651918-2">}</span><span class="p" data-group-id="3288651918-1">}</span></code></pre>
+</span><span class="p" data-group-id="1234794641-2">}</span><span class="p" data-group-id="1234794641-1">}</span></code></pre>
   </section>
 </section>
 <section class="detail" id="update_space/2">
@@ -1268,15 +1268,15 @@ See: <a href="https://docs.lemon.markets/trading/spaces">https://docs.lemon.mark
   <a href="#update_space/2-examples" class="hover-link"><span class="icon-link" aria-hidden="true"></span></a>
   Examples
 </h2>
-<pre><code class="makeup elixir"><span class="gp unselectable">iex&gt; </span><span class="n">params</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="p" data-group-id="2553773039-1">%{</span><span class="ss">name</span><span class="p">:</span><span class="w"> </span><span class="s">&quot;Stonks&quot;</span><span class="p" data-group-id="2553773039-1">}</span><span class="w">
-</span><span class="gp unselectable">iex&gt; </span><span class="nc">LemonMarketsEx.Trading</span><span class="o">.</span><span class="n">update_space</span><span class="p" data-group-id="2553773039-2">(</span><span class="n">space_id</span><span class="p">,</span><span class="w"> </span><span class="n">params</span><span class="p" data-group-id="2553773039-2">)</span><span class="w">
-</span><span class="p" data-group-id="2553773039-3">{</span><span class="ss">:ok</span><span class="p">,</span><span class="w">
-  </span><span class="p" data-group-id="2553773039-4">%{</span><span class="w">
+<pre><code class="makeup elixir"><span class="gp unselectable">iex&gt; </span><span class="n">params</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="p" data-group-id="3389055475-1">%{</span><span class="ss">name</span><span class="p">:</span><span class="w"> </span><span class="s">&quot;Stonks&quot;</span><span class="p" data-group-id="3389055475-1">}</span><span class="w">
+</span><span class="gp unselectable">iex&gt; </span><span class="nc">LemonMarketsEx.Trading</span><span class="o">.</span><span class="n">update_space</span><span class="p" data-group-id="3389055475-2">(</span><span class="n">space_id</span><span class="p">,</span><span class="w"> </span><span class="n">params</span><span class="p" data-group-id="3389055475-2">)</span><span class="w">
+</span><span class="p" data-group-id="3389055475-3">{</span><span class="ss">:ok</span><span class="p">,</span><span class="w">
+  </span><span class="p" data-group-id="3389055475-4">%{</span><span class="w">
   </span><span class="ss">mode</span><span class="p">:</span><span class="w"> </span><span class="s">&quot;paper&quot;</span><span class="p">,</span><span class="w">
-  </span><span class="ss">results</span><span class="p">:</span><span class="w"> </span><span class="p" data-group-id="2553773039-5">%</span><span class="nc" data-group-id="2553773039-5">LemonMarketsEx.Space</span><span class="p" data-group-id="2553773039-5">{</span><span class="p" data-group-id="2553773039-5">}</span><span class="p">,</span><span class="w">
+  </span><span class="ss">results</span><span class="p">:</span><span class="w"> </span><span class="p" data-group-id="3389055475-5">%</span><span class="nc" data-group-id="3389055475-5">LemonMarketsEx.Space</span><span class="p" data-group-id="3389055475-5">{</span><span class="p" data-group-id="3389055475-5">}</span><span class="p">,</span><span class="w">
   </span><span class="ss">status</span><span class="p">:</span><span class="w"> </span><span class="s">&quot;ok&quot;</span><span class="p">,</span><span class="w">
   </span><span class="ss">time</span><span class="p">:</span><span class="w"> </span><span class="s">&quot;2021-12-26T21:35:55.546+00:00&quot;</span><span class="p">,</span><span class="w">
-</span><span class="p" data-group-id="2553773039-4">}</span><span class="p" data-group-id="2553773039-3">}</span></code></pre>
+</span><span class="p" data-group-id="3389055475-4">}</span><span class="p" data-group-id="3389055475-3">}</span></code></pre>
   </section>
 </section>
 
@@ -1331,10 +1331,10 @@ User
   Examples
 </h2>
 <pre><code class="makeup elixir"><span class="gp unselectable">iex&gt; </span><span class="nc">LemonMarketsEx.Trading</span><span class="o">.</span><span class="n">get_user</span><span class="w">
-</span><span class="p" data-group-id="5491096996-1">{</span><span class="ss">:ok</span><span class="p">,</span><span class="w">
-  </span><span class="p" data-group-id="5491096996-2">%{</span><span class="w">
+</span><span class="p" data-group-id="5727771456-1">{</span><span class="ss">:ok</span><span class="p">,</span><span class="w">
+  </span><span class="p" data-group-id="5727771456-2">%{</span><span class="w">
     </span><span class="ss">mode</span><span class="p">:</span><span class="w"> </span><span class="s">&quot;paper&quot;</span><span class="p">,</span><span class="w">
-    </span><span class="ss">results</span><span class="p">:</span><span class="w"> </span><span class="p" data-group-id="5491096996-3">%</span><span class="nc" data-group-id="5491096996-3">LemonMarketsEx.User</span><span class="p" data-group-id="5491096996-3">{</span><span class="w">
+    </span><span class="ss">results</span><span class="p">:</span><span class="w"> </span><span class="p" data-group-id="5727771456-3">%</span><span class="nc" data-group-id="5727771456-3">LemonMarketsEx.User</span><span class="p" data-group-id="5727771456-3">{</span><span class="w">
       </span><span class="ss">account_id</span><span class="p">:</span><span class="w"> </span><span class="s">&quot;acc_1337&quot;</span><span class="p">,</span><span class="w">
       </span><span class="ss">country</span><span class="p">:</span><span class="w"> </span><span class="s">&quot;de&quot;</span><span class="p">,</span><span class="w">
       </span><span class="ss">created_at</span><span class="p">:</span><span class="w"> </span><span class="s">&quot;2021-12-18T21:47:19.204+00:00&quot;</span><span class="p">,</span><span class="w">
@@ -1353,10 +1353,10 @@ User
       </span><span class="ss">tax_allowance_start</span><span class="p">:</span><span class="w"> </span><span class="no">nil</span><span class="p">,</span><span class="w">
       </span><span class="ss">trading_plan</span><span class="p">:</span><span class="w"> </span><span class="s">&quot;free&quot;</span><span class="p">,</span><span class="w">
       </span><span class="ss">user_id</span><span class="p">:</span><span class="w"> </span><span class="s">&quot;usr_1337&quot;</span><span class="w">
-    </span><span class="p" data-group-id="5491096996-3">}</span><span class="p">,</span><span class="w">
+    </span><span class="p" data-group-id="5727771456-3">}</span><span class="p">,</span><span class="w">
     </span><span class="ss">status</span><span class="p">:</span><span class="w"> </span><span class="s">&quot;ok&quot;</span><span class="p">,</span><span class="w">
     </span><span class="ss">time</span><span class="p">:</span><span class="w"> </span><span class="s">&quot;2021-12-26T17:46:33.108+00:00&quot;</span><span class="w">
-  </span><span class="p" data-group-id="5491096996-2">}</span><span class="p" data-group-id="5491096996-1">}</span></code></pre>
+  </span><span class="p" data-group-id="5727771456-2">}</span><span class="p" data-group-id="5727771456-1">}</span></code></pre>
   </section>
 </section>
 
