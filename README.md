@@ -127,7 +127,7 @@ Nice. We successfully created a new order. But it's status is `"inactive"`. That
 We can simply pass in the `order_id` to the function and activate it.
 
 ```elixir
-iex> LemonMarketsEx.activate_order(order_id)
+iex> LemonMarketsEx.activate_order(order_id, %{pin: "1337"})
 {:ok, %{mode: "paper", status: "ok", time: "2021-12-26T22:12:05.023+00:00"}}
 ```
 
