@@ -1,0 +1,33 @@
+{
+  "results": [
+    {
+      "name": "Börse München - Gettex",
+      "title": "Gettex",
+      "mic": "XMUN",
+      "is_open": true,
+      "opening_hours": {
+        "start": "08:00",
+        "end": "22:00",
+        "timezone": "Europe/Berlin"
+      },
+      "opening_days": ["2021-12-27", "2021-12-28", "2021-12-29", "2021-12-30"]
+    },
+    {
+      "name": "Börse München - LM Best Performance",
+      "title": "LM Best Performance",
+      "mic": "LMBPX",
+      "is_open": true,
+      "opening_hours": {
+        "start": "08:00",
+        "end": "22:00",
+        "timezone": "Europe/Berlin"
+      },
+      "opening_days": ["2021-12-27", "2021-12-28", "2021-12-29", "2021-12-30"]
+    }
+  ],
+  "previous": null,
+  "next": null,
+  "total": 2,
+  "page": 1,
+  "pages": 1
+}

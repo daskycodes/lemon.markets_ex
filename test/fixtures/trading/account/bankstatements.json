@@ -1,0 +1,32 @@
+{
+  "time": "2021-12-27T17:11:06.011+00:00",
+  "status": "ok",
+  "mode": "paper",
+  "results": [
+    {
+      "id": "bst_1337",
+      "account_id": "acc_1337",
+      "type": "pay_in",
+      "date": "2021-12-17",
+      "amount": 1000000000,
+      "isin": null,
+      "isin_title": null,
+      "created_at": "2021-12-18T21:48:03.257+00:00"
+    },
+    {
+      "id": "bst_1337",
+      "account_id": "acc_1337",
+      "type": "eod_balance",
+      "date": "2021-12-17",
+      "amount": 1000000000,
+      "isin": null,
+      "isin_title": null,
+      "created_at": "2021-12-18T21:48:03.257+00:00"
+    }
+  ],
+  "previous": null,
+  "next": null,
+  "total": 2,
+  "page": 1,
+  "pages": 1
+}

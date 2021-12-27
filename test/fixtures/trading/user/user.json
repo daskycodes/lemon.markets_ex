@@ -1,0 +1,25 @@
+{
+  "time": "2021-12-27T17:36:33.025+00:00",
+  "mode": "paper",
+  "status": "ok",
+  "results": {
+    "created_at": "2021-12-18T21:47:19.204+00:00",
+    "user_id": "usr_1337",
+    "firstname": "trader@lemon.markets",
+    "lastname": null,
+    "email": "trader@lemon.markets",
+    "phone": null,
+    "phone_verified": null,
+    "pin_verified": false,
+    "account_id": "acc_1337",
+    "trading_plan": "free",
+    "data_plan": "free",
+    "tax_allowance": null,
+    "tax_allowance_start": null,
+    "tax_allowance_end": null,
+    "notifications_general": false,
+    "notifications_order": false,
+    "country": "de",
+    "language": "en"
+  }
+}
