@@ -4,17 +4,17 @@
     <meta charset="utf-8">
     <meta http-equiv="x-ua-compatible" content="ie=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="generator" content="ExDoc v0.26.0">
+    <meta name="generator" content="ExDoc v0.27.0-dev">
     <meta name="project" content="LemonMarketsEx v0.2.0">
 
     <title>LemonMarketsEx.Market — LemonMarketsEx v0.2.0</title>
-    <link rel="stylesheet" href="dist/elixir-b5076885a795c65e636c.css" />
+    <link rel="stylesheet" href="dist/elixir-2c4ed65a6c3763819665.css" />
 
     <script src="dist/sidebar_items-42d81a20c9.js"></script>
 
       <script src="docs_config.js"></script>
 
-    <script async src="dist/app-a404e1e870b77c874f9e.js"></script>
+    <script async src="dist/app-4befcf7f6218cf6c164e.js"></script>
 
 
   </head>
@@ -31,16 +31,16 @@
 <div class="main">
 
 <button class="sidebar-button sidebar-toggle">
-  <span class="icon-menu" title="Collapse/expand sidebar"></span>
+  <i class="ri-menu-line ri-lg" title="Collapse/expand sidebar"></i>
 </button>
 
 <section class="sidebar">
   <form class="sidebar-search" action="search.html">
     <button type="submit" class="search-button" aria-label="Submit Search">
-      <span class="icon-search" aria-hidden="true" title="Submit search"></span>
+      <i class="ri-search-2-line" aria-hidden="true" title="Submit search"></i>
     </button>
     <button type="button" tabindex="-1" class="search-close-button" aria-label="Cancel Search">
-      <span class="icon-cross" aria-hidden="true" title="Cancel search"></span>
+      <i class="ri-close-line ri-lg" aria-hidden="true" title="Cancel search"></i>
     </button>
     <label class="search-label">
       <input name="q" type="text" class="search-input" placeholder="Search..." aria-label="Input your search terms" autocomplete="off" />
@@ -53,6 +53,7 @@
   </div>
 
   <div class="sidebar-header">
+
     <div class="sidebar-projectDetails">
       <a href="readme.html" class="sidebar-projectName" translate="no">
 LemonMarketsEx
@@ -61,16 +62,15 @@ LemonMarketsEx
         v0.2.0
       </strong>
     </div>
+    <ul class="sidebar-listNav">
+      <li><a id="extras-list-link" href="#full-list">Pages</a></li>
 
+        <li><a id="modules-list-link" href="#full-list">Modules</a></li>
+
+
+    </ul>
   </div>
 
-  <ul class="sidebar-listNav">
-    <li><a id="extras-list-link" href="#full-list">Pages</a></li>
-
-      <li><a id="modules-list-link" href="#full-list">Modules</a></li>
-
-
-  </ul>
   <div class="gradient"></div>
   <ul id="full-list" class="sidebar-fullList"></ul>
 </section>
@@ -82,9 +82,13 @@ LemonMarketsEx
 <h1>
   <span translate="no">LemonMarketsEx.Market</span> 
   <small class="app-vsn" translate="no">(LemonMarketsEx v0.2.0)</small>
+  <button class="settings display-settings">
+    <i class="ri-settings-3-line"></i>
+    <span class="sr-only">Settings</span>
+  </button>
 
     <a href="https://github.com/daskycodes/lemon.markets_ex/blob/main/lib/market/market.ex#L1" title="View Source" class="view-source" rel="help">
-      <span class="icon-code" aria-hidden="true"></span>
+      <i class="ri-code-s-slash-line" aria-hidden="true"></i>
       <span class="sr-only">View Source</span>
     </a>
 
@@ -100,7 +104,7 @@ LemonMarketsEx
   <section id="summary" class="details-list">
     <h1 class="section-heading">
       <a class="hover-link" href="#summary">
-        <span class="icon-link" aria-hidden="true"></span>
+        <i class="ri-link-m" aria-hidden="true"></i>
         <span class="sr-only">Link to this section</span>
       </a>
       Summary
@@ -197,7 +201,7 @@ LemonMarketsEx
   <section id="venues" class="details-list">
     <h1 class="section-heading">
       <a class="hover-link" href="#venues">
-        <span class="icon-link" aria-hidden="true"></span>
+        <i class="ri-link-m" aria-hidden="true"></i>
         <span class="sr-only">Link to this section</span>
       </a>
 Venues
@@ -209,13 +213,13 @@ Venues
 
   <div class="detail-header">
     <a href="#get_venues/1" class="detail-link" title="Link to this function">
-      <span class="icon-link" aria-hidden="true"></span>
+      <i class="ri-link-m" aria-hidden="true"></i>
       <span class="sr-only">Link to this function</span>
     </a>
     <h1 class="signature" translate="no">get_venues(query \\ [])</h1>
 
       <a href="https://github.com/daskycodes/lemon.markets_ex/blob/main/lib/market/market.ex#L78" class="view-source" rel="help" title="View Source">
-       <span class="icon-code" aria-hidden="true"></span>
+       <i class="ri-code-s-slash-line" aria-hidden="true"></i>
        <span class="sr-only">View Source</span>
      </a>
 
@@ -242,48 +246,48 @@ Venues
       </div>
 
 <p>Retrieves the available trading venues from the lemon.markets Market Data API.</p><p>See: <a href="https://docs.lemon.markets/market-data/instruments-tradingvenues#trading-venues">https://docs.lemon.markets/market-data/instruments-tradingvenues#trading-venues</a></p><h2 id="get_venues/1-parameters" class="section-heading">
-  <a href="#get_venues/1-parameters" class="hover-link"><span class="icon-link" aria-hidden="true"></span></a>
+  <a href="#get_venues/1-parameters" class="hover-link"><i class="ri-link-m" aria-hidden="true"></i></a>
   Parameters
 </h2>
 <ul><li><code class="inline">query</code> - A keyword list of query parameters.<ul><li><code class="inline">mic</code> (optional) - Enter a Market Identifier Code (MIC) in there. Default is <code class="inline">&quot;XMUN&quot;</code>.</li><li><code class="inline">page</code> (optional) - The specific results page you want to request. - See: <a href="https://docs.lemon.markets/trading/overview#pagination-in-the-trading-api">https://docs.lemon.markets/trading/overview#pagination-in-the-trading-api</a></li><li><code class="inline">limit</code> (optional) - The amount of results per page. - See: <a href="https://docs.lemon.markets/trading/overview#pagination-in-the-trading-api">https://docs.lemon.markets/trading/overview#pagination-in-the-trading-api</a></li></ul></li></ul><h2 id="get_venues/1-examples" class="section-heading">
-  <a href="#get_venues/1-examples" class="hover-link"><span class="icon-link" aria-hidden="true"></span></a>
+  <a href="#get_venues/1-examples" class="hover-link"><i class="ri-link-m" aria-hidden="true"></i></a>
   Examples
 </h2>
-<pre><code class="makeup elixir"><span class="gp unselectable">iex&gt; </span><span class="nc">LemonMarketsEx.Market</span><span class="o">.</span><span class="n">get_venues</span><span class="w">
-</span><span class="p" data-group-id="9749058452-1">{</span><span class="ss">:ok</span><span class="p">,</span><span class="w">
-  </span><span class="p" data-group-id="9749058452-2">%{</span><span class="w">
+<pre><code class="makeup elixir" translate="no"><span class="gp unselectable">iex&gt; </span><span class="nc">LemonMarketsEx.Market</span><span class="o">.</span><span class="n">get_venues</span><span class="w">
+</span><span class="p" data-group-id="1978602300-1">{</span><span class="ss">:ok</span><span class="p">,</span><span class="w">
+  </span><span class="p" data-group-id="1978602300-2">%{</span><span class="w">
     </span><span class="ss">next</span><span class="p">:</span><span class="w"> </span><span class="no">nil</span><span class="p">,</span><span class="w">
     </span><span class="ss">page</span><span class="p">:</span><span class="w"> </span><span class="mi">1</span><span class="p">,</span><span class="w">
     </span><span class="ss">pages</span><span class="p">:</span><span class="w"> </span><span class="mi">1</span><span class="p">,</span><span class="w">
     </span><span class="ss">previous</span><span class="p">:</span><span class="w"> </span><span class="no">nil</span><span class="p">,</span><span class="w">
-    </span><span class="ss">results</span><span class="p">:</span><span class="w"> </span><span class="p" data-group-id="9749058452-3">[</span><span class="w">
-      </span><span class="p" data-group-id="9749058452-4">%</span><span class="nc" data-group-id="9749058452-4">LemonMarketsEx.Venue</span><span class="p" data-group-id="9749058452-4">{</span><span class="w">
+    </span><span class="ss">results</span><span class="p">:</span><span class="w"> </span><span class="p" data-group-id="1978602300-3">[</span><span class="w">
+      </span><span class="p" data-group-id="1978602300-4">%</span><span class="nc" data-group-id="1978602300-4">LemonMarketsEx.Venue</span><span class="p" data-group-id="1978602300-4">{</span><span class="w">
         </span><span class="ss">is_open</span><span class="p">:</span><span class="w"> </span><span class="no">true</span><span class="p">,</span><span class="w">
         </span><span class="ss">mic</span><span class="p">:</span><span class="w"> </span><span class="s">&quot;XMUN&quot;</span><span class="p">,</span><span class="w">
-        </span><span class="ss">opening_days</span><span class="p">:</span><span class="w"> </span><span class="p" data-group-id="9749058452-5">[</span><span class="s">&quot;2021-12-27&quot;</span><span class="p">,</span><span class="w"> </span><span class="s">&quot;2021-12-28&quot;</span><span class="p">,</span><span class="w"> </span><span class="s">&quot;2021-12-29&quot;</span><span class="p">,</span><span class="w">
-          </span><span class="s">&quot;2021-12-30&quot;</span><span class="p" data-group-id="9749058452-5">]</span><span class="p">,</span><span class="w">
-        </span><span class="ss">opening_hours</span><span class="p">:</span><span class="w"> </span><span class="p" data-group-id="9749058452-6">%{</span><span class="w">
+        </span><span class="ss">opening_days</span><span class="p">:</span><span class="w"> </span><span class="p" data-group-id="1978602300-5">[</span><span class="s">&quot;2021-12-27&quot;</span><span class="p">,</span><span class="w"> </span><span class="s">&quot;2021-12-28&quot;</span><span class="p">,</span><span class="w"> </span><span class="s">&quot;2021-12-29&quot;</span><span class="p">,</span><span class="w">
+          </span><span class="s">&quot;2021-12-30&quot;</span><span class="p" data-group-id="1978602300-5">]</span><span class="p">,</span><span class="w">
+        </span><span class="ss">opening_hours</span><span class="p">:</span><span class="w"> </span><span class="p" data-group-id="1978602300-6">%{</span><span class="w">
           </span><span class="ss">end</span><span class="p">:</span><span class="w"> </span><span class="s">&quot;08:00&quot;</span><span class="p">,</span><span class="w">
           </span><span class="ss">start</span><span class="p">:</span><span class="w"> </span><span class="s">&quot;08:00&quot;</span><span class="p">,</span><span class="w">
           </span><span class="ss">timezone</span><span class="p">:</span><span class="w"> </span><span class="s">&quot;Europe/Berlin&quot;</span><span class="w">
-        </span><span class="p" data-group-id="9749058452-6">}</span><span class="p">,</span><span class="w">
+        </span><span class="p" data-group-id="1978602300-6">}</span><span class="p">,</span><span class="w">
         </span><span class="ss">title</span><span class="p">:</span><span class="w"> </span><span class="s">&quot;Gettex&quot;</span><span class="w">
-      </span><span class="p" data-group-id="9749058452-4">}</span><span class="p">,</span><span class="w">
-      </span><span class="p" data-group-id="9749058452-7">%</span><span class="nc" data-group-id="9749058452-7">LemonMarketsEx.Venue</span><span class="p" data-group-id="9749058452-7">{</span><span class="w">
+      </span><span class="p" data-group-id="1978602300-4">}</span><span class="p">,</span><span class="w">
+      </span><span class="p" data-group-id="1978602300-7">%</span><span class="nc" data-group-id="1978602300-7">LemonMarketsEx.Venue</span><span class="p" data-group-id="1978602300-7">{</span><span class="w">
         </span><span class="ss">is_open</span><span class="p">:</span><span class="w"> </span><span class="no">true</span><span class="p">,</span><span class="w">
         </span><span class="ss">mic</span><span class="p">:</span><span class="w"> </span><span class="s">&quot;LMBPX&quot;</span><span class="p">,</span><span class="w">
-        </span><span class="ss">opening_days</span><span class="p">:</span><span class="w"> </span><span class="p" data-group-id="9749058452-8">[</span><span class="s">&quot;2021-12-27&quot;</span><span class="p">,</span><span class="w"> </span><span class="s">&quot;2021-12-28&quot;</span><span class="p">,</span><span class="w"> </span><span class="s">&quot;2021-12-29&quot;</span><span class="p">,</span><span class="w">
-          </span><span class="s">&quot;2021-12-30&quot;</span><span class="p" data-group-id="9749058452-8">]</span><span class="p">,</span><span class="w">
-        </span><span class="ss">opening_hours</span><span class="p">:</span><span class="w"> </span><span class="p" data-group-id="9749058452-9">%{</span><span class="w">
+        </span><span class="ss">opening_days</span><span class="p">:</span><span class="w"> </span><span class="p" data-group-id="1978602300-8">[</span><span class="s">&quot;2021-12-27&quot;</span><span class="p">,</span><span class="w"> </span><span class="s">&quot;2021-12-28&quot;</span><span class="p">,</span><span class="w"> </span><span class="s">&quot;2021-12-29&quot;</span><span class="p">,</span><span class="w">
+          </span><span class="s">&quot;2021-12-30&quot;</span><span class="p" data-group-id="1978602300-8">]</span><span class="p">,</span><span class="w">
+        </span><span class="ss">opening_hours</span><span class="p">:</span><span class="w"> </span><span class="p" data-group-id="1978602300-9">%{</span><span class="w">
           </span><span class="ss">end</span><span class="p">:</span><span class="w"> </span><span class="s">&quot;08:00&quot;</span><span class="p">,</span><span class="w">
           </span><span class="ss">start</span><span class="p">:</span><span class="w"> </span><span class="s">&quot;08:00&quot;</span><span class="p">,</span><span class="w">
           </span><span class="ss">timezone</span><span class="p">:</span><span class="w"> </span><span class="s">&quot;Europe/Berlin&quot;</span><span class="w">
-        </span><span class="p" data-group-id="9749058452-9">}</span><span class="p">,</span><span class="w">
+        </span><span class="p" data-group-id="1978602300-9">}</span><span class="p">,</span><span class="w">
         </span><span class="ss">title</span><span class="p">:</span><span class="w"> </span><span class="s">&quot;LM Best Performance&quot;</span><span class="w">
-      </span><span class="p" data-group-id="9749058452-7">}</span><span class="w">
-    </span><span class="p" data-group-id="9749058452-3">]</span><span class="p">,</span><span class="w">
+      </span><span class="p" data-group-id="1978602300-7">}</span><span class="w">
+    </span><span class="p" data-group-id="1978602300-3">]</span><span class="p">,</span><span class="w">
     </span><span class="ss">total</span><span class="p">:</span><span class="w"> </span><span class="mi">2</span><span class="w">
- </span><span class="p" data-group-id="9749058452-2">}</span><span class="p" data-group-id="9749058452-1">}</span></code></pre>
+ </span><span class="p" data-group-id="1978602300-2">}</span><span class="p" data-group-id="1978602300-1">}</span></code></pre>
   </section>
 </section>
 
@@ -293,7 +297,7 @@ Venues
   <section id="instruments" class="details-list">
     <h1 class="section-heading">
       <a class="hover-link" href="#instruments">
-        <span class="icon-link" aria-hidden="true"></span>
+        <i class="ri-link-m" aria-hidden="true"></i>
         <span class="sr-only">Link to this section</span>
       </a>
 Instruments
@@ -305,13 +309,13 @@ Instruments
 
   <div class="detail-header">
     <a href="#get_instruments/1" class="detail-link" title="Link to this function">
-      <span class="icon-link" aria-hidden="true"></span>
+      <i class="ri-link-m" aria-hidden="true"></i>
       <span class="sr-only">Link to this function</span>
     </a>
     <h1 class="signature" translate="no">get_instruments(query \\ [])</h1>
 
       <a href="https://github.com/daskycodes/lemon.markets_ex/blob/main/lib/market/market.ex#L147" class="view-source" rel="help" title="View Source">
-       <span class="icon-code" aria-hidden="true"></span>
+       <i class="ri-code-s-slash-line" aria-hidden="true"></i>
        <span class="sr-only">View Source</span>
      </a>
 
@@ -338,43 +342,43 @@ Instruments
       </div>
 
 <p>Find stocks on the lemon.markets Market Data API.</p><p>See: <a href="https://docs.lemon.markets/market-data/instruments-tradingvenues#finding-a-stock">https://docs.lemon.markets/market-data/instruments-tradingvenues#finding-a-stock</a></p><h2 id="get_instruments/1-parameters" class="section-heading">
-  <a href="#get_instruments/1-parameters" class="hover-link"><span class="icon-link" aria-hidden="true"></span></a>
+  <a href="#get_instruments/1-parameters" class="hover-link"><i class="ri-link-m" aria-hidden="true"></i></a>
   Parameters
 </h2>
 <ul><li><code class="inline">query</code> - A keyword list of query parameters.<ul><li><code class="inline">isin</code> (optional) - Specify the Instrument you are interested in through it Internation Securities Identification Number. You can also specify multiple ISINs. Maximum 10 ISINs per Request.
 Searching for multiple isins can be done through a comma separated string e.g. <code class="inline">&quot;US88160R1014,US19260Q1076&quot;</code> or multiple <code class="inline">:isin</code> keys e.g. <code class="inline">LemonMarketsEx.Market.get_instruments(isin: &quot;US88160R1014&quot;, isin: &quot;US19260Q1076&quot;)</code>.</li><li><code class="inline">mic</code> (optional) - Enter a Market Identifier Code (MIC) in there. Default is <code class="inline">&quot;XMUN&quot;</code>.</li><li><code class="inline">search</code> (optional) - Search for Name/Title, ISIN, WKN or symbol. You can also perform a partial search by only specifiying the first 4 symbols.</li><li><code class="inline">currency</code> (optional) - Define a three letter ISO currency code to see instruments traded in a specific currency, like <code class="inline">&quot;EUR&quot;</code> or <code class="inline">&quot;USD&quot;</code>.</li><li><code class="inline">tradable</code> (optional) - Filter for tradable or non-tradable Instruments with <code class="inline">true</code> or <code class="inline">false</code>.</li><li><code class="inline">page</code> (optional) - The specific results page you want to request. - See: <a href="https://docs.lemon.markets/trading/overview#pagination-in-the-trading-api">https://docs.lemon.markets/trading/overview#pagination-in-the-trading-api</a></li><li><code class="inline">limit</code> (optional) - The amount of results per page. - See: <a href="https://docs.lemon.markets/trading/overview#pagination-in-the-trading-api">https://docs.lemon.markets/trading/overview#pagination-in-the-trading-api</a></li></ul></li></ul><h2 id="get_instruments/1-examples" class="section-heading">
-  <a href="#get_instruments/1-examples" class="hover-link"><span class="icon-link" aria-hidden="true"></span></a>
+  <a href="#get_instruments/1-examples" class="hover-link"><i class="ri-link-m" aria-hidden="true"></i></a>
   Examples
 </h2>
-<pre><code class="makeup elixir"><span class="gp unselectable">iex&gt; </span><span class="nc">LemonMarketsEx.Market</span><span class="o">.</span><span class="n">get_instruments</span><span class="p" data-group-id="4827346963-1">(</span><span class="ss">search</span><span class="p">:</span><span class="w"> </span><span class="s">&quot;shopify&quot;</span><span class="p">,</span><span class="w"> </span><span class="ss">tradable</span><span class="p">:</span><span class="w"> </span><span class="no">true</span><span class="p">,</span><span class="w"> </span><span class="ss">mic</span><span class="p">:</span><span class="w"> </span><span class="s">&quot;XMUN&quot;</span><span class="p" data-group-id="4827346963-1">)</span><span class="w">
-</span><span class="p" data-group-id="4827346963-2">{</span><span class="ss">:ok</span><span class="p">,</span><span class="w">
-  </span><span class="p" data-group-id="4827346963-3">%{</span><span class="w">
+<pre><code class="makeup elixir" translate="no"><span class="gp unselectable">iex&gt; </span><span class="nc">LemonMarketsEx.Market</span><span class="o">.</span><span class="n">get_instruments</span><span class="p" data-group-id="6878775408-1">(</span><span class="ss">search</span><span class="p">:</span><span class="w"> </span><span class="s">&quot;shopify&quot;</span><span class="p">,</span><span class="w"> </span><span class="ss">tradable</span><span class="p">:</span><span class="w"> </span><span class="no">true</span><span class="p">,</span><span class="w"> </span><span class="ss">mic</span><span class="p">:</span><span class="w"> </span><span class="s">&quot;XMUN&quot;</span><span class="p" data-group-id="6878775408-1">)</span><span class="w">
+</span><span class="p" data-group-id="6878775408-2">{</span><span class="ss">:ok</span><span class="p">,</span><span class="w">
+  </span><span class="p" data-group-id="6878775408-3">%{</span><span class="w">
     </span><span class="ss">next</span><span class="p">:</span><span class="w"> </span><span class="no">nil</span><span class="p">,</span><span class="w">
     </span><span class="ss">page</span><span class="p">:</span><span class="w"> </span><span class="mi">1</span><span class="p">,</span><span class="w">
     </span><span class="ss">pages</span><span class="p">:</span><span class="w"> </span><span class="mi">1</span><span class="p">,</span><span class="w">
     </span><span class="ss">previous</span><span class="p">:</span><span class="w"> </span><span class="no">nil</span><span class="p">,</span><span class="w">
-    </span><span class="ss">results</span><span class="p">:</span><span class="w"> </span><span class="p" data-group-id="4827346963-4">[</span><span class="w">
-      </span><span class="p" data-group-id="4827346963-5">%</span><span class="nc" data-group-id="4827346963-5">LemonMarketsEx.Instrument</span><span class="p" data-group-id="4827346963-5">{</span><span class="w">
+    </span><span class="ss">results</span><span class="p">:</span><span class="w"> </span><span class="p" data-group-id="6878775408-4">[</span><span class="w">
+      </span><span class="p" data-group-id="6878775408-5">%</span><span class="nc" data-group-id="6878775408-5">LemonMarketsEx.Instrument</span><span class="p" data-group-id="6878775408-5">{</span><span class="w">
         </span><span class="ss">isin</span><span class="p">:</span><span class="w"> </span><span class="s">&quot;CA82509L1076&quot;</span><span class="p">,</span><span class="w">
         </span><span class="ss">name</span><span class="p">:</span><span class="w"> </span><span class="s">&quot;SHOPIFY A SUB.VTG&quot;</span><span class="p">,</span><span class="w">
         </span><span class="ss">symbol</span><span class="p">:</span><span class="w"> </span><span class="s">&quot;307&quot;</span><span class="p">,</span><span class="w">
         </span><span class="ss">title</span><span class="p">:</span><span class="w"> </span><span class="s">&quot;SHOPIFY INC.&quot;</span><span class="p">,</span><span class="w">
         </span><span class="ss">type</span><span class="p">:</span><span class="w"> </span><span class="s">&quot;stock&quot;</span><span class="p">,</span><span class="w">
-        </span><span class="ss">venues</span><span class="p">:</span><span class="w"> </span><span class="p" data-group-id="4827346963-6">[</span><span class="w">
-          </span><span class="p" data-group-id="4827346963-7">%{</span><span class="w">
+        </span><span class="ss">venues</span><span class="p">:</span><span class="w"> </span><span class="p" data-group-id="6878775408-6">[</span><span class="w">
+          </span><span class="p" data-group-id="6878775408-7">%{</span><span class="w">
             </span><span class="ss">currency</span><span class="p">:</span><span class="w"> </span><span class="s">&quot;EUR&quot;</span><span class="p">,</span><span class="w">
             </span><span class="ss">is_open</span><span class="p">:</span><span class="w"> </span><span class="no">true</span><span class="p">,</span><span class="w">
             </span><span class="ss">mic</span><span class="p">:</span><span class="w"> </span><span class="s">&quot;XMUN&quot;</span><span class="p">,</span><span class="w">
             </span><span class="ss">name</span><span class="p">:</span><span class="w"> </span><span class="s">&quot;Börse München - Gettex&quot;</span><span class="p">,</span><span class="w">
             </span><span class="ss">title</span><span class="p">:</span><span class="w"> </span><span class="s">&quot;Gettex&quot;</span><span class="p">,</span><span class="w">
             </span><span class="ss">tradable</span><span class="p">:</span><span class="w"> </span><span class="no">true</span><span class="w">
-          </span><span class="p" data-group-id="4827346963-7">}</span><span class="w">
-        </span><span class="p" data-group-id="4827346963-6">]</span><span class="p">,</span><span class="w">
+          </span><span class="p" data-group-id="6878775408-7">}</span><span class="w">
+        </span><span class="p" data-group-id="6878775408-6">]</span><span class="p">,</span><span class="w">
         </span><span class="ss">wkn</span><span class="p">:</span><span class="w"> </span><span class="s">&quot;A14TJP&quot;</span><span class="w">
-      </span><span class="p" data-group-id="4827346963-5">}</span><span class="w">
-    </span><span class="p" data-group-id="4827346963-4">]</span><span class="p">,</span><span class="w">
+      </span><span class="p" data-group-id="6878775408-5">}</span><span class="w">
+    </span><span class="p" data-group-id="6878775408-4">]</span><span class="p">,</span><span class="w">
     </span><span class="ss">total</span><span class="p">:</span><span class="w"> </span><span class="mi">1</span><span class="w">
-  </span><span class="p" data-group-id="4827346963-3">}</span><span class="p" data-group-id="4827346963-2">}</span></code></pre>
+  </span><span class="p" data-group-id="6878775408-3">}</span><span class="p" data-group-id="6878775408-2">}</span></code></pre>
   </section>
 </section>
 
@@ -384,7 +388,7 @@ Searching for multiple isins can be done through a comma separated string e.g. <
   <section id="trades" class="details-list">
     <h1 class="section-heading">
       <a class="hover-link" href="#trades">
-        <span class="icon-link" aria-hidden="true"></span>
+        <i class="ri-link-m" aria-hidden="true"></i>
         <span class="sr-only">Link to this section</span>
       </a>
 Trades
@@ -396,13 +400,13 @@ Trades
 
   <div class="detail-header">
     <a href="#get_trades/1" class="detail-link" title="Link to this function">
-      <span class="icon-link" aria-hidden="true"></span>
+      <i class="ri-link-m" aria-hidden="true"></i>
       <span class="sr-only">Link to this function</span>
     </a>
     <h1 class="signature" translate="no">get_trades(query \\ [])</h1>
 
       <a href="https://github.com/daskycodes/lemon.markets_ex/blob/main/lib/market/market.ex#L212" class="view-source" rel="help" title="View Source">
-       <span class="icon-code" aria-hidden="true"></span>
+       <i class="ri-code-s-slash-line" aria-hidden="true"></i>
        <span class="sr-only">View Source</span>
      </a>
 
@@ -429,38 +433,38 @@ Trades
       </div>
 
 <p>Retrieve trades from the lemon.markets Market Data API.</p><blockquote><h2 id="get_trades/1-working-with-from-and-to-in-the-trades-endpoint" class="section-heading">
-  <a href="#get_trades/1-working-with-from-and-to-in-the-trades-endpoint" class="hover-link"><span class="icon-link" aria-hidden="true"></span></a>
+  <a href="#get_trades/1-working-with-from-and-to-in-the-trades-endpoint" class="hover-link"><i class="ri-link-m" aria-hidden="true"></i></a>
   ⚠️ Working with 'from' and 'to' in the Trades endpoint
 </h2>
 <p><a href="https://lemon.markets">lemon.markets</a> are currently working hard on adding the possibility to specifiy the time range you want to get the Trades for.
 However, there are still some inconsistencies with using from and to to define your desired time range. Using these query parameters to specify your time range in most
 cases results in a 500 Server Error, so please try not to use it/rely on it at this stage. We are working on it :)</p></blockquote><p>See: <a href="https://docs.lemon.markets/market-data/historical-data#trades">https://docs.lemon.markets/market-data/historical-data#trades</a></p><h2 id="get_trades/1-parameters" class="section-heading">
-  <a href="#get_trades/1-parameters" class="hover-link"><span class="icon-link" aria-hidden="true"></span></a>
+  <a href="#get_trades/1-parameters" class="hover-link"><i class="ri-link-m" aria-hidden="true"></i></a>
   Parameters
 </h2>
 <ul><li><code class="inline">query</code> - A keyword list of query parameters.<ul><li><code class="inline">isin</code> (required) - Specify the Instrument you are interested in through it Internation Securities Identification Number. You can also specify multiple ISINs. Maximum 10 ISINs per Request.
 Searching for multiple isins can be done through a comma separated string e.g. <code class="inline">&quot;US88160R1014,US19260Q1076&quot;</code> or multiple <code class="inline">:isin</code> keys e.g. <code class="inline">LemonMarketsEx.Market.get_instruments(isin: &quot;US88160R1014&quot;, isin: &quot;US19260Q1076&quot;)</code>.</li><li><code class="inline">mic</code> (optional) - Market Identifier Code of Trading Venue. Currently, only <code class="inline">&quot;XMUN&quot;</code> is supported.</li><li><code class="inline">from</code> (optional) - Start of Time Range for which you want to get the Trades. Use int/date-iso-string to define your timestamp range. Use from=latest to receive the latest quotes.</li><li><code class="inline">to</code> (optional) - End of Time Range for which you want to get the Trades. Use int/date-iso-string to define your timestamp range.</li><li><code class="inline">decimals</code> (optional) - The numbers format you want to get your response in, either decimals or int. Default is <code class="inline">true</code>.</li><li><code class="inline">epoch</code> (optional) - The date format you want to get your response in. Default is <code class="inline">false</code>. By default, the API will return ISO string dates.</li><li><code class="inline">sorting</code> (optional) - FSort your API response, either ascending (<code class="inline">&quot;asc&quot;</code>) or descending (<code class="inline">&quot;desc&quot;</code>).</li><li><code class="inline">page</code> (optional) - The specific results page you want to request. - See: <a href="https://docs.lemon.markets/trading/overview#pagination-in-the-trading-api">https://docs.lemon.markets/trading/overview#pagination-in-the-trading-api</a></li><li><code class="inline">limit</code> (optional) - The amount of results per page. - See: <a href="https://docs.lemon.markets/trading/overview#pagination-in-the-trading-api">https://docs.lemon.markets/trading/overview#pagination-in-the-trading-api</a></li></ul></li></ul><h2 id="get_trades/1-examples" class="section-heading">
-  <a href="#get_trades/1-examples" class="hover-link"><span class="icon-link" aria-hidden="true"></span></a>
+  <a href="#get_trades/1-examples" class="hover-link"><i class="ri-link-m" aria-hidden="true"></i></a>
   Examples
 </h2>
-<pre><code class="makeup elixir"><span class="gp unselectable">iex&gt; </span><span class="nc">LemonMarketsEx.Market</span><span class="o">.</span><span class="n">get_trades</span><span class="p" data-group-id="5254537784-1">(</span><span class="ss">isin</span><span class="p">:</span><span class="w"> </span><span class="s">&quot;US19260Q1076&quot;</span><span class="p">,</span><span class="w"> </span><span class="ss">mic</span><span class="p">:</span><span class="w"> </span><span class="s">&quot;XMUN&quot;</span><span class="p" data-group-id="5254537784-1">)</span><span class="w">
-</span><span class="p" data-group-id="5254537784-2">{</span><span class="ss">:ok</span><span class="p">,</span><span class="w">
-  </span><span class="p" data-group-id="5254537784-3">%{</span><span class="w">
+<pre><code class="makeup elixir" translate="no"><span class="gp unselectable">iex&gt; </span><span class="nc">LemonMarketsEx.Market</span><span class="o">.</span><span class="n">get_trades</span><span class="p" data-group-id="3834946946-1">(</span><span class="ss">isin</span><span class="p">:</span><span class="w"> </span><span class="s">&quot;US19260Q1076&quot;</span><span class="p">,</span><span class="w"> </span><span class="ss">mic</span><span class="p">:</span><span class="w"> </span><span class="s">&quot;XMUN&quot;</span><span class="p" data-group-id="3834946946-1">)</span><span class="w">
+</span><span class="p" data-group-id="3834946946-2">{</span><span class="ss">:ok</span><span class="p">,</span><span class="w">
+  </span><span class="p" data-group-id="3834946946-3">%{</span><span class="w">
     </span><span class="ss">next</span><span class="p">:</span><span class="w"> </span><span class="no">nil</span><span class="p">,</span><span class="w">
     </span><span class="ss">page</span><span class="p">:</span><span class="w"> </span><span class="mi">1</span><span class="p">,</span><span class="w">
     </span><span class="ss">pages</span><span class="p">:</span><span class="w"> </span><span class="mi">1</span><span class="p">,</span><span class="w">
     </span><span class="ss">previous</span><span class="p">:</span><span class="w"> </span><span class="no">nil</span><span class="p">,</span><span class="w">
-    </span><span class="ss">results</span><span class="p">:</span><span class="w"> </span><span class="p" data-group-id="5254537784-4">[</span><span class="w">
-      </span><span class="p" data-group-id="5254537784-5">%</span><span class="nc" data-group-id="5254537784-5">LemonMarketsEx.Trade</span><span class="p" data-group-id="5254537784-5">{</span><span class="w">
+    </span><span class="ss">results</span><span class="p">:</span><span class="w"> </span><span class="p" data-group-id="3834946946-4">[</span><span class="w">
+      </span><span class="p" data-group-id="3834946946-5">%</span><span class="nc" data-group-id="3834946946-5">LemonMarketsEx.Trade</span><span class="p" data-group-id="3834946946-5">{</span><span class="w">
         </span><span class="ss">isin</span><span class="p">:</span><span class="w"> </span><span class="s">&quot;US19260Q1076&quot;</span><span class="p">,</span><span class="w">
         </span><span class="ss">mic</span><span class="p">:</span><span class="w"> </span><span class="s">&quot;XMUN&quot;</span><span class="p">,</span><span class="w">
         </span><span class="ss">p</span><span class="p">:</span><span class="w"> </span><span class="mf">246.5</span><span class="p">,</span><span class="w">
         </span><span class="ss">t</span><span class="p">:</span><span class="w"> </span><span class="s">&quot;2021-12-27T16:13:28.688+00:00&quot;</span><span class="p">,</span><span class="w">
         </span><span class="ss">v</span><span class="p">:</span><span class="w"> </span><span class="mi">8</span><span class="w">
-      </span><span class="p" data-group-id="5254537784-5">}</span><span class="w">
-    </span><span class="p" data-group-id="5254537784-4">]</span><span class="p">,</span><span class="w">
+      </span><span class="p" data-group-id="3834946946-5">}</span><span class="w">
+    </span><span class="p" data-group-id="3834946946-4">]</span><span class="p">,</span><span class="w">
     </span><span class="ss">total</span><span class="p">:</span><span class="w"> </span><span class="mi">1</span><span class="w">
-  </span><span class="p" data-group-id="5254537784-3">}</span><span class="p" data-group-id="5254537784-2">}</span></code></pre>
+  </span><span class="p" data-group-id="3834946946-3">}</span><span class="p" data-group-id="3834946946-2">}</span></code></pre>
   </section>
 </section>
 
@@ -470,7 +474,7 @@ Searching for multiple isins can be done through a comma separated string e.g. <
   <section id="quotes" class="details-list">
     <h1 class="section-heading">
       <a class="hover-link" href="#quotes">
-        <span class="icon-link" aria-hidden="true"></span>
+        <i class="ri-link-m" aria-hidden="true"></i>
         <span class="sr-only">Link to this section</span>
       </a>
 Quotes
@@ -482,13 +486,13 @@ Quotes
 
   <div class="detail-header">
     <a href="#get_quotes/1" class="detail-link" title="Link to this function">
-      <span class="icon-link" aria-hidden="true"></span>
+      <i class="ri-link-m" aria-hidden="true"></i>
       <span class="sr-only">Link to this function</span>
     </a>
     <h1 class="signature" translate="no">get_quotes(query \\ [])</h1>
 
       <a href="https://github.com/daskycodes/lemon.markets_ex/blob/main/lib/market/market.ex#L279" class="view-source" rel="help" title="View Source">
-       <span class="icon-code" aria-hidden="true"></span>
+       <i class="ri-code-s-slash-line" aria-hidden="true"></i>
        <span class="sr-only">View Source</span>
      </a>
 
@@ -515,29 +519,29 @@ Quotes
       </div>
 
 <p>Retrieve quotes from the lemon.markets Market Data API.</p><blockquote><h2 id="get_quotes/1-working-with-from-and-to-in-the-trades-endpoint" class="section-heading">
-  <a href="#get_quotes/1-working-with-from-and-to-in-the-trades-endpoint" class="hover-link"><span class="icon-link" aria-hidden="true"></span></a>
+  <a href="#get_quotes/1-working-with-from-and-to-in-the-trades-endpoint" class="hover-link"><i class="ri-link-m" aria-hidden="true"></i></a>
   ⚠️ Working with 'from' and 'to' in the Trades endpoint
 </h2>
 <p><a href="https://lemon.markets">lemon.markets</a> are currently working hard on adding the possibility to specifiy the time range you want to get the Trades for.
 However, there are still some inconsistencies with using from and to to define your desired time range. Using these query parameters to specify your time range in most
 cases results in a 500 Server Error, so please try not to use it/rely on it at this stage. We are working on it :)</p></blockquote><p>See: <a href="https://docs.lemon.markets/market-data/historical-data#quotes">https://docs.lemon.markets/market-data/historical-data#quotes</a></p><h2 id="get_quotes/1-parameters" class="section-heading">
-  <a href="#get_quotes/1-parameters" class="hover-link"><span class="icon-link" aria-hidden="true"></span></a>
+  <a href="#get_quotes/1-parameters" class="hover-link"><i class="ri-link-m" aria-hidden="true"></i></a>
   Parameters
 </h2>
 <ul><li><code class="inline">query</code> - A keyword list of query parameters.<ul><li><code class="inline">isin</code> (required) - Specify the Instrument you are interested in through it Internation Securities Identification Number. You can also specify multiple ISINs. Maximum 10 ISINs per Request.
 Searching for multiple isins can be done through a comma separated string e.g. <code class="inline">&quot;US88160R1014,US19260Q1076&quot;</code> or multiple <code class="inline">:isin</code> keys e.g. <code class="inline">LemonMarketsEx.Market.get_instruments(isin: &quot;US88160R1014&quot;, isin: &quot;US19260Q1076&quot;)</code>.</li><li><code class="inline">mic</code> (optional) - Market Identifier Code of Trading Venue. Currently, only <code class="inline">&quot;XMUN&quot;</code> is supported.</li><li><code class="inline">from</code> (optional) - Start of Time Range for which you want to get the Trades. Use int/date-iso-string to define your timestamp range. Use from=latest to receive the latest quotes.</li><li><code class="inline">to</code> (optional) - End of Time Range for which you want to get the Trades. Use int/date-iso-string to define your timestamp range.</li><li><code class="inline">decimals</code> (optional) - The numbers format you want to get your response in, either decimals or int. Default is <code class="inline">true</code>.</li><li><code class="inline">epoch</code> (optional) - The date format you want to get your response in. Default is <code class="inline">false</code>. By default, the API will return ISO string dates.</li><li><code class="inline">sorting</code> (optional) - FSort your API response, either ascending (<code class="inline">&quot;asc&quot;</code>) or descending (<code class="inline">&quot;desc&quot;</code>).</li><li><code class="inline">page</code> (optional) - The specific results page you want to request. - See: <a href="https://docs.lemon.markets/trading/overview#pagination-in-the-trading-api">https://docs.lemon.markets/trading/overview#pagination-in-the-trading-api</a></li><li><code class="inline">limit</code> (optional) - The amount of results per page. - See: <a href="https://docs.lemon.markets/trading/overview#pagination-in-the-trading-api">https://docs.lemon.markets/trading/overview#pagination-in-the-trading-api</a></li></ul></li></ul><h2 id="get_quotes/1-examples" class="section-heading">
-  <a href="#get_quotes/1-examples" class="hover-link"><span class="icon-link" aria-hidden="true"></span></a>
+  <a href="#get_quotes/1-examples" class="hover-link"><i class="ri-link-m" aria-hidden="true"></i></a>
   Examples
 </h2>
-<pre><code class="makeup elixir"><span class="gp unselectable">iex&gt; </span><span class="nc">LemonMarketsEx.Market</span><span class="o">.</span><span class="n">get_quotes</span><span class="p" data-group-id="6951721410-1">(</span><span class="ss">isin</span><span class="p">:</span><span class="w"> </span><span class="s">&quot;US19260Q1076&quot;</span><span class="p">,</span><span class="w"> </span><span class="ss">mic</span><span class="p">:</span><span class="w"> </span><span class="s">&quot;XMUN&quot;</span><span class="p" data-group-id="6951721410-1">)</span><span class="w">
-</span><span class="p" data-group-id="6951721410-2">{</span><span class="ss">:ok</span><span class="p">,</span><span class="w">
-  </span><span class="p" data-group-id="6951721410-3">%{</span><span class="w">
+<pre><code class="makeup elixir" translate="no"><span class="gp unselectable">iex&gt; </span><span class="nc">LemonMarketsEx.Market</span><span class="o">.</span><span class="n">get_quotes</span><span class="p" data-group-id="0018537598-1">(</span><span class="ss">isin</span><span class="p">:</span><span class="w"> </span><span class="s">&quot;US19260Q1076&quot;</span><span class="p">,</span><span class="w"> </span><span class="ss">mic</span><span class="p">:</span><span class="w"> </span><span class="s">&quot;XMUN&quot;</span><span class="p" data-group-id="0018537598-1">)</span><span class="w">
+</span><span class="p" data-group-id="0018537598-2">{</span><span class="ss">:ok</span><span class="p">,</span><span class="w">
+  </span><span class="p" data-group-id="0018537598-3">%{</span><span class="w">
     </span><span class="ss">next</span><span class="p">:</span><span class="w"> </span><span class="no">nil</span><span class="p">,</span><span class="w">
     </span><span class="ss">page</span><span class="p">:</span><span class="w"> </span><span class="mi">1</span><span class="p">,</span><span class="w">
     </span><span class="ss">pages</span><span class="p">:</span><span class="w"> </span><span class="mi">1</span><span class="p">,</span><span class="w">
     </span><span class="ss">previous</span><span class="p">:</span><span class="w"> </span><span class="no">nil</span><span class="p">,</span><span class="w">
-    </span><span class="ss">results</span><span class="p">:</span><span class="w"> </span><span class="p" data-group-id="6951721410-4">[</span><span class="w">
-      </span><span class="p" data-group-id="6951721410-5">%</span><span class="nc" data-group-id="6951721410-5">LemonMarketsEx.Quote</span><span class="p" data-group-id="6951721410-5">{</span><span class="w">
+    </span><span class="ss">results</span><span class="p">:</span><span class="w"> </span><span class="p" data-group-id="0018537598-4">[</span><span class="w">
+      </span><span class="p" data-group-id="0018537598-5">%</span><span class="nc" data-group-id="0018537598-5">LemonMarketsEx.Quote</span><span class="p" data-group-id="0018537598-5">{</span><span class="w">
         </span><span class="ss">a</span><span class="p">:</span><span class="w"> </span><span class="mf">245.0</span><span class="p">,</span><span class="w">
         </span><span class="ss">a_v</span><span class="p">:</span><span class="w"> </span><span class="mi">102</span><span class="p">,</span><span class="w">
         </span><span class="ss">b</span><span class="p">:</span><span class="w"> </span><span class="mf">244.0</span><span class="p">,</span><span class="w">
@@ -545,10 +549,10 @@ Searching for multiple isins can be done through a comma separated string e.g. <
         </span><span class="ss">isin</span><span class="p">:</span><span class="w"> </span><span class="s">&quot;US19260Q1076&quot;</span><span class="p">,</span><span class="w">
         </span><span class="ss">mic</span><span class="p">:</span><span class="w"> </span><span class="s">&quot;XMUN&quot;</span><span class="p">,</span><span class="w">
         </span><span class="ss">t</span><span class="p">:</span><span class="w"> </span><span class="s">&quot;2021-12-27T16:22:14.847+00:00&quot;</span><span class="w">
-      </span><span class="p" data-group-id="6951721410-5">}</span><span class="w">
-    </span><span class="p" data-group-id="6951721410-4">]</span><span class="p">,</span><span class="w">
+      </span><span class="p" data-group-id="0018537598-5">}</span><span class="w">
+    </span><span class="p" data-group-id="0018537598-4">]</span><span class="p">,</span><span class="w">
     </span><span class="ss">total</span><span class="p">:</span><span class="w"> </span><span class="mi">1</span><span class="w">
-  </span><span class="p" data-group-id="6951721410-3">}</span><span class="p" data-group-id="6951721410-2">}</span></code></pre>
+  </span><span class="p" data-group-id="0018537598-3">}</span><span class="p" data-group-id="0018537598-2">}</span></code></pre>
   </section>
 </section>
 
@@ -558,7 +562,7 @@ Searching for multiple isins can be done through a comma separated string e.g. <
   <section id="ohlc" class="details-list">
     <h1 class="section-heading">
       <a class="hover-link" href="#ohlc">
-        <span class="icon-link" aria-hidden="true"></span>
+        <i class="ri-link-m" aria-hidden="true"></i>
         <span class="sr-only">Link to this section</span>
       </a>
 OHLC
@@ -570,13 +574,13 @@ OHLC
 
   <div class="detail-header">
     <a href="#get_ohlc/2" class="detail-link" title="Link to this function">
-      <span class="icon-link" aria-hidden="true"></span>
+      <i class="ri-link-m" aria-hidden="true"></i>
       <span class="sr-only">Link to this function</span>
     </a>
     <h1 class="signature" translate="no">get_ohlc(timespan, query \\ [])</h1>
 
       <a href="https://github.com/daskycodes/lemon.markets_ex/blob/main/lib/market/market.ex#L347" class="view-source" rel="help" title="View Source">
-       <span class="icon-code" aria-hidden="true"></span>
+       <i class="ri-code-s-slash-line" aria-hidden="true"></i>
        <span class="sr-only">View Source</span>
      </a>
 
@@ -586,25 +590,25 @@ OHLC
   <section class="docstring">
 
 <p>Retrieve historic OHLC from the lemon.markets Market Data API.</p><p>See: <a href="https://docs.lemon.markets/market-data/historical-data#quotes">https://docs.lemon.markets/market-data/historical-data#quotes</a></p><h2 id="get_ohlc/2-parameters" class="section-heading">
-  <a href="#get_ohlc/2-parameters" class="hover-link"><span class="icon-link" aria-hidden="true"></span></a>
+  <a href="#get_ohlc/2-parameters" class="hover-link"><i class="ri-link-m" aria-hidden="true"></i></a>
   Parameters
 </h2>
 <ul><li><p><code class="inline">timespan</code> (required) - Specify the type of data you wish to retrieve: <code class="inline">&quot;m1&quot;</code> (per minute), <code class="inline">&quot;h1&quot;</code> (per hour), or <code class="inline">&quot;d1&quot;</code> (per day).</p></li><li><p><code class="inline">query</code> - A keyword list of query parameters.</p><ul><li><code class="inline">isin</code> (required) - Specify the Instrument you are interested in through it Internation Securities Identification Number. You can also specify multiple ISINs. Maximum 10 ISINs per Request.
 Searching for multiple isins can be done through a comma separated string e.g. <code class="inline">&quot;US88160R1014,US19260Q1076&quot;</code> or multiple <code class="inline">:isin</code> keys e.g. <code class="inline">LemonMarketsEx.Market.get_instruments(isin: &quot;US88160R1014&quot;, isin: &quot;US19260Q1076&quot;)</code>.</li><li><code class="inline">mic</code> (optional) - Market Identifier Code of Trading Venue. Currently, only <code class="inline">&quot;XMUN&quot;</code> is supported.</li><li><code class="inline">from</code> (optional) - Start of Time Range for which you want to get the Trades. Use int/date-iso-string to define your timestamp range. Use from=latest to receive the latest quotes.</li><li><code class="inline">to</code> (optional) - End of Time Range for which you want to get the Trades. Use int/date-iso-string to define your timestamp range.</li><li><code class="inline">decimals</code> (optional) - The numbers format you want to get your response in, either decimals or int. Default is <code class="inline">true</code>.</li><li><code class="inline">epoch</code> (optional) - The date format you want to get your response in. Default is <code class="inline">false</code>. By default, the API will return ISO string dates.</li><li><code class="inline">sorting</code> (optional) - FSort your API response, either ascending (<code class="inline">&quot;asc&quot;</code>) or descending (<code class="inline">&quot;desc&quot;</code>).</li><li><code class="inline">page</code> (optional) - The specific results page you want to request. - See: <a href="https://docs.lemon.markets/trading/overview#pagination-in-the-trading-api">https://docs.lemon.markets/trading/overview#pagination-in-the-trading-api</a></li><li><code class="inline">limit</code> (optional) - The amount of results per page. - See: <a href="https://docs.lemon.markets/trading/overview#pagination-in-the-trading-api">https://docs.lemon.markets/trading/overview#pagination-in-the-trading-api</a></li></ul></li></ul><h2 id="get_ohlc/2-examples" class="section-heading">
-  <a href="#get_ohlc/2-examples" class="hover-link"><span class="icon-link" aria-hidden="true"></span></a>
+  <a href="#get_ohlc/2-examples" class="hover-link"><i class="ri-link-m" aria-hidden="true"></i></a>
   Examples
 </h2>
-<pre><code class="makeup elixir"><span class="gp unselectable">iex&gt; </span><span class="n">to</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="nc">Date</span><span class="o">.</span><span class="n">utc_today</span><span class="w"> </span><span class="o">|&gt;</span><span class="w"> </span><span class="nc">Date</span><span class="o">.</span><span class="n">end_of_week</span><span class="w"> </span><span class="o">|&gt;</span><span class="w"> </span><span class="nc">Date</span><span class="o">.</span><span class="n">to_iso8601</span><span class="w">
+<pre><code class="makeup elixir" translate="no"><span class="gp unselectable">iex&gt; </span><span class="n">to</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="nc">Date</span><span class="o">.</span><span class="n">utc_today</span><span class="w"> </span><span class="o">|&gt;</span><span class="w"> </span><span class="nc">Date</span><span class="o">.</span><span class="n">end_of_week</span><span class="w"> </span><span class="o">|&gt;</span><span class="w"> </span><span class="nc">Date</span><span class="o">.</span><span class="n">to_iso8601</span><span class="w">
 </span><span class="gp unselectable">iex&gt; </span><span class="n">from</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="nc">Date</span><span class="o">.</span><span class="n">utc_today</span><span class="w"> </span><span class="o">|&gt;</span><span class="w"> </span><span class="nc">Date</span><span class="o">.</span><span class="n">beginning_of_week</span><span class="w"> </span><span class="o">|&gt;</span><span class="w"> </span><span class="nc">Date</span><span class="o">.</span><span class="n">to_iso8601</span><span class="w">
-</span><span class="gp unselectable">iex&gt; </span><span class="nc">LemonMarketsEx.Market</span><span class="o">.</span><span class="n">get_ohlc</span><span class="p" data-group-id="4340370610-1">(</span><span class="s">&quot;m1&quot;</span><span class="p">,</span><span class="w"> </span><span class="ss">isin</span><span class="p">:</span><span class="w"> </span><span class="s">&quot;US19260Q1076&quot;</span><span class="p">,</span><span class="w"> </span><span class="ss">mic</span><span class="p">:</span><span class="w"> </span><span class="s">&quot;XMUN&quot;</span><span class="p">,</span><span class="w"> </span><span class="ss">limit</span><span class="p">:</span><span class="w"> </span><span class="mi">100</span><span class="p">,</span><span class="w"> </span><span class="ss">from</span><span class="p">:</span><span class="w"> </span><span class="n">from</span><span class="p">,</span><span class="w"> </span><span class="ss">to</span><span class="p">:</span><span class="w"> </span><span class="n">to</span><span class="p" data-group-id="4340370610-1">)</span><span class="w">
-</span><span class="p" data-group-id="4340370610-2">{</span><span class="ss">:ok</span><span class="p">,</span><span class="w">
-  </span><span class="p" data-group-id="4340370610-3">%{</span><span class="w">
+</span><span class="gp unselectable">iex&gt; </span><span class="nc">LemonMarketsEx.Market</span><span class="o">.</span><span class="n">get_ohlc</span><span class="p" data-group-id="8052326023-1">(</span><span class="s">&quot;m1&quot;</span><span class="p">,</span><span class="w"> </span><span class="ss">isin</span><span class="p">:</span><span class="w"> </span><span class="s">&quot;US19260Q1076&quot;</span><span class="p">,</span><span class="w"> </span><span class="ss">mic</span><span class="p">:</span><span class="w"> </span><span class="s">&quot;XMUN&quot;</span><span class="p">,</span><span class="w"> </span><span class="ss">limit</span><span class="p">:</span><span class="w"> </span><span class="mi">100</span><span class="p">,</span><span class="w"> </span><span class="ss">from</span><span class="p">:</span><span class="w"> </span><span class="n">from</span><span class="p">,</span><span class="w"> </span><span class="ss">to</span><span class="p">:</span><span class="w"> </span><span class="n">to</span><span class="p" data-group-id="8052326023-1">)</span><span class="w">
+</span><span class="p" data-group-id="8052326023-2">{</span><span class="ss">:ok</span><span class="p">,</span><span class="w">
+  </span><span class="p" data-group-id="8052326023-3">%{</span><span class="w">
     </span><span class="ss">next</span><span class="p">:</span><span class="w"> </span><span class="no">nil</span><span class="p">,</span><span class="w">
     </span><span class="ss">page</span><span class="p">:</span><span class="w"> </span><span class="mi">1</span><span class="p">,</span><span class="w">
     </span><span class="ss">pages</span><span class="p">:</span><span class="w"> </span><span class="mi">1</span><span class="p">,</span><span class="w">
     </span><span class="ss">previous</span><span class="p">:</span><span class="w"> </span><span class="no">nil</span><span class="p">,</span><span class="w">
-    </span><span class="ss">results</span><span class="p">:</span><span class="w"> </span><span class="p" data-group-id="4340370610-4">[</span><span class="w">
-      </span><span class="p" data-group-id="4340370610-5">%</span><span class="nc" data-group-id="4340370610-5">LemonMarketsEx.Ohlc</span><span class="p" data-group-id="4340370610-5">{</span><span class="w">
+    </span><span class="ss">results</span><span class="p">:</span><span class="w"> </span><span class="p" data-group-id="8052326023-4">[</span><span class="w">
+      </span><span class="p" data-group-id="8052326023-5">%</span><span class="nc" data-group-id="8052326023-5">LemonMarketsEx.Ohlc</span><span class="p" data-group-id="8052326023-5">{</span><span class="w">
         </span><span class="ss">c</span><span class="p">:</span><span class="w"> </span><span class="mf">237.5</span><span class="p">,</span><span class="w">
         </span><span class="ss">h</span><span class="p">:</span><span class="w"> </span><span class="mf">237.5</span><span class="p">,</span><span class="w">
         </span><span class="ss">isin</span><span class="p">:</span><span class="w"> </span><span class="s">&quot;US19260Q1076&quot;</span><span class="p">,</span><span class="w">
@@ -612,12 +616,12 @@ Searching for multiple isins can be done through a comma separated string e.g. <
         </span><span class="ss">mic</span><span class="p">:</span><span class="w"> </span><span class="s">&quot;XMUN&quot;</span><span class="p">,</span><span class="w">
         </span><span class="ss">o</span><span class="p">:</span><span class="w"> </span><span class="mf">237.5</span><span class="p">,</span><span class="w">
         </span><span class="ss">t</span><span class="p">:</span><span class="w"> </span><span class="s">&quot;2021-12-27T07:01:00.000+00:00&quot;</span><span class="w">
-      </span><span class="p" data-group-id="4340370610-5">}</span><span class="p">,</span><span class="w">
-      </span><span class="p" data-group-id="4340370610-6">%</span><span class="nc" data-group-id="4340370610-6">LemonMarketsEx.Ohlc</span><span class="p" data-group-id="4340370610-6">{</span><span class="n">...</span><span class="p" data-group-id="4340370610-6">}</span><span class="p">,</span><span class="w">
+      </span><span class="p" data-group-id="8052326023-5">}</span><span class="p">,</span><span class="w">
+      </span><span class="p" data-group-id="8052326023-6">%</span><span class="nc" data-group-id="8052326023-6">LemonMarketsEx.Ohlc</span><span class="p" data-group-id="8052326023-6">{</span><span class="n">...</span><span class="p" data-group-id="8052326023-6">}</span><span class="p">,</span><span class="w">
       </span><span class="n">...</span><span class="w">
-    </span><span class="p" data-group-id="4340370610-4">]</span><span class="p">,</span><span class="w">
+    </span><span class="p" data-group-id="8052326023-4">]</span><span class="p">,</span><span class="w">
     </span><span class="ss">total</span><span class="p">:</span><span class="w"> </span><span class="mi">48</span><span class="w">
-  </span><span class="p" data-group-id="4340370610-3">}</span><span class="p" data-group-id="4340370610-2">}</span></code></pre>
+  </span><span class="p" data-group-id="8052326023-3">}</span><span class="p" data-group-id="8052326023-2">}</span></code></pre>
   </section>
 </section>
 
@@ -626,37 +630,26 @@ Searching for multiple isins can be done through a comma separated string e.g. <
 
       <footer class="footer">
 
+          <p>
+            On Hex.pm:
+
+            <span class="line">
+              <a href="https://hex.pm/packages/lemon_markets_ex/0.2.0" class="line footer-hex-package">Package</a>
+              <a href="https://preview.hex.pm/preview/lemon_markets_ex/0.2.0" class="line">Preview</a>
+
+                <a href="https://preview.hex.pm/preview/lemon_markets_ex/0.2.0/show/lib/market/market.ex">(current file)</a>
+
+            </span>
+
+            <button class="line footer-button display-quick-switch">
+              Search
+            </button>
+          </p>
+
         <p>
-          Find it on Hex:
-          <a href="https://hex.pm/packages/lemon_markets_ex/0.2.0" class="line footer-hex-package">Package</a>
-          <a href="https://preview.hex.pm/preview/lemon_markets_ex/0.2.0" class="line">Preview</a>
-
-            <a href="https://preview.hex.pm/preview/lemon_markets_ex/0.2.0/show/lib/market/market.ex">(current file)</a>
-
-        </p>
-
-        <p>
-          <span class="line">
-            Built using
-            <a href="https://github.com/elixir-lang/ex_doc" title="ExDoc" target="_blank" rel="help noopener" translate="no">ExDoc</a> (v0.26.0) for the
-            <a href="https://elixir-lang.org" title="Elixir" target="_blank" translate="no">Elixir programming language</a>.
-          </span>
-          <span class="line">
-            Designed by
-            <a href="https://twitter.com/dignifiedquire" target="_blank" rel="noopener" title="@dignifiedquire" translate="no">Friedel Ziegelmayer</a>.
-          </span>
-        </p>
-        <p>
-
-          <button class="line footer-button display-shortcuts-help">
-            Display keyboard shortcuts
-          </button>
-          <button class="line footer-button display-quick-switch">
-            Go to a HexDocs package
-          </button>
-          <button class="line footer-button display-settings">
-            Settings
-          </button>
+          Built using
+          <a href="https://github.com/elixir-lang/ex_doc" title="ExDoc" target="_blank" rel="help noopener" translate="no">ExDoc</a> (v0.27.0-dev) for the
+          <a href="https://elixir-lang.org" title="Elixir" target="_blank" translate="no">Elixir programming language</a>
         </p>
       </footer>
     </div>
