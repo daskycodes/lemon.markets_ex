@@ -77,7 +77,7 @@ defmodule LemonMarketsEx.MixProject do
       {:hackney, "~> 1.17.0"},
       {:jason, ">= 1.0.0"},
       {:exconstructor, "~> 1.2.3"},
-      {:ex_doc, "~> 0.24", only: :dev, runtime: false}
+      {:ex_doc, git: "https://github.com/elixir-lang/ex_doc", ref: "a011116", only: :dev, runtime: false}
     ]
   end
 
